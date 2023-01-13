@@ -9,5 +9,6 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     public void addRecipes(RegisterRecipeHandlersEvent event) {
         event.register(new ResourceLocation("minestuck:grist_cost"), GristCostRecipeJS::new);
         event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
+        event.register(new ResourceLocation("minestuck:irradiating"), IrradiatingRecipeJS::new);
     }
 }

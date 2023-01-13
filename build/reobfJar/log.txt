@@ -1,5 +1,5 @@
 Java Launcher: C:\Program Files\Java\jdk-17.0.2\bin\java.exe
-Arguments: '--in-jar, C:\Users\Gaming\Downloads\kubejsminestuck\build\libs\kubejsminestuck-1.0.jar, --out-jar, C:\Users\Gaming\Downloads\kubejsminestuck\build\reobfJar\output.jar, --srg-in, C:\Users\Gaming\Downloads\kubejsminestuck\build\createMcpToSrg\output.tsrg, --live'
+Arguments: '--in-jar, C:\Users\Gaming\Desktop\kubejsminestuck\build\libs\kubejsminestuck-1.0.jar, --out-jar, C:\Users\Gaming\Desktop\kubejsminestuck\build\reobfJar\output.jar, --srg-in, C:\Users\Gaming\Desktop\kubejsminestuck\build\createMcpToSrg\output.tsrg, --live'
 Classpath:
  - C:\Users\Gaming\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar
  - C:\Users\Gaming\.gradle\caches\forge_gradle\deobf_dependencies\dev\latvian\mods\kubejs-forge\1802.5.5-build.562_mapped_official_1.18.2\kubejs-forge-1802.5.5-build.562_mapped_official_1.18.2.jar
@@ -90,7 +90,7 @@ Classpath:
  - C:\Users\Gaming\.gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.2\cd9cd41361c155f3af0f653009dcecb08d8b4afd\antlr-runtime-3.5.2.jar
  - C:\Users\Gaming\.gradle\caches\modules-2\files-2.1\org.abego.treelayout\org.abego.treelayout.core\1.0.3\457216e8e6578099ae63667bb1e4439235892028\org.abego.treelayout.core-1.0.3.jar
  - C:\Users\Gaming\.gradle\caches\modules-2\files-2.1\org.glassfish\javax.json\1.0.4\3178f73569fd7a1e5ffc464e680f7a8cc784b85a\javax.json-1.0.4.jar
-Working directory: C:\Users\Gaming\Downloads\kubejsminestuck\build\reobfJar
+Working directory: C:\Users\Gaming\Desktop\kubejsminestuck\build\reobfJar
 Main class: net.md_5.specialsource.SpecialSource
 ====================================
 Loading mappings
@@ -103,13 +103,13 @@ Loading mappings... 50%
 0 packages, 6399 classes, 28861 fields, 53847 methods
 Remapping final jar
 Remapping jar...  8%
-Remapping jar... 17%
-Remapping jar... 25%
-Remapping jar... 33%
-Remapping jar... 42%
-Remapping jar... 50%
-Remapping jar... 67%
-Remapping jar... 75%
-Remapping jar... 83%
+Remapping jar... 15%
+Remapping jar... 23%
+Remapping jar... 31%
+Remapping jar... 46%
+Remapping jar... 54%
+Remapping jar... 62%
+Remapping jar... 77%
+Remapping jar... 85%
 Remapping jar... 92%
 Remapping jar... 100%
