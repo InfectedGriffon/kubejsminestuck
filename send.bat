@@ -1,1 +1,0 @@
-robocopy "./build/libs/" "C:\Users\Gaming\AppData\Roaming\PrismLauncher\instances\homestuck the threequel\.minecraft\mods" /ns /nc /nfl /ndl /njh
