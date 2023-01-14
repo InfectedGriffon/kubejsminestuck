@@ -5,6 +5,7 @@ import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import net.minecraft.resources.ResourceLocation;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
+import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 import com.mraof.minestuck.alchemy.GristType;
 import com.mraof.minestuck.alchemy.GristTypes;
@@ -33,6 +34,10 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         if (!stringified.contains(":")) { //default to minestuck when no namespace
             stringified = "minestuck:" + stringified;
         }
-        return GristTypes.getRegistry().getValue(new ResourceLocation(stringified));
+        var type = GristTypes.getRegistry().getValue(new ResourceLocation(stringified));
+        if(type==null) {
+            ConsoleJS.SERVER.error("Invalid Grist Type: "+stringified+"!");
+        }
+        return type;
     }
 }
