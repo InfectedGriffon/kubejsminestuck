@@ -7,3 +7,5 @@ current features:
     - combination (punch card alchemy)
     - grist costs (alchemiter)
     - irradiating (cookalyzer)
+- Global binding for grist amounts
+    - currently super simple
