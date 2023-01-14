@@ -4,5 +4,6 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
 
 current features:
 - recipe handlers for
-    - combination
-    - grist costs
+    - combination (punch card alchemy)
+    - grist costs (alchemiter)
+    - irradiating (cookalyzer)
