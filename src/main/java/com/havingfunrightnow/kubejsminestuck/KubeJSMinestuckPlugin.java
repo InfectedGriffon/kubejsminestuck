@@ -7,6 +7,7 @@ import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
+import com.mraof.minestuck.alchemy.GristSet;
 import com.mraof.minestuck.alchemy.GristType;
 import com.mraof.minestuck.alchemy.GristTypes;
 
@@ -22,11 +23,13 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     @Override
     public void addBindings(BindingsEvent event) {
         event.add("Grist", GristWrapper.class);
+        event.add("GristSet", GristSetWrapper.class);
     }
 
     @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
         typeWrappers.register(GristType.class, g -> getGrist(g));
+        typeWrappers.register(GristSet.class, g -> getGristSet(g));
     }
     public GristType getGrist(Object g) {
         if (g instanceof GristType grist) {return grist;} //return self when grist
@@ -39,5 +42,10 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
             ConsoleJS.SERVER.error("Invalid Grist Type: "+stringified+"!");
         }
         return type;
+    }
+    public GristSet getGristSet(Object g) {
+        if (g instanceof GristSet grist) {return grist;}
+        ConsoleJS.SERVER.info(g);
+        return new GristSet();
     }
 }

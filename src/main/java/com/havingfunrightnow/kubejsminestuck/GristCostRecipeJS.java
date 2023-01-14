@@ -3,6 +3,7 @@ package com.havingfunrightnow.kubejsminestuck;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.mraof.minestuck.alchemy.GristAmount;
+import com.mraof.minestuck.alchemy.GristSet;
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
 import dev.latvian.mods.kubejs.util.ListJS;
 
@@ -15,7 +16,9 @@ public class GristCostRecipeJS extends RecipeJS {
     public void create(ListJS args) {
         inputItems.add(parseIngredientItem(args.get(0)));
         if (args.get(1) instanceof GristAmount grist) {
-            grist_cost = new Gson().fromJson(getGristString(grist), JsonElement.class);
+            grist_cost = new Gson().fromJson(getGristString(grist), JsonElement.class); //i love json ❤
+        } else if (args.get(1) instanceof GristSet gristSet) {
+            grist_cost = gristSet.serialize();
         } else {
             grist_cost = new Gson().toJsonTree(args.get(1)); // mapjs -> jsonelement
         }
