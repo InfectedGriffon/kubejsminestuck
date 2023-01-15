@@ -1,4 +1,4 @@
-package com.havingfunrightnow.kubejsminestuck;
+package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
 import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 

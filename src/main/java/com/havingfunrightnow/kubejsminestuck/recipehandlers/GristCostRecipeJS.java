@@ -1,4 +1,4 @@
-package com.havingfunrightnow.kubejsminestuck;
+package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
