@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;
+import com.mraof.minestuck.alchemy.GristTypes;
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
 import dev.latvian.mods.kubejs.util.ListJS;
 
@@ -25,6 +26,9 @@ public class GristCostRecipeJS extends RecipeJS {
     }
 
     public String getGristString(GristAmount grist) {
+        if (grist.getType()==GristTypes.ZILLIUM.get() && grist.getAmount()==Long.MIN_VALUE) {
+            return "{}";
+        }
         return "{\""+grist.getType().toString()+"\":"+String.valueOf(grist.getAmount())+"}";
     }
 
