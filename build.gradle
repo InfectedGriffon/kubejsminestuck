@@ -48,6 +48,9 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
+            //FIX RUNCLIENT BEING STUPID
+            property 'mixin.env.disableRefMap', 'true'
+
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
@@ -72,6 +75,9 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
+
+            //FIX RUNCLIENT BEING STUPID
+            property 'mixin.env.disableRefMap', 'true'
 
             property 'forge.logging.markers', 'REGISTRIES'
 

@@ -1,27 +1,26 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import dev.latvian.mods.kubejs.KubeJSPlugin;
-import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import dev.latvian.mods.kubejs.KubeJSPlugin;
+import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
+import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
-import com.havingfunrightnow.kubejsminestuck.recipehandlers.CombinationRecipeJS;
-import com.havingfunrightnow.kubejsminestuck.recipehandlers.GristCostRecipeJS;
-import com.havingfunrightnow.kubejsminestuck.recipehandlers.IrradiatingRecipeJS;
-import com.havingfunrightnow.kubejsminestuck.wrappers.GristSetWrapper;
-import com.havingfunrightnow.kubejsminestuck.wrappers.GristWrapper;
-import com.mraof.minestuck.alchemy.GristSet;
-import com.mraof.minestuck.alchemy.GristType;
-import com.mraof.minestuck.alchemy.GristTypes;
-
-// import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
-// import dev.latvian.mods.kubejs.util.UtilsJS;
+import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
+import com.havingfunrightnow.kubejsminestuck.wrappers.*;
+import com.mraof.minestuck.Minestuck;
+import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
-    // public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(UtilsJS.cast(GristTypes.getRegistry()), GristType.class);
+    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = 
+        ResourceKey.createRegistryKey(new ResourceLocation(Minestuck.MOD_ID, "grist"));
+
+    public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
 
     @Override
     public void addRecipes(RegisterRecipeHandlersEvent event) {
@@ -37,10 +36,16 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     }
 
     @Override
+    public void init() {
+        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
+    }
+
+    @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
         typeWrappers.register(GristType.class, g -> getGrist(g));
         typeWrappers.register(GristSet.class, g -> getGristSet(g));
     }
+
     public GristType getGrist(Object g) {
         if (g instanceof GristType grist) {return grist;} //return self when grist
         var stringified = g.toString();
@@ -53,9 +58,10 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         }
         return type;
     }
+
     public GristSet getGristSet(Object g) {
         if (g instanceof GristSet grist) {return grist;}
-        ConsoleJS.SERVER.info(g);
+        ConsoleJS.SERVER.info(g); //TODO FIGURE THIS OUT
         return new GristSet();
     }
 }

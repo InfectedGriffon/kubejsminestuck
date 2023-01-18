@@ -2,5 +2,6 @@
 gradle
 .vscode
 build
+run
 /send.bat
 /*.log
