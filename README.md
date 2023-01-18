@@ -4,7 +4,7 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
 
 ## current features:
 - recipe handlers
-    - combination (punch card alchemy)
+    - combination (totem lathe / punch designix)
         - event.recipes.minestuck.combination(output, input1, input2, mode)
     - grist costs (alchemiter)
         - event.recipes.minestuck.grist_cost(item, grist)
@@ -12,7 +12,7 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
     - irradiating (cookalyzer)
         - just use it like a normal furnace recipe
 - Global binding for grist amounts
-    - Grist.of(type, amount)
-    - GristSet.from(grist, grist, etc)
+    - `Grist.of(type, amount)`
+    - `GristSet.from(grist, grist, ...)`
 - Ability to add new types of grist
     - by that i mean it's still unimplemented

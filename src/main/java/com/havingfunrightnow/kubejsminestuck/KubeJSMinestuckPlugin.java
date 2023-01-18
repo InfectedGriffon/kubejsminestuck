@@ -43,13 +43,17 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
         typeWrappers.register(GristType.class, g -> getGrist(g));
-        typeWrappers.register(GristSet.class, g -> getGristSet(g));
+        typeWrappers.register(GristAmount.class, g -> getGristAmount(g));
     }
 
     public GristType getGrist(Object g) {
+        return getGrist(g, true);
+    }
+
+    public GristType getGrist(Object g, boolean useFallbackNamespace) {
         if (g instanceof GristType grist) {return grist;} //return self when grist
         var stringified = g.toString();
-        if (!stringified.contains(":")) { //default to minestuck when no namespace
+        if (!stringified.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
             stringified = "minestuck:" + stringified;
         }
         var type = GristTypes.getRegistry().getValue(new ResourceLocation(stringified));
@@ -59,9 +63,14 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         return type;
     }
 
-    public GristSet getGristSet(Object g) {
-        if (g instanceof GristSet grist) {return grist;}
-        ConsoleJS.SERVER.info(g); //TODO FIGURE THIS OUT
-        return new GristSet();
+    public GristAmount getGristAmount(Object g) {
+        if (g instanceof GristAmount grist) {return grist;}
+        String[] s = g
+            .toString()
+            .replaceAll("\\{(.*)\\}","$1")
+            .split(":");
+        GristType type = getGrist(s[0]+":"+s[1], false);
+        Long amount = Long.parseLong(s[2].replaceAll("\\s|\\..*",""));
+        return new GristAmount(type, amount);
     }
 }
