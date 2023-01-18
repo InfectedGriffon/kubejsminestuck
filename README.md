@@ -9,3 +9,6 @@ current features:
     - irradiating (cookalyzer)
 - Global binding for grist amounts
     - currently super simple
+    - both single type and sets of grist
+- Ability to add new types of grist
+    - this took so long to implement dear god
