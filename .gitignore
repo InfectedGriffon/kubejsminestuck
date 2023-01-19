@@ -3,6 +3,9 @@ gradle
 .vscode
 build
 run/*
+!run/kubejs
+run/kubejs/*
+!run/kubejs/server_scripts
 !run/kubejs/server_scripts/script.js
 /send.bat
 /*.log
