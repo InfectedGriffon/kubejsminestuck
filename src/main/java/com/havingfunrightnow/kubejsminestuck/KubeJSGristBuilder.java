@@ -36,9 +36,7 @@ public class KubeJSGristBuilder extends BuilderBase<GristType> {
     }
 
     public KubeJSGristBuilder notUnderlingType() {
-        if (properties != null) {
-            properties.notUnderlingType();
-        }
+        properties.notUnderlingType();
         return this;
     }
 
