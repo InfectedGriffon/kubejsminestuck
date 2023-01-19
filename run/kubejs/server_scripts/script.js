@@ -19,5 +19,5 @@ onEvent('recipes', event => {
 	event.recipes.minestuck.grist_cost("minecraft:coarse_dirt", GristSet.from(Grist.of("build",2),Grist.of("amber",4)))
 
 	//irradiating
-	event.recipes.minestuck.irradiating("minecraft:emerald", "minecraft:diamond").xp(0.1)
+	event.recipes.minestuck.irradiating("minecraft:emerald", "minecraft:diamond").xp(0.1) //recipe type not in jei
 })

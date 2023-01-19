@@ -1,11 +1,15 @@
+#gradle stuff
 .gradle
 gradle
-.vscode
 build
+
+#get this one file to show up
 run/*
 !run/kubejs
 run/kubejs/*
 !run/kubejs/server_scripts
-!run/kubejs/server_scripts/script.js
+
+#misc
+.vscode
 /send.bat
 /*.log
