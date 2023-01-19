@@ -5,4 +5,4 @@ build
 run
 /send.bat
 /*.log
-!run/kubejs/server_scripts/script.js
+!run/kubejs/server_scripts
