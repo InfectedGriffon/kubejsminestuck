@@ -19,17 +19,17 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
 
     public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
+    
+    @Override
+    public void init() {
+        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
+    }
 
     @Override
     public void addRecipes(RegisterRecipeHandlersEvent event) {
         event.register(new ResourceLocation("minestuck:grist_cost"), GristCostRecipeJS::new);
         event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
         event.register(new ResourceLocation("minestuck:irradiating"), IrradiatingRecipeJS::new);
-    }
-    
-    @Override
-    public void init() {
-        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
     }
     
     @Override
