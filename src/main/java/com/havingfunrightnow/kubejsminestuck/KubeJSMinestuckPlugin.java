@@ -12,13 +12,11 @@ import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
 import com.havingfunrightnow.kubejsminestuck.wrappers.*;
-import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
-    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = 
-        ResourceKey.createRegistryKey(new ResourceLocation(Minestuck.MOD_ID, "grist"));
+    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
 
     public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
 
