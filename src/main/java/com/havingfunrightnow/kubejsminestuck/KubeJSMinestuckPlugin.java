@@ -16,10 +16,10 @@ import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
+    // girl help i am going insane
     private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
-
     public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
-    
+
     @Override
     public void init() {
         GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
@@ -31,7 +31,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
         event.register(new ResourceLocation("minestuck:irradiating"), IrradiatingRecipeJS::new);
     }
-    
+
     @Override
     public void addBindings(BindingsEvent event) {
         event.add("Grist", GristWrapper.class);
