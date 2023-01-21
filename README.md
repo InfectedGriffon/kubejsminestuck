@@ -8,11 +8,11 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
         - `event.recipes.minestuck.combination(output, input1, input2, mode)`
     - grist costs (alchemiter)
         - `event.recipes.minestuck.grist_cost(item, grist)`
-        - when removing, make sure the item(s) are selected as input
+        - when removing, make sure the item is selected as input
     - irradiating (cookalyzer)
-        - just use it like a normal furnace recipe
+        - same syntax and methods as a normal furnace recipe
 - Global binding for grist amounts
-    - `Grist.of(type, amount)`
-    - `GristSet.from(grist, grist, ...)`
+    - `Grist.of(type, amount)` <- gives single grist amount
+    - `GristSet.from(grist, grist, ...)` <- combine multiple into one set
 - Ability to add new types of grist
-    - by that i mean it's still unimplemented
+    - still unimplemented
