@@ -26,16 +26,16 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
         event.register(new ResourceLocation("minestuck:irradiating"), IrradiatingRecipeJS::new);
     }
-
+    
+    @Override
+    public void init() {
+        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
+    }
+    
     @Override
     public void addBindings(BindingsEvent event) {
         event.add("Grist", GristWrapper.class);
         event.add("GristSet", GristSetWrapper.class);
-    }
-
-    @Override
-    public void init() {
-        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
     }
 
     @Override
