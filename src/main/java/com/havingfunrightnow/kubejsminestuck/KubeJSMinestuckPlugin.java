@@ -35,7 +35,6 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     @Override
     public void addBindings(BindingsEvent event) {
         event.add("Grist", GristWrapper.class);
-        event.add("GristSet", GristSetWrapper.class);
     }
 
     @Override
@@ -44,11 +43,11 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         typeWrappers.register(GristAmount.class, g -> getGristAmount(g));
     }
 
-    public GristType getGrist(Object g) {
+    public static GristType getGrist(Object g) {
         return getGrist(g, true);
     }
 
-    public GristType getGrist(Object g, boolean useFallbackNamespace) {
+    public static GristType getGrist(Object g, boolean useFallbackNamespace) {
         if (g instanceof GristType grist) {return grist;} //return self when grist
         var stringified = g.toString();
         if (!stringified.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
@@ -61,7 +60,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         return type;
     }
 
-    public GristAmount getGristAmount(Object g) {
+    public static GristAmount getGristAmount(Object g) {
         if (g instanceof GristAmount grist) {return grist;}
         String[] s = g
             .toString()
