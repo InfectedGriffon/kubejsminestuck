@@ -24,8 +24,10 @@ public class GristCostRecipeJS extends RecipeJS {
         }
     }
 
-    /*
-     * take some object and turns it into a json element
+    
+    /**
+     * @param someObject some artbitrary object to conver into json
+     * @return json element representing said object
      */
     public JsonElement jsonify(Object someObject) {
         if (someObject instanceof GristAmount grist) {
@@ -40,8 +42,13 @@ public class GristCostRecipeJS extends RecipeJS {
         }
     }
 
-    /*
-     * takes two objects and turns them into a json element
+    
+    /**
+     * @param key part before the colon
+     * @param value part after the colon
+     * @return json element formatted like {key:value}
+     * @throws JsonParseException - if key or value contain colons, commas, etc in string form
+     * @throws JsonSyntaxException
      */
     public JsonElement jsonify(Object key, Object value) {
         return JsonParser.parseString("{\"" + key.toString() + "\":" + value.toString() + "}");
