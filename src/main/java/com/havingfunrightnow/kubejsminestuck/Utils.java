@@ -5,11 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;
-import com.mraof.minestuck.alchemy.GristType;
 import com.mraof.minestuck.alchemy.GristTypes;
-
-import dev.latvian.mods.kubejs.util.ConsoleJS;
-import net.minecraft.resources.ResourceLocation;
 
 public class Utils {
     /**
@@ -42,33 +38,6 @@ public class Utils {
      */
     public static JsonElement jsonify(Object key, Object value) {
         return JsonParser.parseString("{\"" + key.toString() + "\":" + value.toString() + "}");
-    }
-
-    /**
-     * defaults usefallbacknamespace to true
-     * @param o the object to turn into a grist type
-     * @return the grist type parsed
-     */
-    public static GristType getGrist(Object o) {
-        return getGrist(o, true);
-    }
-
-    /**
-     * @param o the object to turn into a grist type
-     * @param useFallbackNamespace whether to attach minestuck: before when missing a namespace
-     * @return the grist type parsed
-     */
-    public static GristType getGrist(Object o, boolean useFallbackNamespace) {
-        if (o instanceof GristType grist) {return grist;} //return self when grist
-        var s = o.toString();
-        if (!s.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
-            s = "minestuck:" + s;
-        }
-        var type = GristTypes.getRegistry().getValue(new ResourceLocation(s));
-        if(type==null) {
-            ConsoleJS.SERVER.error("Invalid Grist Type: "+s+"!");
-        }
-        return type;
     }
 
 }

@@ -8,6 +8,7 @@ import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 import dev.latvian.mods.kubejs.script.ScriptType;
+import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 
 import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
@@ -34,6 +35,24 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
-        typeWrappers.register(GristType.class, g -> Utils.getGrist(g));
+        typeWrappers.register(GristType.class, g -> getGrist(g));
+    }
+
+    /**
+     * defaults usefallbacknamespace to true
+     * @param o the object to turn into a grist type
+     * @return the grist type parsed
+     */
+    public static GristType getGrist(Object o) {
+        if (o instanceof GristType grist) {return grist;} //return self when grist
+        var s = o.toString();
+        if (!s.contains(":")) { //default to minestuck when no namespace
+            s = "minestuck:" + s;
+        }
+        var type = GristTypes.getRegistry().getValue(new ResourceLocation(s));
+        if(type==null) {
+            ConsoleJS.SERVER.error("Invalid Grist Type: "+s+"!");
+        }
+        return type;
     }
 }
