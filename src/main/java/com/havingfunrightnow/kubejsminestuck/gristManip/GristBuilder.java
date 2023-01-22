@@ -11,11 +11,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class KubeJSGristBuilder extends BuilderBase<GristType> {
+public class GristBuilder extends BuilderBase<GristType> {
 
     private GristType.Properties properties;
 
-    public KubeJSGristBuilder(ResourceLocation i) {
+    public GristBuilder(ResourceLocation i) {
         super(i);
     }
 
@@ -27,29 +27,29 @@ public class KubeJSGristBuilder extends BuilderBase<GristType> {
         return new GristType(properties);
     }
 
-    public KubeJSGristBuilder setup(float rarity, float value) {
+    public GristBuilder setup(float rarity, float value) {
         properties = new GristType.Properties(rarity, value);
         return this;
     }
 
-    public KubeJSGristBuilder setup(float rarity) {
+    public GristBuilder setup(float rarity) {
         properties = new GristType.Properties(rarity);
         return this;
     }
 
-    public KubeJSGristBuilder notUnderlingType() {
+    public GristBuilder notUnderlingType() {
         properties.notUnderlingType();
         return this;
     }
 
-    public KubeJSGristBuilder candy(Supplier<Item> item) {
+    public GristBuilder candy(Supplier<Item> item) {
         if (properties != null) {
             properties.candy(item);
         }
         return this;
     }
 
-    public KubeJSGristBuilder candyStack(Supplier<ItemStack> item) {
+    public GristBuilder candyStack(Supplier<ItemStack> item) {
         if (properties != null) {
             properties.candyStack(item);
         }

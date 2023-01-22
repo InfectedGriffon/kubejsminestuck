@@ -23,7 +23,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     @Override
     public void init() {
-        GRIST.addType("basic", KubeJSGristBuilder.class, KubeJSGristBuilder::new);
+        GRIST.addType("basic", GristBuilder.class, GristBuilder::new);
     }
 
     @Override
