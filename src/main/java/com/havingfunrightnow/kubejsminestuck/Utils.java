@@ -17,16 +17,20 @@ public class Utils {
      * @return json element representing said object
      */
     public static JsonElement jsonify(Object someObject) {
+        if (someObject instanceof JsonElement j) {return j;}
+
         if (someObject instanceof GristAmount grist) {
             if (grist.getType() == GristTypes.ZILLIUM.get() && grist.getAmount() == Long.MIN_VALUE) {
                 return JsonParser.parseString("{}");
             }
             return jsonify(grist.getType(), grist.getAmount());
-        } else if (someObject instanceof GristSet gristSet) { // gristset has built-in serializer
-            return gristSet.serialize();
-        } else {
-            return new Gson().toJsonTree(someObject);
         }
+
+        if (someObject instanceof GristSet gristSet) {
+            return gristSet.serialize();
+        }
+
+        return new Gson().toJsonTree(someObject);
     }
 
     /**
