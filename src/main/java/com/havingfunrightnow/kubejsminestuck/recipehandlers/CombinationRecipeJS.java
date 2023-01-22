@@ -13,8 +13,8 @@ public class CombinationRecipeJS extends RecipeJS {
     public void create(ListJS args) {
         outputItems.add(parseResultItem(args.get(0)));
 		inputItems.add(parseIngredientItem(args.get(1)));
-		inputItems.add(parseIngredientItem(args.get(2)));
-        mode = CombinationMode.fromString(args.get(3).toString());
+        mode = CombinationMode.fromString(args.get(2).toString());
+		inputItems.add(parseIngredientItem(args.get(3)));
     }
 
     @Override
