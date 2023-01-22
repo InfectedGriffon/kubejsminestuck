@@ -9,10 +9,10 @@ import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
-import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
+
+import com.havingfunrightnow.kubejsminestuck.gristManip.*;
 import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
-import com.havingfunrightnow.kubejsminestuck.wrappers.*;
 import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
@@ -40,35 +40,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
-        typeWrappers.register(GristType.class, g -> getGrist(g));
-        typeWrappers.register(GristAmount.class, g -> getGristAmount(g));
-    }
-
-    public static GristType getGrist(Object g) {
-        return getGrist(g, true);
-    }
-
-    public static GristType getGrist(Object g, boolean useFallbackNamespace) {
-        if (g instanceof GristType grist) {return grist;} //return self when grist
-        var stringified = g.toString();
-        if (!stringified.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
-            stringified = "minestuck:" + stringified;
-        }
-        var type = GristTypes.getRegistry().getValue(new ResourceLocation(stringified));
-        if(type==null) {
-            ConsoleJS.SERVER.error("Invalid Grist Type: "+stringified+"!");
-        }
-        return type;
-    }
-
-    public static GristAmount getGristAmount(Object g) {
-        if (g instanceof GristAmount grist) {return grist;}
-        String[] s = g
-            .toString()
-            .replaceAll("\\{(.*)\\}","$1")
-            .split(":");
-        GristType type = getGrist(s[0]+":"+s[1], false);
-        Long amount = Long.parseLong(s[2].replaceAll("\\s|\\..*",""));
-        return new GristAmount(type, amount);
+        typeWrappers.register(GristType.class, g -> Utils.getGrist(g));
+        typeWrappers.register(GristAmount.class, g -> Utils.getGristAmount(g));
     }
 }

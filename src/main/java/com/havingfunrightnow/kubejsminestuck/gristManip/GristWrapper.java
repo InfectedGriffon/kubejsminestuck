@@ -1,4 +1,4 @@
-package com.havingfunrightnow.kubejsminestuck.wrappers;
+package com.havingfunrightnow.kubejsminestuck.gristManip;
 
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;

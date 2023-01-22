@@ -1,6 +1,8 @@
-package com.havingfunrightnow.kubejsminestuck;
+package com.havingfunrightnow.kubejsminestuck.gristManip;
 
 import java.util.function.Supplier;
+
+import com.havingfunrightnow.kubejsminestuck.KubeJSMinestuckPlugin;
 import com.mraof.minestuck.alchemy.GristType;
 import dev.latvian.mods.kubejs.BuilderBase;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
