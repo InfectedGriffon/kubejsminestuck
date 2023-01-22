@@ -1,6 +1,7 @@
 package com.havingfunrightnow.kubejsminestuck;
 
 import net.minecraft.core.Registry;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
@@ -10,6 +11,8 @@ import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
+
+import org.jetbrains.annotations.Nullable;
 
 import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
 import com.mraof.minestuck.Minestuck;
@@ -43,16 +46,31 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
      * @param o the object to turn into a grist type
      * @return the grist type parsed
      */
-    public static GristType getGrist(Object o) {
-        if (o instanceof GristType grist) {return grist;} //return self when grist
-        var s = o.toString();
-        if (!s.contains(":")) { //default to minestuck when no namespace
-            s = "minestuck:" + s;
+    public static @Nullable GristType getGrist(@Nullable Object o) {
+        if (o instanceof GristType type) {
+            return type;
         }
-        var type = GristTypes.getRegistry().getValue(new ResourceLocation(s));
-        if(type==null) {
-            ConsoleJS.SERVER.error("Invalid Grist Type: "+s+"!");
+    
+        if (o instanceof ResourceLocation id) {
+            var type = GristTypes.getRegistry().getValue(id);
+    
+            if (type != null) {
+                return type;
+            }
         }
-        return type;
+    
+        if (o instanceof StringTag tag) {
+            return getGrist(tag.getAsString());
+        }
+    
+        if (o instanceof CharSequence chars) {
+            var str = chars.toString().trim();
+    
+            return getGrist(new ResourceLocation(Utils.fallbackNamespace(str)));
+        }
+    
+        ConsoleJS.SERVER.error("Unknown grist type: " + o);
+    
+        return null;
     }
 }
