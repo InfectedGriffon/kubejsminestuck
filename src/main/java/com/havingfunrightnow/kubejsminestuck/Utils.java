@@ -13,24 +13,24 @@ import net.minecraft.resources.ResourceLocation;
 
 public class Utils {
     /**
-     * @param someObject some artbitrary object to conver into json
+     * @param o some artbitrary object to conver into json
      * @return json element representing said object
      */
-    public static JsonElement jsonify(Object someObject) {
-        if (someObject instanceof JsonElement j) {return j;}
+    public static JsonElement jsonify(Object o) {
+        if (o instanceof JsonElement j) {return j;}
 
-        if (someObject instanceof GristAmount grist) {
+        if (o instanceof GristAmount grist) {
             if (grist.getType() == GristTypes.ZILLIUM.get() && grist.getAmount() == Long.MIN_VALUE) {
                 return JsonParser.parseString("{}");
             }
             return jsonify(grist.getType(), grist.getAmount());
         }
 
-        if (someObject instanceof GristSet gristSet) {
+        if (o instanceof GristSet gristSet) {
             return gristSet.serialize();
         }
 
-        return new Gson().toJsonTree(someObject);
+        return new Gson().toJsonTree(o);
     }
 
     /**
@@ -46,27 +46,27 @@ public class Utils {
 
     /**
      * defaults usefallbacknamespace to true
-     * @param theVeryObjectSelectedForThisMethodRightNow the object to turn into a grist type
+     * @param o the object to turn into a grist type
      * @return the grist type parsed
      */
-    public static GristType getGrist(Object theVeryObjectSelectedForThisMethodRightNow) {
-        return getGrist(theVeryObjectSelectedForThisMethodRightNow, true);
+    public static GristType getGrist(Object o) {
+        return getGrist(o, true);
     }
 
     /**
-     * @param saidObjectInQuestion the object to turn into a grist type
+     * @param o the object to turn into a grist type
      * @param useFallbackNamespace whether to attach minestuck: before when missing a namespace
      * @return the grist type parsed
      */
-    public static GristType getGrist(Object saidObjectInQuestion, boolean useFallbackNamespace) {
-        if (saidObjectInQuestion instanceof GristType grist) {return grist;} //return self when grist
-        var stringified = saidObjectInQuestion.toString();
-        if (!stringified.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
-            stringified = "minestuck:" + stringified;
+    public static GristType getGrist(Object o, boolean useFallbackNamespace) {
+        if (o instanceof GristType grist) {return grist;} //return self when grist
+        var s = o.toString();
+        if (!s.contains(":") && useFallbackNamespace) { //default to minestuck when no namespace
+            s = "minestuck:" + s;
         }
-        var type = GristTypes.getRegistry().getValue(new ResourceLocation(stringified));
+        var type = GristTypes.getRegistry().getValue(new ResourceLocation(s));
         if(type==null) {
-            ConsoleJS.SERVER.error("Invalid Grist Type: "+stringified+"!");
+            ConsoleJS.SERVER.error("Invalid Grist Type: "+s+"!");
         }
         return type;
     }
@@ -75,9 +75,9 @@ public class Utils {
      * @param someObject the object to inspect
      * @return the grist amount parsed
      */
-    public static GristAmount getGristAmount(Object someObject) {
-        if (someObject instanceof GristAmount grist) {return grist;}
-        String[] s = someObject
+    public static GristAmount getGristAmount(Object o) {
+        if (o instanceof GristAmount grist) {return grist;}
+        String[] s = o
             .toString()
             .replaceAll("\\{(.*)\\}","$1")
             .split(":");
