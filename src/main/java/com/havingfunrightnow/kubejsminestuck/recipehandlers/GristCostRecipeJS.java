@@ -1,11 +1,7 @@
 package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.mraof.minestuck.alchemy.GristAmount;
-import com.mraof.minestuck.alchemy.GristSet;
-import com.mraof.minestuck.alchemy.GristTypes;
+import com.google.gson.*;
+import com.mraof.minestuck.alchemy.*;
 
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
@@ -31,16 +27,16 @@ public class GristCostRecipeJS extends RecipeJS {
     /*
      * take some object and turns it into a json element
      */
-    public JsonElement jsonify(Object thisThing) {
-        if (thisThing instanceof GristAmount grist) {
+    public JsonElement jsonify(Object someObject) {
+        if (someObject instanceof GristAmount grist) {
             if (grist.getType() == GristTypes.ZILLIUM.get() && grist.getAmount() == Long.MIN_VALUE) {
                 return JsonParser.parseString("{}");
             }
             return jsonify(grist.getType(), grist.getAmount());
-        } else if (thisThing instanceof GristSet gristSet) { //gristset has built-in serializer
+        } else if (someObject instanceof GristSet gristSet) { // gristset has built-in serializer
             return gristSet.serialize();
         } else {
-            return new Gson().toJsonTree(thisThing);
+            return new Gson().toJsonTree(someObject);
         }
     }
 
@@ -48,7 +44,7 @@ public class GristCostRecipeJS extends RecipeJS {
      * takes two objects and turns them into a json element
      */
     public JsonElement jsonify(Object key, Object value) {
-        return JsonParser.parseString("{\""+key.toString()+"\":"+value.toString()+"}");
+        return JsonParser.parseString("{\"" + key.toString() + "\":" + value.toString() + "}");
     }
 
     @Override
@@ -59,7 +55,7 @@ public class GristCostRecipeJS extends RecipeJS {
     @Override
     public void serialize() {
         json.add("ingredient", inputItems.get(0).toJson());
-        if(grist_cost!=null) { // when no costs (free)
+        if (grist_cost != null) { // when no costs (free)
             json.add("grist_cost", grist_cost);
         }
     } 
