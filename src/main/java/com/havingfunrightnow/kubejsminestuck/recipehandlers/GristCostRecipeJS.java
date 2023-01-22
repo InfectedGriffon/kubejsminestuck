@@ -24,7 +24,6 @@ public class GristCostRecipeJS extends RecipeJS {
         }
     }
 
-    
     /**
      * @param someObject some artbitrary object to conver into json
      * @return json element representing said object
@@ -42,12 +41,11 @@ public class GristCostRecipeJS extends RecipeJS {
         }
     }
 
-    
     /**
      * @param key part before the colon
      * @param value part after the colon
      * @return json element formatted like {key:value}
-     * @throws JsonParseException - if key or value contain colons, commas, etc in string form
+     * @throws JsonParseException - if key or value contain json special characters
      * @throws JsonSyntaxException
      */
     public JsonElement jsonify(Object key, Object value) {
@@ -62,7 +60,7 @@ public class GristCostRecipeJS extends RecipeJS {
     @Override
     public void serialize() {
         json.add("ingredient", inputItems.get(0).toJson());
-        if (grist_cost != null) { // when no costs (free)
+        if (grist_cost != null) {
             json.add("grist_cost", grist_cost);
         }
     } 
