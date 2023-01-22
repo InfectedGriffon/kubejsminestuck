@@ -21,7 +21,7 @@ public class GristCostRecipeJS extends RecipeJS {
         } else if (args.size() == 2) {
             grist_cost = Utils.jsonify(args.get(1));
         } else {
-            ConsoleJS.SERVER.error("Too many arguments! Try using Grist.set()!");
+            ConsoleJS.SERVER.error("Too many arguments!");
         }
     }
 

@@ -71,18 +71,4 @@ public class Utils {
         return type;
     }
 
-    /**
-     * @param someObject the object to inspect
-     * @return the grist amount parsed
-     */
-    public static GristAmount getGristAmount(Object o) {
-        if (o instanceof GristAmount grist) {return grist;}
-        String[] s = o
-            .toString()
-            .replaceAll("\\{(.*)\\}","$1")
-            .split(":");
-        GristType type = getGrist(s[0]+":"+s[1], false);
-        Long amount = Long.parseLong(s[2].replaceAll("\\s|\\..*",""));
-        return new GristAmount(type, amount);
-    }
 }

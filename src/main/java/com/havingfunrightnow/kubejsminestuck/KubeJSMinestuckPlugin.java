@@ -7,7 +7,6 @@ import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
-import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 
@@ -34,13 +33,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     }
 
     @Override
-    public void addBindings(BindingsEvent event) {
-        event.add("Grist", GristWrapper.class);
-    }
-
-    @Override
 	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
         typeWrappers.register(GristType.class, g -> Utils.getGrist(g));
-        typeWrappers.register(GristAmount.class, g -> Utils.getGristAmount(g));
     }
 }
