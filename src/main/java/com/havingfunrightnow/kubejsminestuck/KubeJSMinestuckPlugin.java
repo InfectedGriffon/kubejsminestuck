@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
+import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
@@ -29,7 +30,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     public void addRecipes(RegisterRecipeHandlersEvent event) {
         event.register(new ResourceLocation("minestuck:grist_cost"), GristCostRecipeJS::new);
         event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
-        event.register(new ResourceLocation("minestuck:irradiating"), IrradiatingRecipeJS::new);
+        event.register(new ResourceLocation("minestuck:irradiating"), CookingRecipeJS::new);
     }
 
     @Override
