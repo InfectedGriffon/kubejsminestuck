@@ -3,6 +3,7 @@ package com.havingfunrightnow.kubejsminestuck;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;
 import com.mraof.minestuck.alchemy.GristTypes;
@@ -40,4 +41,12 @@ public class Utils {
         return JsonParser.parseString("{\"" + key.toString() + "\":" + value.toString() + "}");
     }
 
+
+    public static String fallbackNamespace(String str) {
+        if (str.indexOf(':') >= 0) {
+            return str;
+        }
+
+        return Minestuck.MOD_ID + ":" + str;
+    }
 }
