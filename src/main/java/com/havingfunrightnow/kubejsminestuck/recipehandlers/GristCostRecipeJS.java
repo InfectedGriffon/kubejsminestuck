@@ -16,12 +16,17 @@ public class GristCostRecipeJS extends RecipeJS {
         inputItems.add(parseIngredientItem(args.get(0)));
 
         if (args.size() == 3) {
-            grist_cost = Utils.jsonify(args.get(1), args.get(2));
+            var type = namespaceFallback(args.get(1).toString());
+            grist_cost = Utils.jsonify(type, args.get(2));
         } else if (args.size() == 2) {
             grist_cost = Utils.jsonify(args.get(1));
         } else {
             ConsoleJS.SERVER.error("Too many arguments! Try using Grist.set()!");
         }
+    }
+
+    private String namespaceFallback(String s) {
+        return s.contains(":") ? s : "minestuck:" + s;
     }
 
     @Override
