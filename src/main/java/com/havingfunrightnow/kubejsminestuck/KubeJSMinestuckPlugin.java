@@ -11,8 +11,8 @@ import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
 
-import com.havingfunrightnow.kubejsminestuck.gristManip.*;
 import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
+import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
@@ -28,9 +28,9 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     @Override
     public void addRecipes(RegisterRecipeHandlersEvent event) {
-        event.register(new ResourceLocation("minestuck:grist_cost"), GristCostRecipeJS::new);
-        event.register(new ResourceLocation("minestuck:combination"), CombinationRecipeJS::new);
-        event.register(new ResourceLocation("minestuck:irradiating"), CookingRecipeJS::new);
+        event.register(new ResourceLocation(Minestuck.MOD_ID, "grist_cost"), GristCostRecipeJS::new);
+        event.register(new ResourceLocation(Minestuck.MOD_ID, "combination"), CombinationRecipeJS::new);
+        event.register(new ResourceLocation(Minestuck.MOD_ID, "irradiating"), CookingRecipeJS::new);
     }
 
     @Override
