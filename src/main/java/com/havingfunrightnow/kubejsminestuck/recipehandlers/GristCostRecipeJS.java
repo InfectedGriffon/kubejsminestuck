@@ -4,7 +4,6 @@ import com.google.gson.*;
 import com.havingfunrightnow.kubejsminestuck.Utils;
 
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
-import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.kubejs.util.ListJS;
 
 public class GristCostRecipeJS extends RecipeJS {
@@ -21,7 +20,7 @@ public class GristCostRecipeJS extends RecipeJS {
         } else if (args.size() == 2) {
             grist_cost = Utils.jsonify(args.get(1));
         } else {
-            ConsoleJS.SERVER.error("Too many arguments!");
+            grist_cost = Utils.jsonifyPairs(args.subList(1, args.getLength()));
         }
     }
 

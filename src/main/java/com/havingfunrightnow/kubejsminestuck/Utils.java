@@ -1,8 +1,11 @@
 package com.havingfunrightnow.kubejsminestuck;
 
+import java.util.List;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.mojang.logging.LogUtils;
 import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;
@@ -48,5 +51,28 @@ public class Utils {
         }
 
         return Minestuck.MOD_ID + ":" + str;
+    }
+
+    /**
+     * @param list a list of alternating keys and values
+     * @return a json element containing pairs from the list
+     */
+    public static JsonElement jsonifyPairs(List<Object> list) {
+
+        if (list.size() % 2 != 0) {
+            throw new IllegalArgumentException("Even number of keys/values needed!");
+        }
+
+        StringBuilder builder = new StringBuilder("{\"");
+
+        for (var i = 0; i < list.size(); i+=2) {
+            var key = fallbackNamespace(list.get(i).toString());
+            var value = list.get(i+1).toString().replace(".0", "");
+            builder.append(key+"\":"+value+",\"");
+        }
+        builder.delete(builder.length()-2, builder.length()); //get rid of last ," bit
+        builder.append("}");
+        LogUtils.getLogger().info("builder: {}", builder);
+        return JsonParser.parseString(builder.toString());
     }
 }
