@@ -5,7 +5,6 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import com.mojang.logging.LogUtils;
 import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.GristAmount;
 import com.mraof.minestuck.alchemy.GristSet;
@@ -72,7 +71,6 @@ public class Utils {
         }
         builder.delete(builder.length()-2, builder.length()); //get rid of last ," bit
         builder.append("}");
-        LogUtils.getLogger().info("builder: {}", builder);
         return JsonParser.parseString(builder.toString());
     }
 }
