@@ -185,13 +185,13 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.93'
 
-    implementation fg.deobf("curse.maven:minestuck-224635:4324200")
-    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.18:${System.getProperty 'geckolib_version'}")
-    implementation fg.deobf("commoble.infiniverse:infiniverse-1.18.2:${System.getProperty 'infiniverse_version'}")
+    implementation fg.deobf("curse.maven:minestuck-${project.minestuck_curse_id}:${project.minestuck_file_id}")
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.18:${project.geckolib_version}")
+    implementation fg.deobf("commoble.infiniverse:infiniverse-1.18.2:${project.infiniverse_version}")
 
-    implementation fg.deobf("dev.latvian.mods:kubejs-forge:${System.getProperty 'kubejs_version'}")
-    implementation fg.deobf("dev.latvian.mods:rhino-forge:${System.getProperty 'rhino_version'}")
-    implementation fg.deobf("dev.architectury:architectury-forge:${System.getProperty 'architectury_version'}")
+    implementation fg.deobf("dev.latvian.mods:kubejs-forge:${project.kubejs_version}")
+    implementation fg.deobf("dev.latvian.mods:rhino-forge:${project.rhino_version}")
+    implementation fg.deobf("dev.architectury:architectury-forge:${project.architectury_version}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
