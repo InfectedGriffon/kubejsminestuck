@@ -16,9 +16,9 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.0'
-group = 'com.havingfunrightnow.kubejsminestuck' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'kubejsminestuck'
+version = project.mod_version
+group = project.maven_group
+archivesBaseName = project.archives_base_name
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -185,12 +185,13 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.93'
 
-    implementation fg.deobf("dev.latvian.mods:kubejs-forge:1802.5.5-build.567")
     implementation fg.deobf("curse.maven:minestuck-224635:4324200")
-    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.18:3.0.57')
-    implementation fg.deobf("commoble.infiniverse:infiniverse-1.18.2:1.0.0.2")
-    implementation fg.deobf("dev.latvian.mods:rhino-forge:1802.2.1-build.255")
-    implementation fg.deobf("dev.architectury:architectury-forge:4.10.88")
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.18:${System.getProperty 'geckolib_version'}")
+    implementation fg.deobf("commoble.infiniverse:infiniverse-1.18.2:${System.getProperty 'infiniverse_version'}")
+
+    implementation fg.deobf("dev.latvian.mods:kubejs-forge:${System.getProperty 'kubejs_version'}")
+    implementation fg.deobf("dev.latvian.mods:rhino-forge:${System.getProperty 'rhino_version'}")
+    implementation fg.deobf("dev.architectury:architectury-forge:${System.getProperty 'architectury_version'}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
