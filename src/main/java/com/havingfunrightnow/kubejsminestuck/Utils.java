@@ -11,6 +11,7 @@ import com.mraof.minestuck.alchemy.GristSet;
 import com.mraof.minestuck.alchemy.GristTypes;
 
 public class Utils {
+
     /**
      * @param o some artbitrary object to conver into json
      * @return json element representing said object
@@ -43,7 +44,6 @@ public class Utils {
         return JsonParser.parseString("{\"" + key.toString() + "\":" + value.toString() + "}");
     }
 
-
     public static String fallbackNamespace(String str) {
         if (str.indexOf(':') >= 0) {
             return str;
@@ -62,15 +62,21 @@ public class Utils {
             throw new IllegalArgumentException("Even number of keys/values needed!");
         }
 
-        StringBuilder builder = new StringBuilder("{\"");
+        StringBuilder builder = new StringBuilder("{");
 
         for (var i = 0; i < list.size(); i+=2) {
+
             var key = fallbackNamespace(list.get(i).toString());
-            var value = list.get(i+1).toString().replace(".0", "");
-            builder.append(key+"\":"+value+",\"");
+            var value = list.get(i+1).toString();
+            
+            builder.append("\""+key+"\":"+value);
+            
+            if (i != list.size()-2) {
+                builder.append(",");
+            }
         }
-        builder.delete(builder.length()-2, builder.length()); //get rid of last ," bit
         builder.append("}");
         return JsonParser.parseString(builder.toString());
     }
+
 }
