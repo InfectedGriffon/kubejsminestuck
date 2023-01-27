@@ -1,26 +1,33 @@
 package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
 import com.google.gson.*;
-import com.havingfunrightnow.kubejsminestuck.Utils;
+import com.mraof.minestuck.Minestuck;
+import com.mraof.minestuck.alchemy.GristAmount;
 
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
 import dev.latvian.mods.kubejs.util.ListJS;
 
 public class GristCostRecipeJS extends RecipeJS {
 
-    public JsonElement grist_cost;
+    public JsonObject grist_cost = new JsonObject();
 
     @Override
     public void create(ListJS args) {
         inputItems.add(parseIngredientItem(args.get(0)));
-
-        if (args.size() == 3) {
-            var type = Utils.fallbackNamespace(args.get(1).toString());
-            grist_cost = Utils.jsonify(type, args.get(2));
-        } else if (args.size() == 2) {
-            grist_cost = Utils.jsonify(args.get(1));
+        if (args.get(1) instanceof GristAmount grist) {
+            grist_cost.addProperty(grist.getType().toString(),grist.getAmount());
+        } else if (args.size() % 2 == 1) {
+            var iter = args.iterator();
+            iter.next();
+            while (iter.hasNext()) {
+                var key = iter.next().toString();
+                grist_cost.addProperty(
+                    key.indexOf(':')>=0?key:Minestuck.MOD_ID+":"+key,
+                    Long.parseLong(iter.next().toString().replace(".0", ""))
+                );
+            }
         } else {
-            grist_cost = Utils.jsonifyPairs(args.subList(1, args.getLength()));
+            throw new IllegalArgumentException("Invalid Grist Cost Argument!");
         }
     }
 
@@ -35,5 +42,5 @@ public class GristCostRecipeJS extends RecipeJS {
         if (grist_cost != null) {
             json.add("grist_cost", grist_cost);
         }
-    } 
+    }
 }

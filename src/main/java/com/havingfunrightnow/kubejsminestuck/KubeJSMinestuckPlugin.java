@@ -1,14 +1,12 @@
 package com.havingfunrightnow.kubejsminestuck;
 
 import net.minecraft.core.Registry;
-import net.minecraft.nbt.StringTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
 import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
-import dev.latvian.mods.kubejs.script.BindingsEvent;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
@@ -21,9 +19,10 @@ import com.mraof.minestuck.alchemy.*;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
-    // girl help i am going insane
-    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
-    public static final RegistryObjectBuilderTypes<GristType> GRIST = RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
+    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = 
+        ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
+    public static final RegistryObjectBuilderTypes<GristType> GRIST = 
+        RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
 
     @Override
     public void init() {
@@ -38,45 +37,30 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     }
 
     @Override
-    public void addBindings(BindingsEvent event) {
-        event.add("Grist", GristWrapper.class);
+    public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
+        typeWrappers.register(GristType.class, g -> getGristType(g));
     }
 
-    @Override
-	public void addTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
-        typeWrappers.register(GristType.class, g -> getGrist(g));
-    }
-
-    /**
-     * defaults usefallbacknamespace to true
-     * @param o the object to turn into a grist type
-     * @return the grist type parsed
-     */
-    public static @Nullable GristType getGrist(@Nullable Object o) {
+    public static @Nullable GristType getGristType(@Nullable Object o) {
         if (o instanceof GristType type) {
             return type;
         }
-    
+
         if (o instanceof ResourceLocation id) {
             var type = GristTypes.getRegistry().getValue(id);
-    
+
             if (type != null) {
                 return type;
             }
         }
-    
-        if (o instanceof StringTag tag) {
-            return getGrist(tag.getAsString());
+
+        if (o instanceof String str) {
+            return getGristType(new ResourceLocation(
+                str.indexOf(':') >= 0? str : Minestuck.MOD_ID+":"+str
+            ));
         }
-    
-        if (o instanceof CharSequence chars) {
-            var str = chars.toString().trim();
-    
-            return getGrist(new ResourceLocation(Utils.fallbackNamespace(str)));
-        }
-    
+
         ConsoleJS.SERVER.error("Unknown grist type: " + o);
-    
         return null;
     }
 }
