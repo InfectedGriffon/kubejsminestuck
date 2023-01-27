@@ -39,8 +39,6 @@ public class GristCostRecipeJS extends RecipeJS {
     @Override
     public void serialize() {
         json.add("ingredient", inputItems.get(0).toJson());
-        if (grist_cost != null) {
-            json.add("grist_cost", grist_cost);
-        }
+        json.add("grist_cost", grist_cost);
     }
 }
