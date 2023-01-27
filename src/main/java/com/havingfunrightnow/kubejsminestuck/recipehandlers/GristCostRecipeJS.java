@@ -34,6 +34,7 @@ public class GristCostRecipeJS extends RecipeJS {
     @Override
     public void deserialize() {
         inputItems.add(parseIngredientItem(json.get("ingredient")));
+        grist_cost = json.get("grist_cost").getAsJsonObject();
     }
 
     @Override
