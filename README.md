@@ -12,8 +12,9 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
         - grist is just the name of a grist type followed by a number
     - irradiating (cookalyzer)
         - same syntax and methods as a normal furnace recipe
-- Command to summon grist
-    - summongrist \<position> \<type> \<amount>
+        - doesn't show up in jei
+- Command to summon grist entities
+    - `summongrist <position> <type> <amount>`
 - Ability to add new types of grist
     - uses the startup event 'minestuck.grist.registry'
     - `event.create('name').rarity(num).value(num)`
