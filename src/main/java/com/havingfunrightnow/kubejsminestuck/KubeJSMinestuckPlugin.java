@@ -21,6 +21,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME = 
         ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
+
     public static final RegistryObjectBuilderTypes<GristType> GRIST = 
         RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
 
@@ -55,9 +56,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         }
 
         if (o instanceof String str) {
-            return getGristType(new ResourceLocation(
-                str.indexOf(':') >= 0? str : Minestuck.MOD_ID+":"+str
-            ));
+            return getGristType(new ResourceLocation(str.indexOf(':')>=0? str : Minestuck.MOD_ID+":"+str));
         }
 
         ConsoleJS.SERVER.error("Unknown grist type: " + o);
