@@ -13,7 +13,7 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
     - irradiating (cookalyzer)
         - same syntax and methods as a normal furnace recipe
 - Command to summon grist
-    - summongrist <position> <type> <amount>
+    - summongrist \<position> \<type> \<amount>
 - Ability to add new types of grist
     - uses the startup event 'minestuck.grist.registry'
     - `event.create('name').rarity(num).value(num)`
