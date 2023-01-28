@@ -1,8 +1,13 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.Nullable;
+
+import com.havingfunrightnow.kubejsminestuck.recipehandlers.CombinationRecipeJS;
+import com.havingfunrightnow.kubejsminestuck.recipehandlers.GristCostRecipeJS;
+import com.mraof.minestuck.Minestuck;
+import com.mraof.minestuck.alchemy.GristType;
+import com.mraof.minestuck.alchemy.GristTypes;
+
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import dev.latvian.mods.kubejs.recipe.RegisterRecipeHandlersEvent;
@@ -10,12 +15,9 @@ import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
 import dev.latvian.mods.kubejs.script.ScriptType;
 import dev.latvian.mods.kubejs.util.ConsoleJS;
 import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
-
-import org.jetbrains.annotations.Nullable;
-
-import com.havingfunrightnow.kubejsminestuck.recipehandlers.*;
-import com.mraof.minestuck.Minestuck;
-import com.mraof.minestuck.alchemy.*;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 

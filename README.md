@@ -9,11 +9,11 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
     - grist costs (alchemiter)
         - `event.recipes.minestuck.grist_cost(item, grist...)`
         - when removing, make sure the item is selected as input
-        - 
+        - grist is just the name of a grist type followed by a number
     - irradiating (cookalyzer)
         - same syntax and methods as a normal furnace recipe
-- Global binding for grist amounts
-    - `Grist.of(type, amount)`
+- Command to summon grist
+    - summongrist <position> <type> <amount>
 - Ability to add new types of grist
     - uses the startup event 'minestuck.grist.registry'
     - `event.create('name').rarity(num).value(num)`
