@@ -1,8 +1,9 @@
 package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
+import java.math.BigInteger;
+
 import com.google.gson.*;
 import com.mraof.minestuck.Minestuck;
-import com.mraof.minestuck.alchemy.GristAmount;
 
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
 import dev.latvian.mods.kubejs.util.ListJS;
@@ -14,20 +15,20 @@ public class GristCostRecipeJS extends RecipeJS {
     @Override
     public void create(ListJS args) {
         inputItems.add(parseIngredientItem(args.get(0)));
-        if (args.get(1) instanceof GristAmount grist) {
-            grist_cost.addProperty(grist.getType().toString(),grist.getAmount());
-        } else if (args.size() % 2 == 1) {
-            var iter = args.iterator();
-            iter.next();
-            while (iter.hasNext()) {
-                var key = iter.next().toString();
-                grist_cost.addProperty(
-                    key.indexOf(':')>=0?key:Minestuck.MOD_ID+":"+key,
-                    Long.parseLong(iter.next().toString().replace(".0", ""))
-                );
-            }
-        } else {
-            throw new IllegalArgumentException("Invalid Grist Cost Argument!");
+        if (args.size() == 1) {
+            return; //free
+        } else if (args.size() % 2 == 0) {
+            throw new IllegalArgumentException("Invalid Grist Cost Argument! Need pairs of names and amounts!");
+        }
+        
+        var iter = args.iterator();
+        iter.next(); //skip over item
+        while (iter.hasNext()) {
+            var key = iter.next().toString();
+            grist_cost.addProperty(
+                key.indexOf(":")>=0?key:Minestuck.MOD_ID+":"+key,
+                new BigInteger(iter.next().toString()).longValue()
+            );
         }
     }
 
