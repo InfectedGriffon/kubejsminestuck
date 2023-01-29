@@ -4,6 +4,7 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 import com.mraof.minestuck.alchemy.GristType;
+
 import dev.latvian.mods.kubejs.BuilderBase;
 import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
 import net.minecraft.resources.ResourceLocation;

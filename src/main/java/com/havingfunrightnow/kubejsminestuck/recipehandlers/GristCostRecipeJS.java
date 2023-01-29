@@ -1,6 +1,6 @@
 package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
-import com.google.gson.*;
+import com.google.gson.JsonObject;
 import com.mraof.minestuck.Minestuck;
 
 import dev.latvian.mods.kubejs.recipe.RecipeJS;
