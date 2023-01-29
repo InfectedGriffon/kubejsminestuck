@@ -1,7 +1,5 @@
 package com.havingfunrightnow.kubejsminestuck.recipehandlers;
 
-import java.math.BigInteger;
-
 import com.google.gson.*;
 import com.mraof.minestuck.Minestuck;
 
@@ -27,9 +25,18 @@ public class GristCostRecipeJS extends RecipeJS {
             var key = iter.next().toString();
             grist_cost.addProperty(
                 key.indexOf(":")>=0?key:Minestuck.MOD_ID+":"+key,
-                new BigInteger(iter.next().toString()).longValue()
+                jsNumToLong(iter.next().toString())
             );
         }
+    }
+
+    private Long jsNumToLong(String s) {
+        // scientific notation
+        if (s.indexOf("E")>=0) {
+            return ((Double) Double.parseDouble(s)).longValue();
+        }
+        // every other number (will error on decimals)
+        return Long.parseLong(s.replace(".0",""));
     }
 
     @Override
