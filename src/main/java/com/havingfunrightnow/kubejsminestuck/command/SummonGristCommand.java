@@ -16,6 +16,7 @@ public class SummonGristCommand {
 	{
 		dispatcher.register(
             Commands.literal("summongrist")
+            .requires(source -> source.hasPermission(2))
             .then(Commands.argument("position", BlockPosArgument.blockPos())
                 .then(Commands.argument("type", GristTypeArgument.gristType())
                     .then(Commands.argument("amount", LongArgumentType.longArg(0, 1000000))
