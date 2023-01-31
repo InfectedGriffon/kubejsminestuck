@@ -22,17 +22,14 @@ public class CombinationRecipeJS extends RecipeJS {
         outputItems.add(parseResultItem(json.get("output")));
 		inputItems.add(parseIngredientItem(json.get("input1")));
         inputItems.add(parseIngredientItem(json.get("input2")));
+        mode = CombinationMode.fromString(json.get("mode").getAsString());
     }
 
     @Override
     public void serialize() {
-        if (serializeOutputs) {
-            json.add("output", outputItems.get(0).toResultJson());
-        }
-        if (serializeInputs) {
-            json.add("input1", inputItems.get(0).toJson());
-            json.add("input2", inputItems.get(1).toJson());
-            json.addProperty("mode", mode.asString());
-        }
+        json.add("output", outputItems.get(0).toResultJson());
+        json.add("input1", inputItems.get(0).toJson());
+        json.add("input2", inputItems.get(1).toJson());
+        json.addProperty("mode", mode.asString());
     }
 }
