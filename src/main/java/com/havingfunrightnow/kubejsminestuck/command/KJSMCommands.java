@@ -14,5 +14,6 @@ public class KJSMCommands {
     public static void serverStarting(RegisterCommandsEvent event) {
         CommandDispatcher<CommandSourceStack> dispatcher = event.getDispatcher();
         SummonGristCommand.register(dispatcher);
+        AlchemizeCommand.register(dispatcher);
     }
 }
