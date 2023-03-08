@@ -10,6 +10,7 @@ import net.minecraft.commands.Commands;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.server.command.EnumArgument;
 
 enum Alchemizable {
@@ -30,35 +31,24 @@ public class AlchemizeCommand {
         );
     }
 
-    private static int transformItem(CommandSourceStack source, Alchemizable which) throws CommandSyntaxException {    
-        // get player and current item (for use later)
+    private static int transformItem(CommandSourceStack source, Alchemizable which) throws CommandSyntaxException {
         var player = source.getPlayerOrException();
         var item = player.getItemInHand(InteractionHand.MAIN_HAND);
-        
-        // what player's hand gets set to
-        ItemStack alchemized = new ItemStack(MSItems.CAPTCHA_CARD.get(), 1, new CompoundTag());
-
+        var alch = new ItemStack(MSItems.CAPTCHA_CARD.get(), 1, new CompoundTag());
         switch (which) {
-            case card:
-                alchemized.getOrCreateTag().putBoolean("punched", false);
-                alchemized.getOrCreateTag().putInt("contentSize", item.getCount());
-                break;
-            case punched:
-                alchemized.getOrCreateTag().putBoolean("punched", true);
-                break;
-            case totem:
-                alchemized = new ItemStack(MSItems.CRUXITE_DOWEL.get(), 1, new CompoundTag());
-                alchemized.getOrCreateTag().putInt("color", PlayerSavedData.getData(player).getColor());
-                break;
+        case punched:
+            alch.getOrCreateTag().putBoolean("punched", true);
+        case card:
+            alch.getOrCreateTag().putInt("contentSize", item.getCount());
+            break;
+        case totem:
+            alch = new ItemStack(MSItems.CRUXITE_DOWEL.get(), 1, new CompoundTag());
+            alch.getOrCreateTag().putInt("color", PlayerSavedData.getData(player).getColor());
         }
-        
-        // empty items need no contentID
-        if (item != ItemStack.EMPTY) {
-            alchemized.getOrCreateTag().putString("contentID", item.getItem().getCreatorModId(item)+":"+item.getItem().toString());
+        if (!item.isEmpty()) {
+            alch.getOrCreateTag().putString("contentID", ForgeRegistries.ITEMS.getKey(item.getItem()).toString());
         }
-
-        // finally, set item in hand to new alchemized item
-        player.setItemInHand(InteractionHand.MAIN_HAND, alchemized);
+        player.setItemInHand(InteractionHand.MAIN_HAND, alch);
         return 1;
     }
 }
