@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT License"
+issueTrackerURL="https://github.com/InfectedGriffon/kubejsminestuck/issues"
+
+[[mods]]
+modId="kubejsminestuck"
+version="1.2"
+displayName="KubeJS Minestuck"
+logoFile="kubejsminestucklogo.png"
+authors="ataraxianAscendant"
+description='''
+Adds KubeJS support for Minestuck
+'''
+
+[[dependencies.kubejsminestuck]]
+    modId="minestuck"
+    mandatory=true
+    versionRange="[1.9,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.kubejsminestuck]]
+    modId="kubejs"
+    mandatory=true
+    versionRange="[1902.6,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.kubejsminestuck]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.kubejsminestuck]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,)"
+    ordering="NONE"
+    side="BOTH"

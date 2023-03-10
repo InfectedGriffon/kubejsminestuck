@@ -1,0 +1,19 @@
+bin
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# get this one file to show up
+run/*
+!run/kubejs
+run/kubejs/*
+!run/kubejs/server_scripts
+!run/kubejs/startup_scripts
