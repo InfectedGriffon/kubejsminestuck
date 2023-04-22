@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc5602fc-2ce6-45d4-96d3-29e2cbd5a96f" name="Changes" comment="" />
+    <list default="true" id="fc5602fc-2ce6-45d4-96d3-29e2cbd5a96f" name="Changes" comment="clean slate 2 but this time enable mixins so kube works">
+      <change afterPath="$PROJECT_DIR$/run/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/fml.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/forge-client.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/forge-common.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/forge-resource-caching.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/minestuck-client.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/config/minestuck-common.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2023-04-22_13.27.07-fml.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2023-04-22_13.28.37-fml.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/local/kubejsdev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2023-04-22-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/kubejs/client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/kubejs/server.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/kubejs/startup.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/rhino.local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/kubejs/startup_scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/run/kubejs/startup_scripts/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,13 +97,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2On0cpvBZ0G2QNKsHvyAepiwh2D" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
@@ -165,6 +196,14 @@
       <option name="presentableId" value="Default" />
       <updated>1682181120163</updated>
     </task>
+    <task id="LOCAL-00001" summary="clean slate 2 but this time enable mixins so kube works">
+      <created>1682184150726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682184150726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,5 +216,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="clean slate 2 but this time enable mixins so kube works" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean slate 2 but this time enable mixins so kube works" />
   </component>
 </project>

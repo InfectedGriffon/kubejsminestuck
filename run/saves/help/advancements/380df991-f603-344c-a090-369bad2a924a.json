@@ -1,0 +1,39 @@
+{
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2023-04-22 13:31:39 -0400"
+    },
+    "done": true
+  },
+  "minestuck:recipes/minestuck/queue_modus_card": {
+    "criteria": {
+      "has_card": "2023-04-22 13:31:59 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2023-04-22 13:31:39 -0400"
+    },
+    "done": true
+  },
+  "minestuck:recipes/minestuck/stack_modus_card": {
+    "criteria": {
+      "has_card": "2023-04-22 13:31:59 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2023-04-22 13:33:09 -0400"
+    },
+    "done": true
+  },
+  "minestuck:minestuck/connect": {
+    "criteria": {
+      "connection": "2023-04-22 13:31:54 -0400"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

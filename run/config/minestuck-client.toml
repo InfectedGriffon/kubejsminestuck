@@ -1,0 +1,10 @@
+
+[client]
+	#Set this to true to replace grist names in alchemiter/grist widget with the grist icon.
+	alchemyIcons = true
+	#Determines if the color selector should be displayed when entering a save file for the first time.
+	loginColorSelector = true
+	#Allows control of standard speed for the echeladder rung "animation", or if it should have one in the first place.
+	#Allowed Values: NOTHING, SLOW, NORMAL, FAST
+	echeladderAnimation = "NORMAL"
+

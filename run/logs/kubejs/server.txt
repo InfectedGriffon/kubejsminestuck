@@ -1,0 +1,5 @@
+[13:30:39] [INFO ] server_scripts:script.js:3: Hello, World! (You will see this line every time server resources reload)
+[13:30:39] [INFO ] Loaded script server_scripts:script.js in 0.001 s
+[13:30:39] [INFO ] Loaded 1/1 KubeJS server scripts in 0.004 s
+[13:30:39] [INFO ] Scripts loaded
+[13:30:39] [INFO ] Scanning recipes...
