@@ -1,0 +1,16 @@
+#gradle stuff
+.gradle
+gradle
+build
+
+#get this one file to show up
+run/*
+!run/kubejs
+run/kubejs/*
+!run/kubejs/server_scripts
+!run/kubejs/startup_scripts
+
+#misc
+.vscode
+/send.bat
+/*.log
