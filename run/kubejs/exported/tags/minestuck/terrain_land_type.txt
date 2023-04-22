@@ -1,0 +1,18 @@
+To refresh this file, delete it and run /reload command again! Last updated: Apr 22, 2023, 12:44:37 PM
+
+#minestuck:sand
+- minestuck:sand (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sand (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:lush_deserts (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:rock
+- minestuck:rock (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:petrification (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:forest
+- minestuck:forest (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:taiga (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:sandstone
+- minestuck:sandstone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sandstone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)

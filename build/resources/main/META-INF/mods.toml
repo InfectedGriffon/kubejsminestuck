@@ -1,0 +1,63 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "MIT"
+[[mods]]
+    modId = "kubejsminestuck"
+    version = "${file.jarVersion}"
+    displayName = "KubeJSMinestuck"
+    logoFile="wtd.png"
+    authors="Love, Cheese and small house plants"
+    description = '''
+KubeJS support for Minestuck Recipes and Resources
+'''
+
+[[dependencies.kubejsminestuck]]
+modId="minestuck"
+mandatory=true
+versionRange="[1.9.0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.kubejsminestuck]]
+modId="geckolib3"
+mandatory=true
+versionRange="[3.0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.kubejsminestuck]]
+modId="infiniverse"
+mandatory=true
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.kubejsminestuck]]
+modId="kubejs"
+mandatory=true
+versionRange="[1902.6,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.kubejsminestuck]]
+modId="rhino"
+mandatory=true
+versionRange="[1902.2,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.kubejsminestuck]]
+modId="architectury"
+mandatory=true
+versionRange="[6.5,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.kubejsminestuck]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[43,)"
+    ordering = "NONE"
+    side = "BOTH"
+[[dependencies.kubejsminestuck]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[1.19.2,1.20)"
+    ordering = "NONE"
+    side = "BOTH"

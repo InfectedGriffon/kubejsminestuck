@@ -1,0 +1,37 @@
+To refresh this file, delete it and run /reload command again! Last updated: Apr 22, 2023, 12:44:37 PM
+
+#minecraft:lava
+- minecraft:lava (from Default)
+- minecraft:flowing_lava (from Default)
+
+#minestuck:water_colors
+- minestuck:water_colors (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_water_colors (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:water
+- minecraft:water (from Default)
+- minecraft:flowing_water (from Default)
+
+#forge:milk
+- minecraft:milk? (from )
+- minecraft:flowing_milk? (from )
+
+#minestuck:ender
+- minestuck:ender (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_ender (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:brain_juice
+- minestuck:brain_juice (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_brain_juice (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:blood
+- minestuck:blood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_blood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:oil
+- minestuck:oil (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_oil (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:light_water
+- minestuck:light_water (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowing_light_water (from minestuck-224635-4498401_mapped_official_1.19.2.jar)

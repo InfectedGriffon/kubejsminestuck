@@ -1,0 +1,667 @@
+To refresh this file, delete it and run /reload command again! Last updated: Apr 22, 2023, 12:44:37 PM
+
+#minecraft:has_structure/nether_fortress
+- #minecraft:is_nether (from Default)
+
+#forge:is_slope
+- minecraft:savanna_plateau (from )
+- minecraft:wooded_badlands (from )
+- minecraft:meadow (from )
+- minecraft:grove (from )
+- minecraft:snowy_slopes (from )
+
+#minecraft:water_on_map_outlines
+- #minecraft:is_ocean (from Default)
+- #minecraft:is_river (from Default)
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+
+#minecraft:is_river
+- minecraft:river (from Default)
+- minecraft:frozen_river (from Default)
+
+#minecraft:has_structure/mineshaft
+- #minecraft:is_ocean (from Default)
+- #minecraft:is_river (from Default)
+- #minecraft:is_beach (from Default)
+- #minecraft:is_mountain (from Default)
+- #minecraft:is_hill (from Default)
+- #minecraft:is_taiga (from Default)
+- #minecraft:is_jungle (from Default)
+- #minecraft:is_forest (from Default)
+- minecraft:stony_shore (from Default)
+- minecraft:mushroom_fields (from Default)
+- minecraft:ice_spikes (from Default)
+- minecraft:windswept_savanna (from Default)
+- minecraft:desert (from Default)
+- minecraft:savanna (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:plains (from Default)
+- minecraft:sunflower_plains (from Default)
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+- minecraft:savanna_plateau (from Default)
+- minecraft:dripstone_caves (from Default)
+- minecraft:lush_caves (from Default)
+
+#minestuck:land/ocean
+- minestuck:land_default_ocean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_no_rain_ocean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_snow_ocean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_high_humid_ocean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:has_structure/small_ruin
+- #minestuck:land/normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:has_structure/jungle_temple
+- minecraft:bamboo_jungle (from Default)
+- minecraft:jungle (from Default)
+
+#minestuck:land
+- #minestuck:land/normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:land/ocean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:land/rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:is_jungle
+- minecraft:bamboo_jungle (from Default)
+- minecraft:jungle (from Default)
+- minecraft:sparse_jungle (from Default)
+
+#forge:is_hot/nether
+- minecraft:nether_wastes (from )
+- minecraft:soul_sand_valley (from )
+- minecraft:crimson_forest (from )
+- minecraft:warped_forest (from )
+- minecraft:basalt_deltas (from )
+
+#minecraft:is_ocean
+- #minecraft:is_deep_ocean (from Default)
+- minecraft:frozen_ocean (from Default)
+- minecraft:ocean (from Default)
+- minecraft:cold_ocean (from Default)
+- minecraft:lukewarm_ocean (from Default)
+- minecraft:warm_ocean (from Default)
+
+#forge:is_hot/overworld
+- minecraft:desert (from )
+- minecraft:jungle (from )
+- minecraft:sparse_jungle (from )
+- minecraft:savanna (from )
+- minecraft:savanna_plateau (from )
+- minecraft:stony_peaks (from )
+- minecraft:warm_ocean (from )
+- minecraft:windswept_savanna (from )
+- minecraft:eroded_badlands (from )
+- minecraft:bamboo_jungle (from )
+- minecraft:mangrove_swamp (from )
+
+#forge:is_cold
+- #forge:is_cold/overworld (from )
+- #forge:is_cold/nether? (from )
+- #forge:is_cold/end (from )
+
+#forge:is_sparse/overworld
+- minecraft:windswept_forest (from )
+- minecraft:savanna (from )
+- minecraft:savanna_plateau (from )
+- minecraft:wooded_badlands (from )
+- minecraft:snowy_slopes (from )
+- minecraft:jagged_peaks (from )
+- minecraft:frozen_peaks (from )
+- minecraft:windswept_gravelly_hills (from )
+- minecraft:windswept_savanna (from )
+- minecraft:eroded_badlands (from )
+- minecraft:dripstone_caves (from )
+
+#minecraft:has_structure/buried_treasure
+- #minecraft:is_beach (from Default)
+
+#minecraft:has_structure/ocean_ruin_cold
+- minecraft:frozen_ocean (from Default)
+- minecraft:cold_ocean (from Default)
+- minecraft:ocean (from Default)
+- minecraft:deep_frozen_ocean (from Default)
+- minecraft:deep_cold_ocean (from Default)
+- minecraft:deep_ocean (from Default)
+
+#minecraft:produces_corals_from_bonemeal
+- minecraft:warm_ocean (from Default)
+
+#forge:is_desert
+- minecraft:desert (from )
+
+#minecraft:has_structure/stronghold
+- #minecraft:is_overworld (from Default)
+
+#minecraft:has_structure/mineshaft_mesa
+- #minecraft:is_badlands (from Default)
+
+#minecraft:has_structure/ancient_city
+- minecraft:deep_dark (from Default)
+
+#forge:is_peak
+- minecraft:jagged_peaks (from )
+- minecraft:frozen_peaks (from )
+- minecraft:stony_peaks (from )
+
+#minecraft:has_structure/shipwreck
+- #minecraft:is_ocean (from Default)
+
+#forge:is_wet/overworld
+- minecraft:swamp (from )
+- minecraft:jungle (from )
+- minecraft:sparse_jungle (from )
+- minecraft:beach (from )
+- minecraft:bamboo_jungle (from )
+- minecraft:lush_caves (from )
+- minecraft:mangrove_swamp (from )
+
+#minecraft:is_savanna
+- minecraft:savanna (from Default)
+- minecraft:savanna_plateau (from Default)
+- minecraft:windswept_savanna (from Default)
+
+#minestuck:land/normal
+- minestuck:land_default_normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_no_rain_normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_snow_normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_high_humid_normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:is_hot
+- #forge:is_hot/overworld (from )
+- #forge:is_hot/nether (from )
+- #forge:is_hot/end? (from )
+
+#minecraft:has_structure/igloo
+- minecraft:snowy_taiga (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:snowy_slopes (from Default)
+
+#minecraft:has_structure/shipwreck_beached
+- #minecraft:is_beach (from Default)
+
+#minecraft:is_hill
+- minecraft:windswept_hills (from Default)
+- minecraft:windswept_forest (from Default)
+- minecraft:windswept_gravelly_hills (from Default)
+
+#forge:is_wet
+- #forge:is_wet/overworld (from )
+- #forge:is_wet/nether? (from )
+- #forge:is_wet/end? (from )
+
+#forge:is_cold/end
+- minecraft:the_end (from )
+- minecraft:small_end_islands (from )
+- minecraft:end_midlands (from )
+- minecraft:end_highlands (from )
+- minecraft:end_barrens (from )
+
+#minecraft:allows_surface_slime_spawns
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+
+#forge:is_plains
+- minecraft:plains (from )
+- minecraft:snowy_plains (from )
+- minecraft:meadow (from )
+- minecraft:sunflower_plains (from )
+
+#minecraft:required_ocean_monument_surrounding
+- #minecraft:is_ocean (from Default)
+- #minecraft:is_river (from Default)
+
+#forge:is_mountain
+- #forge:is_peak (from )
+- #forge:is_slope (from )
+
+#minecraft:has_structure/ocean_monument
+- #minecraft:is_deep_ocean (from Default)
+
+#minestuck:has_structure/land_gate
+- #minestuck:land (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:is_sandy
+- minecraft:desert (from )
+- minecraft:beach (from )
+- minecraft:badlands (from )
+- minecraft:wooded_badlands (from )
+
+#minecraft:has_structure/ruined_portal_jungle
+- #minecraft:is_jungle (from Default)
+
+#minestuck:has_structure/frog_temple
+- #minecraft:is_overworld (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:plays_underwater_music
+- #minecraft:is_ocean (from Default)
+- #minecraft:is_river (from Default)
+
+#minecraft:has_structure/desert_pyramid
+- minecraft:desert (from Default)
+
+#minecraft:has_structure/ruined_portal_ocean
+- #minecraft:is_ocean (from Default)
+
+#forge:is_rare
+- minecraft:mushroom_fields (from )
+- minecraft:sparse_jungle (from )
+- minecraft:savanna_plateau (from )
+- minecraft:sunflower_plains (from )
+- minecraft:windswept_gravelly_hills (from )
+- minecraft:flower_forest (from )
+- minecraft:ice_spikes (from )
+- minecraft:old_growth_birch_forest (from )
+- minecraft:old_growth_spruce_taiga (from )
+- minecraft:windswept_savanna (from )
+- minecraft:eroded_badlands (from )
+- minecraft:bamboo_jungle (from )
+- minecraft:deep_dark (from )
+
+#forge:is_plateau
+- minecraft:savanna_plateau (from )
+- minecraft:wooded_badlands (from )
+- minecraft:meadow (from )
+
+#minecraft:is_deep_ocean
+- minecraft:deep_frozen_ocean (from Default)
+- minecraft:deep_cold_ocean (from Default)
+- minecraft:deep_ocean (from Default)
+- minecraft:deep_lukewarm_ocean (from Default)
+
+#minecraft:is_nether
+- minecraft:nether_wastes (from Default)
+- minecraft:soul_sand_valley (from Default)
+- minecraft:crimson_forest (from Default)
+- minecraft:warped_forest (from Default)
+- minecraft:basalt_deltas (from Default)
+
+#forge:is_lush
+- minecraft:lush_caves (from )
+
+#forge:is_dry/overworld
+- minecraft:desert (from )
+- minecraft:badlands (from )
+- minecraft:wooded_badlands (from )
+- minecraft:windswept_savanna (from )
+- minecraft:eroded_badlands (from )
+
+#minecraft:has_structure/woodland_mansion
+- minecraft:dark_forest (from Default)
+
+#forge:is_void
+- minecraft:the_void (from )
+
+#minestuck:land/rough
+- minestuck:land_default_rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_no_rain_rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_snow_rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:land_high_humid_rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:is_dry
+- #forge:is_dry/overworld (from )
+- #forge:is_dry/nether (from )
+- #forge:is_dry/end (from )
+
+#minecraft:has_structure/ocean_ruin_warm
+- minecraft:lukewarm_ocean (from Default)
+- minecraft:warm_ocean (from Default)
+- minecraft:deep_lukewarm_ocean (from Default)
+
+#forge:is_cave
+- minecraft:lush_caves (from )
+- minecraft:dripstone_caves (from )
+- minecraft:deep_dark (from )
+
+#forge:is_mushroom
+- minecraft:mushroom_fields (from )
+
+#minecraft:more_frequent_drowned_spawns
+- #minecraft:is_river (from Default)
+
+#minecraft:has_structure/village_desert
+- minecraft:desert (from Default)
+
+#minecraft:is_forest
+- minecraft:forest (from Default)
+- minecraft:flower_forest (from Default)
+- minecraft:birch_forest (from Default)
+- minecraft:old_growth_birch_forest (from Default)
+- minecraft:dark_forest (from Default)
+- minecraft:grove (from Default)
+
+#minecraft:is_overworld
+- minecraft:mushroom_fields (from Default)
+- minecraft:deep_frozen_ocean (from Default)
+- minecraft:frozen_ocean (from Default)
+- minecraft:deep_cold_ocean (from Default)
+- minecraft:cold_ocean (from Default)
+- minecraft:deep_ocean (from Default)
+- minecraft:ocean (from Default)
+- minecraft:deep_lukewarm_ocean (from Default)
+- minecraft:lukewarm_ocean (from Default)
+- minecraft:warm_ocean (from Default)
+- minecraft:stony_shore (from Default)
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+- minecraft:snowy_slopes (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:snowy_beach (from Default)
+- minecraft:windswept_gravelly_hills (from Default)
+- minecraft:grove (from Default)
+- minecraft:windswept_hills (from Default)
+- minecraft:snowy_taiga (from Default)
+- minecraft:windswept_forest (from Default)
+- minecraft:taiga (from Default)
+- minecraft:plains (from Default)
+- minecraft:meadow (from Default)
+- minecraft:beach (from Default)
+- minecraft:forest (from Default)
+- minecraft:old_growth_spruce_taiga (from Default)
+- minecraft:flower_forest (from Default)
+- minecraft:birch_forest (from Default)
+- minecraft:dark_forest (from Default)
+- minecraft:savanna_plateau (from Default)
+- minecraft:savanna (from Default)
+- minecraft:jungle (from Default)
+- minecraft:badlands (from Default)
+- minecraft:desert (from Default)
+- minecraft:wooded_badlands (from Default)
+- minecraft:jagged_peaks (from Default)
+- minecraft:stony_peaks (from Default)
+- minecraft:frozen_river (from Default)
+- minecraft:river (from Default)
+- minecraft:ice_spikes (from Default)
+- minecraft:old_growth_pine_taiga (from Default)
+- minecraft:sunflower_plains (from Default)
+- minecraft:old_growth_birch_forest (from Default)
+- minecraft:sparse_jungle (from Default)
+- minecraft:bamboo_jungle (from Default)
+- minecraft:eroded_badlands (from Default)
+- minecraft:windswept_savanna (from Default)
+- minecraft:frozen_peaks (from Default)
+- minecraft:dripstone_caves (from Default)
+- minecraft:lush_caves (from Default)
+- minecraft:deep_dark (from Default)
+
+#minecraft:has_structure/village_savanna
+- minecraft:savanna (from Default)
+
+#minecraft:without_patrol_spawns
+- minecraft:mushroom_fields (from Default)
+
+#minecraft:has_structure/village_taiga
+- minecraft:taiga (from Default)
+
+#minecraft:allows_tropical_fish_spawns_at_any_height
+- minecraft:lush_caves (from Default)
+
+#minecraft:polar_bears_spawn_on_alternate_blocks
+- minecraft:frozen_ocean (from Default)
+- minecraft:deep_frozen_ocean (from Default)
+
+#minecraft:has_closer_water_fog
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+
+#minecraft:has_structure/village_plains
+- minecraft:plains (from Default)
+- minecraft:meadow (from Default)
+
+#forge:is_coniferous
+- minecraft:taiga (from )
+- minecraft:snowy_taiga (from )
+- minecraft:old_growth_pine_taiga (from )
+- minecraft:grove (from )
+
+#minecraft:without_wandering_trader_spawns
+- minecraft:the_void (from Default)
+
+#minecraft:has_structure/ruined_portal_desert
+- minecraft:desert (from Default)
+
+#forge:is_snowy
+- minecraft:frozen_ocean (from )
+- minecraft:frozen_river (from )
+- minecraft:snowy_plains (from )
+- minecraft:snowy_beach (from )
+- minecraft:snowy_taiga (from )
+- minecraft:grove (from )
+- minecraft:snowy_slopes (from )
+- minecraft:jagged_peaks (from )
+- minecraft:frozen_peaks (from )
+- minecraft:ice_spikes (from )
+
+#forge:is_dense
+- #forge:is_dense/overworld (from )
+- #forge:is_dense/nether? (from )
+- #forge:is_dense/end? (from )
+
+#minecraft:has_structure/ruined_portal_swamp
+- minecraft:swamp (from Default)
+- minecraft:mangrove_swamp (from Default)
+
+#minestuck:has_structure/consort_village
+- #minestuck:land/normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:has_structure/imp_dungeon
+- #minestuck:land/normal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:land/rough (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:has_structure/swamp_hut
+- minecraft:swamp (from Default)
+
+#minecraft:spawns_cold_variant_frogs
+- minecraft:snowy_plains (from Default)
+- minecraft:ice_spikes (from Default)
+- minecraft:frozen_peaks (from Default)
+- minecraft:jagged_peaks (from Default)
+- minecraft:snowy_slopes (from Default)
+- minecraft:frozen_ocean (from Default)
+- minecraft:deep_frozen_ocean (from Default)
+- minecraft:grove (from Default)
+- minecraft:deep_dark (from Default)
+- minecraft:frozen_river (from Default)
+- minecraft:snowy_taiga (from Default)
+- minecraft:snowy_beach (from Default)
+- #minecraft:is_end (from Default)
+
+#forge:is_water
+- #minecraft:is_ocean (from )
+- #minecraft:is_river (from )
+
+#minecraft:has_structure/ruined_portal_nether
+- #minecraft:is_nether (from Default)
+
+#minecraft:only_allows_snow_and_gold_rabbits
+- minecraft:desert (from Default)
+
+#minecraft:is_end
+- minecraft:the_end (from Default)
+- minecraft:end_highlands (from Default)
+- minecraft:end_midlands (from Default)
+- minecraft:small_end_islands (from Default)
+- minecraft:end_barrens (from Default)
+
+#minecraft:stronghold_biased_to
+- minecraft:plains (from Default)
+- minecraft:sunflower_plains (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:ice_spikes (from Default)
+- minecraft:desert (from Default)
+- minecraft:forest (from Default)
+- minecraft:flower_forest (from Default)
+- minecraft:birch_forest (from Default)
+- minecraft:dark_forest (from Default)
+- minecraft:old_growth_birch_forest (from Default)
+- minecraft:old_growth_pine_taiga (from Default)
+- minecraft:old_growth_spruce_taiga (from Default)
+- minecraft:taiga (from Default)
+- minecraft:snowy_taiga (from Default)
+- minecraft:savanna (from Default)
+- minecraft:savanna_plateau (from Default)
+- minecraft:windswept_hills (from Default)
+- minecraft:windswept_gravelly_hills (from Default)
+- minecraft:windswept_forest (from Default)
+- minecraft:windswept_savanna (from Default)
+- minecraft:jungle (from Default)
+- minecraft:sparse_jungle (from Default)
+- minecraft:bamboo_jungle (from Default)
+- minecraft:badlands (from Default)
+- minecraft:eroded_badlands (from Default)
+- minecraft:wooded_badlands (from Default)
+- minecraft:meadow (from Default)
+- minecraft:grove (from Default)
+- minecraft:snowy_slopes (from Default)
+- minecraft:frozen_peaks (from Default)
+- minecraft:jagged_peaks (from Default)
+- minecraft:stony_peaks (from Default)
+- minecraft:mushroom_fields (from Default)
+- minecraft:dripstone_caves (from Default)
+- minecraft:lush_caves (from Default)
+
+#forge:is_underground
+- #forge:is_cave (from )
+
+#minecraft:without_zombie_sieges
+- minecraft:mushroom_fields (from Default)
+
+#forge:is_dry/nether
+- minecraft:nether_wastes (from )
+- minecraft:soul_sand_valley (from )
+- minecraft:crimson_forest (from )
+- minecraft:warped_forest (from )
+- minecraft:basalt_deltas (from )
+
+#minecraft:is_beach
+- minecraft:beach (from Default)
+- minecraft:snowy_beach (from Default)
+
+#minecraft:has_structure/ruined_portal_standard
+- #minecraft:is_beach (from Default)
+- #minecraft:is_river (from Default)
+- #minecraft:is_taiga (from Default)
+- #minecraft:is_forest (from Default)
+- minecraft:mushroom_fields (from Default)
+- minecraft:ice_spikes (from Default)
+- minecraft:dripstone_caves (from Default)
+- minecraft:lush_caves (from Default)
+- minecraft:savanna (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:plains (from Default)
+- minecraft:sunflower_plains (from Default)
+
+#minecraft:has_structure/pillager_outpost
+- minecraft:desert (from Default)
+- minecraft:plains (from Default)
+- minecraft:savanna (from Default)
+- minecraft:snowy_plains (from Default)
+- minecraft:taiga (from Default)
+- #minecraft:is_mountain (from Default)
+- minecraft:grove (from Default)
+
+#minestuck:has_structure/skaia_castle
+- minestuck:skaia (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:is_taiga
+- minecraft:taiga (from Default)
+- minecraft:snowy_taiga (from Default)
+- minecraft:old_growth_pine_taiga (from Default)
+- minecraft:old_growth_spruce_taiga (from Default)
+
+#minecraft:spawns_warm_variant_frogs
+- minecraft:desert (from Default)
+- minecraft:warm_ocean (from Default)
+- #minecraft:is_jungle (from Default)
+- #minecraft:is_savanna (from Default)
+- #minecraft:is_nether (from Default)
+- #minecraft:is_badlands (from Default)
+- minecraft:mangrove_swamp (from Default)
+
+#minecraft:mineshaft_blocking
+- minecraft:deep_dark (from Default)
+
+#forge:is_sparse
+- #forge:is_sparse/overworld (from )
+- #forge:is_sparse/nether? (from )
+- #forge:is_sparse/end? (from )
+
+#forge:is_swamp
+- minecraft:swamp (from )
+- minecraft:mangrove_swamp (from )
+
+#forge:is_wasteland
+- minecraft:snowy_plains (from )
+
+#minecraft:is_mountain
+- minecraft:meadow (from Default)
+- minecraft:frozen_peaks (from Default)
+- minecraft:jagged_peaks (from Default)
+- minecraft:stony_peaks (from Default)
+- minecraft:snowy_slopes (from Default)
+
+#minecraft:has_structure/village_snowy
+- minecraft:snowy_plains (from Default)
+
+#minecraft:is_badlands
+- minecraft:badlands (from Default)
+- minecraft:eroded_badlands (from Default)
+- minecraft:wooded_badlands (from Default)
+
+#forge:is_dry/end
+- minecraft:the_end (from )
+- minecraft:small_end_islands (from )
+- minecraft:end_midlands (from )
+- minecraft:end_highlands (from )
+- minecraft:end_barrens (from )
+
+#minecraft:has_structure/nether_fossil
+- minecraft:soul_sand_valley (from Default)
+
+#forge:is_cold/overworld
+- minecraft:taiga (from )
+- minecraft:frozen_ocean (from )
+- minecraft:frozen_river (from )
+- minecraft:snowy_plains (from )
+- minecraft:snowy_beach (from )
+- minecraft:snowy_taiga (from )
+- minecraft:old_growth_pine_taiga (from )
+- minecraft:grove (from )
+- minecraft:snowy_slopes (from )
+- minecraft:jagged_peaks (from )
+- minecraft:frozen_peaks (from )
+- minecraft:cold_ocean (from )
+- minecraft:deep_cold_ocean (from )
+- minecraft:deep_frozen_ocean (from )
+- minecraft:ice_spikes (from )
+
+#minecraft:has_structure/end_city
+- minecraft:end_highlands (from Default)
+- minecraft:end_midlands (from Default)
+
+#forge:is_dense/overworld
+- minecraft:jungle (from )
+- minecraft:dark_forest (from )
+- minecraft:old_growth_birch_forest (from )
+- minecraft:old_growth_spruce_taiga (from )
+
+#minecraft:reduce_water_ambient_spawns
+- #minecraft:is_river (from Default)
+
+#minecraft:has_structure/bastion_remnant
+- minecraft:crimson_forest (from Default)
+- minecraft:nether_wastes (from Default)
+- minecraft:soul_sand_valley (from Default)
+- minecraft:warped_forest (from Default)
+
+#forge:is_spooky
+- minecraft:dark_forest (from )
+- minecraft:deep_dark (from )
+
+#minecraft:has_structure/ruined_portal_mountain
+- #minecraft:is_badlands (from Default)
+- #minecraft:is_hill (from Default)
+- minecraft:savanna_plateau (from Default)
+- minecraft:windswept_savanna (from Default)
+- minecraft:stony_shore (from Default)
+- #minecraft:is_mountain (from Default)

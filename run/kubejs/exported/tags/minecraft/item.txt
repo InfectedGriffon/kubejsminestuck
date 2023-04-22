@@ -1,0 +1,1970 @@
+To refresh this file, delete it and run /reload command again! Last updated: Apr 22, 2023, 12:44:37 PM
+
+#forge:cobblestone/mossy
+- minecraft:mossy_cobblestone (from )
+
+#minecraft:soul_fire_base_blocks
+- minecraft:soul_sand (from Default)
+- minecraft:soul_soil (from Default)
+
+#forge:glass_panes/magenta
+- minecraft:magenta_stained_glass_pane (from )
+
+#forge:nuggets
+- #forge:nuggets/iron (from )
+- #forge:nuggets/gold (from )
+
+#forge:glass/tinted
+- minecraft:tinted_glass (from )
+
+#forge:eggs
+- minecraft:egg (from )
+
+#forge:dyes/gray
+- minecraft:gray_dye (from )
+
+#forge:dyes/red
+- minecraft:red_dye (from )
+
+#forge:rods/blaze
+- minecraft:blaze_rod (from )
+
+#forge:storage_blocks/netherite
+- minecraft:netherite_block (from )
+
+#forge:glass_panes/white
+- minecraft:white_stained_glass_pane (from )
+
+#forge:gravel
+- minecraft:gravel (from )
+
+#forge:glass_panes/cyan
+- minecraft:cyan_stained_glass_pane (from )
+
+#forge:dyes/black
+- minecraft:black_dye (from )
+
+#forge:ingots/silver
+
+#forge:dusts/glowstone
+- minecraft:glowstone_dust (from )
+
+#forge:glass_panes/light_gray
+- minecraft:light_gray_stained_glass_pane (from )
+
+#minecraft:wool
+- minecraft:white_wool (from Default)
+- minecraft:orange_wool (from Default)
+- minecraft:magenta_wool (from Default)
+- minecraft:light_blue_wool (from Default)
+- minecraft:yellow_wool (from Default)
+- minecraft:lime_wool (from Default)
+- minecraft:pink_wool (from Default)
+- minecraft:gray_wool (from Default)
+- minecraft:light_gray_wool (from Default)
+- minecraft:cyan_wool (from Default)
+- minecraft:purple_wool (from Default)
+- minecraft:blue_wool (from Default)
+- minecraft:brown_wool (from Default)
+- minecraft:green_wool (from Default)
+- minecraft:red_wool (from Default)
+- minecraft:black_wool (from Default)
+
+#forge:glass/colorless
+- minecraft:glass (from )
+
+#forge:raw_materials/aluminium
+
+#minestuck:ores/cruxite
+- minestuck:stone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:netherrack_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cobblestone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:sandstone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sandstone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_stone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stone_cruxite_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass_panes/light_blue
+- minecraft:light_blue_stained_glass_pane (from )
+
+#minecraft:wool_carpets
+- minecraft:white_carpet (from Default)
+- minecraft:orange_carpet (from Default)
+- minecraft:magenta_carpet (from Default)
+- minecraft:light_blue_carpet (from Default)
+- minecraft:yellow_carpet (from Default)
+- minecraft:lime_carpet (from Default)
+- minecraft:pink_carpet (from Default)
+- minecraft:gray_carpet (from Default)
+- minecraft:light_gray_carpet (from Default)
+- minecraft:cyan_carpet (from Default)
+- minecraft:purple_carpet (from Default)
+- minecraft:blue_carpet (from Default)
+- minecraft:brown_carpet (from Default)
+- minecraft:green_carpet (from Default)
+- minecraft:red_carpet (from Default)
+- minecraft:black_carpet (from Default)
+
+#forge:tools/crossbows
+- minecraft:crossbow (from )
+
+#forge:ores/zinc
+
+#forge:ores/netherite_scrap
+- minecraft:ancient_debris (from )
+
+#forge:stained_glass
+- minecraft:white_stained_glass (from )
+- minecraft:orange_stained_glass (from )
+- minecraft:magenta_stained_glass (from )
+- minecraft:light_blue_stained_glass (from )
+- minecraft:yellow_stained_glass (from )
+- minecraft:lime_stained_glass (from )
+- minecraft:pink_stained_glass (from )
+- minecraft:gray_stained_glass (from )
+- minecraft:light_gray_stained_glass (from )
+- minecraft:cyan_stained_glass (from )
+- minecraft:purple_stained_glass (from )
+- minecraft:blue_stained_glass (from )
+- minecraft:brown_stained_glass (from )
+- minecraft:green_stained_glass (from )
+- minecraft:red_stained_glass (from )
+- minecraft:black_stained_glass (from )
+
+#forge:glass/pink
+- minecraft:pink_stained_glass (from )
+
+#forge:crops/carrot
+- minecraft:carrot (from )
+
+#forge:chests
+- #forge:chests/ender (from )
+- #forge:chests/trapped (from )
+- #forge:chests/wooden (from )
+
+#forge:storage_blocks/emerald
+- minecraft:emerald_block (from )
+
+#forge:raw_materials/lead
+
+#forge:ores/redstone
+- #minecraft:redstone_ores (from )
+- #minestuck:ores/redstone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:storage_blocks/uranium
+- minestuck:uranium_block (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:nuggets/gold
+- minecraft:gold_nugget (from )
+
+#minecraft:warped_stems
+- minecraft:warped_stem (from Default)
+- minecraft:stripped_warped_stem (from Default)
+- minecraft:warped_hyphae (from Default)
+- minecraft:stripped_warped_hyphae (from Default)
+
+#forge:nether_stars
+- minecraft:nether_star (from )
+
+#forge:glass/red
+- minecraft:red_stained_glass (from )
+
+#forge:ingots/tin
+
+#forge:dyes/blue
+- minecraft:blue_dye (from )
+
+#forge:storage_blocks/iron
+- minecraft:iron_block (from )
+
+#forge:tools/pickaxes
+- minecraft:wooden_pickaxe (from )
+- minecraft:stone_pickaxe (from )
+- minecraft:iron_pickaxe (from )
+- minecraft:golden_pickaxe (from )
+- minecraft:diamond_pickaxe (from )
+- minecraft:netherite_pickaxe (from )
+
+#minestuck:saplings/aspect
+- minestuck:blood_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:breath_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:doom_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:heart_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:hope_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:life_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mind_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rage_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:space_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:time_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:void_aspect_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ender_pearls
+- minecraft:ender_pearl (from )
+
+#forge:glass_panes/brown
+- minecraft:brown_stained_glass_pane (from )
+
+#forge:heads
+- minecraft:creeper_head (from )
+- minecraft:dragon_head (from )
+- minecraft:player_head (from )
+- minecraft:skeleton_skull (from )
+- minecraft:wither_skeleton_skull (from )
+- minecraft:zombie_head (from )
+
+#forge:cobblestone/deepslate
+- minecraft:cobbled_deepslate (from )
+
+#forge:glass_panes/green
+- minecraft:green_stained_glass_pane (from )
+
+#forge:tools/axes
+- minecraft:wooden_axe (from )
+- minecraft:stone_axe (from )
+- minecraft:iron_axe (from )
+- minecraft:golden_axe (from )
+- minecraft:diamond_axe (from )
+- minecraft:netherite_axe (from )
+
+#forge:chests/trapped
+- minecraft:trapped_chest (from )
+
+#forge:fence_gates
+- #forge:fence_gates/wooden (from )
+
+#minestuck:ores/uranium
+- minestuck:stone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:deepslate_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:netherrack_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cobblestone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:sandstone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sandstone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_stone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stone_uranium_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ingots
+- #forge:ingots/brick (from )
+- #forge:ingots/copper (from )
+- #forge:ingots/gold (from )
+- #forge:ingots/iron (from )
+- #forge:ingots/netherite (from )
+- #forge:ingots/nether_brick (from )
+
+#minecraft:dark_oak_logs
+- minecraft:dark_oak_log (from Default)
+- minecraft:dark_oak_wood (from Default)
+- minecraft:stripped_dark_oak_log (from Default)
+- minecraft:stripped_dark_oak_wood (from Default)
+
+#forge:bones
+- minecraft:bone (from )
+
+#minestuck:logs/dead
+- minestuck:dead_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dead_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass_panes
+- #forge:glass_panes/colorless (from )
+- #forge:stained_glass_panes (from )
+
+#forge:enchanting_fuels
+- #forge:gems/lapis (from )
+
+#minecraft:non_flammable_wood
+- minecraft:warped_stem (from Default)
+- minecraft:stripped_warped_stem (from Default)
+- minecraft:warped_hyphae (from Default)
+- minecraft:stripped_warped_hyphae (from Default)
+- minecraft:crimson_stem (from Default)
+- minecraft:stripped_crimson_stem (from Default)
+- minecraft:crimson_hyphae (from Default)
+- minecraft:stripped_crimson_hyphae (from Default)
+- minecraft:crimson_planks (from Default)
+- minecraft:warped_planks (from Default)
+- minecraft:crimson_slab (from Default)
+- minecraft:warped_slab (from Default)
+- minecraft:crimson_pressure_plate (from Default)
+- minecraft:warped_pressure_plate (from Default)
+- minecraft:crimson_fence (from Default)
+- minecraft:warped_fence (from Default)
+- minecraft:crimson_trapdoor (from Default)
+- minecraft:warped_trapdoor (from Default)
+- minecraft:crimson_fence_gate (from Default)
+- minecraft:warped_fence_gate (from Default)
+- minecraft:crimson_stairs (from Default)
+- minecraft:warped_stairs (from Default)
+- minecraft:crimson_button (from Default)
+- minecraft:warped_button (from Default)
+- minecraft:crimson_door (from Default)
+- minecraft:warped_door (from Default)
+- minecraft:crimson_sign (from Default)
+- minecraft:warped_sign (from Default)
+
+#forge:crops/nether_wart
+- minecraft:nether_wart (from )
+
+#forge:sandstone
+- minecraft:sandstone (from )
+- minecraft:cut_sandstone (from )
+- minecraft:chiseled_sandstone (from )
+- minecraft:smooth_sandstone (from )
+- minecraft:red_sandstone (from )
+- minecraft:cut_red_sandstone (from )
+- minecraft:chiseled_red_sandstone (from )
+- minecraft:smooth_red_sandstone (from )
+
+#forge:storage_blocks/copper
+- minecraft:copper_block (from )
+
+#forge:glass_panes/colorless
+- minecraft:glass_pane (from )
+
+#minecraft:coals
+- minecraft:coal (from Default)
+- minecraft:charcoal (from Default)
+
+#minecraft:piglin_food
+- minecraft:porkchop (from Default)
+- minecraft:cooked_porkchop (from Default)
+
+#minestuck:ores/gold
+- minestuck:sandstone_gold_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sandstone_gold_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stone_gold_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_gold_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:mushrooms
+- minecraft:brown_mushroom (from )
+- minecraft:red_mushroom (from )
+
+#minecraft:lapis_ores
+- minecraft:lapis_ore (from Default)
+- minecraft:deepslate_lapis_ore (from Default)
+
+#forge:tools/swords
+- minecraft:wooden_sword (from )
+- minecraft:stone_sword (from )
+- minecraft:iron_sword (from )
+- minecraft:golden_sword (from )
+- minecraft:diamond_sword (from )
+- minecraft:netherite_sword (from )
+
+#forge:ingots/nether_brick
+- minecraft:nether_brick (from )
+
+#forge:cobblestone/infested
+- minecraft:infested_cobblestone (from )
+
+#forge:ingots/red_alloy
+
+#forge:ingots/netherite
+- minecraft:netherite_ingot (from )
+
+#minecraft:fences
+- #minecraft:wooden_fences (from Default)
+- minecraft:nether_brick_fence (from Default)
+
+#minestuck:consort_snacks
+- minecraft:cookie (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:bugs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:saplings
+- minecraft:oak_sapling (from Default)
+- minecraft:spruce_sapling (from Default)
+- minecraft:birch_sapling (from Default)
+- minecraft:jungle_sapling (from Default)
+- minecraft:acacia_sapling (from Default)
+- minecraft:dark_oak_sapling (from Default)
+- minecraft:azalea (from Default)
+- minecraft:flowering_azalea (from Default)
+- minecraft:mangrove_propagule (from Default)
+- minestuck:rainbow_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shadewood_sapling (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:saplings/aspect (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:storage_blocks/lapis
+- minecraft:lapis_block (from )
+
+#forge:ores/copper
+- #minecraft:copper_ores (from )
+
+#minecraft:beds
+- minecraft:red_bed (from Default)
+- minecraft:black_bed (from Default)
+- minecraft:blue_bed (from Default)
+- minecraft:brown_bed (from Default)
+- minecraft:cyan_bed (from Default)
+- minecraft:gray_bed (from Default)
+- minecraft:green_bed (from Default)
+- minecraft:light_blue_bed (from Default)
+- minecraft:light_gray_bed (from Default)
+- minecraft:lime_bed (from Default)
+- minecraft:magenta_bed (from Default)
+- minecraft:orange_bed (from Default)
+- minecraft:pink_bed (from Default)
+- minecraft:purple_bed (from Default)
+- minecraft:white_bed (from Default)
+- minecraft:yellow_bed (from Default)
+
+#forge:armors/helmets
+- minecraft:leather_helmet (from )
+- minecraft:turtle_helmet (from )
+- minecraft:chainmail_helmet (from )
+- minecraft:iron_helmet (from )
+- minecraft:golden_helmet (from )
+- minecraft:diamond_helmet (from )
+- minecraft:netherite_helmet (from )
+
+#forge:ores/diamond
+- #minecraft:diamond_ores (from )
+- #minestuck:ores/diamond (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:seeds/beetroot
+- minecraft:beetroot_seeds (from )
+
+#forge:ores/lead
+
+#minecraft:doors
+- #minecraft:wooden_doors (from Default)
+- minecraft:iron_door (from Default)
+
+#minestuck:ores/coal
+- minestuck:netherrack_coal_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stone_coal_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_coal_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:banners
+- minecraft:white_banner (from Default)
+- minecraft:orange_banner (from Default)
+- minecraft:magenta_banner (from Default)
+- minecraft:light_blue_banner (from Default)
+- minecraft:yellow_banner (from Default)
+- minecraft:lime_banner (from Default)
+- minecraft:pink_banner (from Default)
+- minecraft:gray_banner (from Default)
+- minecraft:light_gray_banner (from Default)
+- minecraft:cyan_banner (from Default)
+- minecraft:purple_banner (from Default)
+- minecraft:blue_banner (from Default)
+- minecraft:brown_banner (from Default)
+- minecraft:green_banner (from Default)
+- minecraft:red_banner (from Default)
+- minecraft:black_banner (from Default)
+
+#forge:ingots/uranium
+
+#minecraft:wooden_fences
+- minecraft:oak_fence (from Default)
+- minecraft:acacia_fence (from Default)
+- minecraft:dark_oak_fence (from Default)
+- minecraft:spruce_fence (from Default)
+- minecraft:birch_fence (from Default)
+- minecraft:jungle_fence (from Default)
+- minecraft:crimson_fence (from Default)
+- minecraft:warped_fence (from Default)
+- minecraft:mangrove_fence (from Default)
+
+#forge:tools/tridents
+- minecraft:trident (from )
+
+#forge:ore_rates/dense
+- minecraft:copper_ore (from )
+- minecraft:deepslate_copper_ore (from )
+- minecraft:deepslate_lapis_ore (from )
+- minecraft:deepslate_redstone_ore (from )
+- minecraft:lapis_ore (from )
+- minecraft:redstone_ore (from )
+
+#forge:dyes/orange
+- minecraft:orange_dye (from )
+
+#forge:armors/boots
+- minecraft:leather_boots (from )
+- minecraft:chainmail_boots (from )
+- minecraft:iron_boots (from )
+- minecraft:golden_boots (from )
+- minecraft:diamond_boots (from )
+- minecraft:netherite_boots (from )
+
+#forge:obsidian
+- minecraft:obsidian (from )
+
+#forge:ore_rates/singular
+- minecraft:ancient_debris (from )
+- minecraft:coal_ore (from )
+- minecraft:deepslate_coal_ore (from )
+- minecraft:deepslate_diamond_ore (from )
+- minecraft:deepslate_emerald_ore (from )
+- minecraft:deepslate_gold_ore (from )
+- minecraft:deepslate_iron_ore (from )
+- minecraft:diamond_ore (from )
+- minecraft:emerald_ore (from )
+- minecraft:gold_ore (from )
+- minecraft:iron_ore (from )
+- minecraft:nether_quartz_ore (from )
+
+#minecraft:dampens_vibrations
+- #minecraft:wool (from Default)
+- #minecraft:wool_carpets (from Default)
+
+#minestuck:planks/aspect
+- minestuck:blood_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:breath_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:doom_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:heart_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:hope_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:life_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mind_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rage_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:space_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:time_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:void_aspect_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ores/tin
+
+#forge:raw_materials/copper
+- minecraft:raw_copper (from )
+
+#forge:glass/white
+- minecraft:white_stained_glass (from )
+
+#minecraft:signs
+- minecraft:oak_sign (from Default)
+- minecraft:spruce_sign (from Default)
+- minecraft:birch_sign (from Default)
+- minecraft:acacia_sign (from Default)
+- minecraft:jungle_sign (from Default)
+- minecraft:dark_oak_sign (from Default)
+- minecraft:crimson_sign (from Default)
+- minecraft:warped_sign (from Default)
+- minecraft:mangrove_sign (from Default)
+
+#forge:glass_panes/red
+- minecraft:red_stained_glass_pane (from )
+
+#forge:glass/magenta
+- minecraft:magenta_stained_glass (from )
+
+#minecraft:fishes
+- minecraft:cod (from Default)
+- minecraft:cooked_cod (from Default)
+- minecraft:salmon (from Default)
+- minecraft:cooked_salmon (from Default)
+- minecraft:pufferfish (from Default)
+- minecraft:tropical_fish (from Default)
+
+#forge:ores/coal
+- #minecraft:coal_ores (from )
+- #minestuck:ores/coal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:feathers
+- minecraft:feather (from )
+
+#forge:tools/shields
+- minecraft:shield (from )
+
+#minestuck:logs/aspect
+- minestuck:blood_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:breath_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:doom_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:heart_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:hope_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:life_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mind_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rage_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:space_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:time_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:void_aspect_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:cobblestone/normal
+- minecraft:cobblestone (from )
+
+#minestuck:logs/end
+- minestuck:end_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:string
+- minecraft:string (from )
+
+#forge:sand/colorless
+- minecraft:sand (from )
+
+#minecraft:trapdoors
+- #minecraft:wooden_trapdoors (from Default)
+- minecraft:iron_trapdoor (from Default)
+
+#minecraft:redstone_ores
+- minecraft:redstone_ore (from Default)
+- minecraft:deepslate_redstone_ore (from Default)
+
+#forge:raw_materials/nickel
+
+#forge:raw_materials/iron
+- minecraft:raw_iron (from )
+
+#forge:ingots/gold
+- minecraft:gold_ingot (from )
+
+#forge:glass/cyan
+- minecraft:cyan_stained_glass (from )
+
+#forge:leather
+- minecraft:leather (from )
+
+#forge:ingots/invar
+
+#forge:glass
+- #forge:glass/colorless (from )
+- #forge:stained_glass (from )
+- #forge:glass/tinted (from )
+
+#forge:raw_materials/tin
+
+#forge:ores/galena
+
+#minecraft:boats
+- minecraft:oak_boat (from Default)
+- minecraft:spruce_boat (from Default)
+- minecraft:birch_boat (from Default)
+- minecraft:jungle_boat (from Default)
+- minecraft:acacia_boat (from Default)
+- minecraft:dark_oak_boat (from Default)
+- minecraft:mangrove_boat (from Default)
+- #minecraft:chest_boats (from Default)
+
+#forge:nuggets/iron
+- minecraft:iron_nugget (from )
+
+#forge:armors
+- #forge:armors/helmets (from )
+- #forge:armors/chestplates (from )
+- #forge:armors/leggings (from )
+- #forge:armors/boots (from )
+
+#forge:raw_materials/aluminum
+
+#minecraft:leaves
+- minecraft:jungle_leaves (from Default)
+- minecraft:oak_leaves (from Default)
+- minecraft:spruce_leaves (from Default)
+- minecraft:dark_oak_leaves (from Default)
+- minecraft:acacia_leaves (from Default)
+- minecraft:birch_leaves (from Default)
+- minecraft:azalea_leaves (from Default)
+- minecraft:flowering_azalea_leaves (from Default)
+- minecraft:mangrove_leaves (from Default)
+- minestuck:frost_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rainbow_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:leaves/aspect (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:leaves/shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:gems/diamond
+- minecraft:diamond (from )
+
+#minecraft:walls
+- minecraft:cobblestone_wall (from Default)
+- minecraft:mossy_cobblestone_wall (from Default)
+- minecraft:brick_wall (from Default)
+- minecraft:prismarine_wall (from Default)
+- minecraft:red_sandstone_wall (from Default)
+- minecraft:mossy_stone_brick_wall (from Default)
+- minecraft:granite_wall (from Default)
+- minecraft:stone_brick_wall (from Default)
+- minecraft:nether_brick_wall (from Default)
+- minecraft:andesite_wall (from Default)
+- minecraft:red_nether_brick_wall (from Default)
+- minecraft:sandstone_wall (from Default)
+- minecraft:end_stone_brick_wall (from Default)
+- minecraft:diorite_wall (from Default)
+- minecraft:blackstone_wall (from Default)
+- minecraft:polished_blackstone_brick_wall (from Default)
+- minecraft:polished_blackstone_wall (from Default)
+- minecraft:cobbled_deepslate_wall (from Default)
+- minecraft:polished_deepslate_wall (from Default)
+- minecraft:deepslate_tile_wall (from Default)
+- minecraft:deepslate_brick_wall (from Default)
+- minecraft:mud_brick_wall (from Default)
+
+#forge:ores_in_ground/netherrack
+- minecraft:nether_gold_ore (from )
+- minecraft:nether_quartz_ore (from )
+
+#forge:glass/green
+- minecraft:green_stained_glass (from )
+
+#forge:crops/potato
+- minecraft:potato (from )
+
+#forge:glass_panes/gray
+- minecraft:gray_stained_glass_pane (from )
+
+#minecraft:acacia_logs
+- minecraft:acacia_log (from Default)
+- minecraft:acacia_wood (from Default)
+- minecraft:stripped_acacia_log (from Default)
+- minecraft:stripped_acacia_wood (from Default)
+
+#minecraft:piglin_loved
+- #minecraft:gold_ores (from Default)
+- minecraft:gold_block (from Default)
+- minecraft:gilded_blackstone (from Default)
+- minecraft:light_weighted_pressure_plate (from Default)
+- minecraft:gold_ingot (from Default)
+- minecraft:bell (from Default)
+- minecraft:clock (from Default)
+- minecraft:golden_carrot (from Default)
+- minecraft:glistering_melon_slice (from Default)
+- minecraft:golden_apple (from Default)
+- minecraft:enchanted_golden_apple (from Default)
+- minecraft:golden_helmet (from Default)
+- minecraft:golden_chestplate (from Default)
+- minecraft:golden_leggings (from Default)
+- minecraft:golden_boots (from Default)
+- minecraft:golden_horse_armor (from Default)
+- minecraft:golden_sword (from Default)
+- minecraft:golden_pickaxe (from Default)
+- minecraft:golden_shovel (from Default)
+- minecraft:golden_axe (from Default)
+- minecraft:golden_hoe (from Default)
+- minecraft:raw_gold (from Default)
+- minecraft:raw_gold_block (from Default)
+
+#minecraft:music_discs
+- #minecraft:creeper_drop_music_discs (from Default)
+- minecraft:music_disc_pigstep (from Default)
+- minecraft:music_disc_otherside (from Default)
+- minecraft:music_disc_5 (from Default)
+- minestuck:music_disc_dance_stab_dance (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:music_disc_emissary_of_dance (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:music_disc_retro_battle (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:stained_glass_panes
+- minecraft:white_stained_glass_pane (from )
+- minecraft:orange_stained_glass_pane (from )
+- minecraft:magenta_stained_glass_pane (from )
+- minecraft:light_blue_stained_glass_pane (from )
+- minecraft:yellow_stained_glass_pane (from )
+- minecraft:lime_stained_glass_pane (from )
+- minecraft:pink_stained_glass_pane (from )
+- minecraft:gray_stained_glass_pane (from )
+- minecraft:light_gray_stained_glass_pane (from )
+- minecraft:cyan_stained_glass_pane (from )
+- minecraft:purple_stained_glass_pane (from )
+- minecraft:blue_stained_glass_pane (from )
+- minecraft:brown_stained_glass_pane (from )
+- minecraft:green_stained_glass_pane (from )
+- minecraft:red_stained_glass_pane (from )
+- minecraft:black_stained_glass_pane (from )
+
+#forge:gems
+- #forge:gems/amethyst (from )
+- #forge:gems/diamond (from )
+- #forge:gems/emerald (from )
+- #forge:gems/lapis (from )
+- #forge:gems/prismarine (from )
+- #forge:gems/quartz (from )
+
+#forge:sand/red
+- minecraft:red_sand (from )
+
+#minestuck:ores/quartz
+- minestuck:stone_quartz_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:chunks/uranium
+- minestuck:raw_uranium (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:logs/vine
+- minestuck:vine_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:vine_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:sand
+- minecraft:sand (from Default)
+- minecraft:red_sand (from Default)
+
+#forge:end_stones
+- minecraft:end_stone (from )
+
+#minecraft:copper_ores
+- minecraft:copper_ore (from Default)
+- minecraft:deepslate_copper_ore (from Default)
+
+#forge:glass/brown
+- minecraft:brown_stained_glass (from )
+
+#minecraft:logs_that_burn
+- #minecraft:dark_oak_logs (from Default)
+- #minecraft:oak_logs (from Default)
+- #minecraft:acacia_logs (from Default)
+- #minecraft:birch_logs (from Default)
+- #minecraft:jungle_logs (from Default)
+- #minecraft:spruce_logs (from Default)
+- #minecraft:mangrove_logs (from Default)
+
+#minestuck:logs/flowery_vine
+- minestuck:flowery_vine_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowery_vine_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:creative_shock_right_click_limit
+- minecraft:chorus_fruit (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:fences/wooden
+- #minecraft:wooden_fences (from )
+
+#forge:dyes/light_gray
+- minecraft:light_gray_dye (from )
+
+#forge:storage_blocks
+- #forge:storage_blocks/amethyst (from )
+- #forge:storage_blocks/coal (from )
+- #forge:storage_blocks/copper (from )
+- #forge:storage_blocks/diamond (from )
+- #forge:storage_blocks/emerald (from )
+- #forge:storage_blocks/gold (from )
+- #forge:storage_blocks/iron (from )
+- #forge:storage_blocks/lapis (from )
+- #forge:storage_blocks/quartz (from )
+- #forge:storage_blocks/raw_copper (from )
+- #forge:storage_blocks/raw_gold (from )
+- #forge:storage_blocks/raw_iron (from )
+- #forge:storage_blocks/redstone (from )
+- #forge:storage_blocks/netherite (from )
+- #minestuck:storage_blocks/cruxite (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #forge:storage_blocks/uranium (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/gray
+- minecraft:gray_stained_glass (from )
+
+#forge:glass_panes/orange
+- minecraft:orange_stained_glass_pane (from )
+
+#forge:glass/light_gray
+- minecraft:light_gray_stained_glass (from )
+
+#forge:dyes/light_blue
+- minecraft:light_blue_dye (from )
+
+#minecraft:beacon_payment_items
+- minecraft:netherite_ingot (from Default)
+- minecraft:emerald (from Default)
+- minecraft:diamond (from Default)
+- minecraft:gold_ingot (from Default)
+- minecraft:iron_ingot (from Default)
+
+#forge:ingots/copper
+- minecraft:copper_ingot (from )
+
+#forge:ores/quartz
+- minecraft:nether_quartz_ore (from )
+- #minestuck:ores/quartz (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ores/cobalt
+
+#minecraft:wooden_slabs
+- minecraft:oak_slab (from Default)
+- minecraft:spruce_slab (from Default)
+- minecraft:birch_slab (from Default)
+- minecraft:jungle_slab (from Default)
+- minecraft:acacia_slab (from Default)
+- minecraft:dark_oak_slab (from Default)
+- minecraft:crimson_slab (from Default)
+- minecraft:warped_slab (from Default)
+- minecraft:mangrove_slab (from Default)
+- minestuck:rainbow_planks_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_planks_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dead_planks_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:treated_planks_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ingots/brick
+- minecraft:brick (from )
+
+#forge:dyes/white
+- minecraft:white_dye (from )
+
+#minestuck:logs/glowing
+- minestuck:glowing_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:glowing_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/blue
+- minecraft:blue_stained_glass (from )
+
+#minecraft:coal_ores
+- minecraft:coal_ore (from Default)
+- minecraft:deepslate_coal_ore (from Default)
+
+#forge:tools/bows
+- minecraft:bow (from )
+
+#minecraft:small_flowers
+- minecraft:dandelion (from Default)
+- minecraft:poppy (from Default)
+- minecraft:blue_orchid (from Default)
+- minecraft:allium (from Default)
+- minecraft:azure_bluet (from Default)
+- minecraft:red_tulip (from Default)
+- minecraft:orange_tulip (from Default)
+- minecraft:white_tulip (from Default)
+- minecraft:pink_tulip (from Default)
+- minecraft:oxeye_daisy (from Default)
+- minecraft:cornflower (from Default)
+- minecraft:lily_of_the_valley (from Default)
+- minecraft:wither_rose (from Default)
+
+#minecraft:wooden_trapdoors
+- minecraft:acacia_trapdoor (from Default)
+- minecraft:birch_trapdoor (from Default)
+- minecraft:dark_oak_trapdoor (from Default)
+- minecraft:jungle_trapdoor (from Default)
+- minecraft:oak_trapdoor (from Default)
+- minecraft:spruce_trapdoor (from Default)
+- minecraft:crimson_trapdoor (from Default)
+- minecraft:warped_trapdoor (from Default)
+- minecraft:mangrove_trapdoor (from Default)
+
+#forge:seeds/pumpkin
+- minecraft:pumpkin_seeds (from )
+
+#forge:ore_bearing_ground/stone
+- minecraft:stone (from )
+
+#forge:storage_blocks/coal
+- minecraft:coal_block (from )
+
+#forge:raw_materials/ardite
+
+#forge:glass_panes/black
+- minecraft:black_stained_glass_pane (from )
+
+#forge:glass/light_blue
+- minecraft:light_blue_stained_glass (from )
+
+#forge:dusts/redstone
+- minecraft:redstone (from )
+
+#minestuck:grist_candy
+- minestuck:build_gushers (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:amber_gummy_worm (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:caulk_pretzel (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chalk_candy_cigarette (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:iodine_licorice (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shale_peep (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:tar_licorice (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cobalt_gum (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:marble_jawbreaker (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mercury_sixlets (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:quartz_jelly_bean (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:sulfur_candy_apple (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:amethyst_hard_candy (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:garnet_twix (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:ruby_lollipop (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rust_gummy_eye (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:diamond_mint (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:gold_candy_ribbon (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:uranium_gummy_bear (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:artifact_warhead (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:zillium_skittles (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ingots/brass
+
+#forge:dyes/pink
+- minecraft:pink_dye (from )
+
+#forge:storage_blocks/redstone
+- minecraft:redstone_block (from )
+
+#minecraft:axolotl_tempt_items
+- minecraft:tropical_fish_bucket (from Default)
+
+#forge:gems/quartz
+- minecraft:quartz (from )
+
+#forge:storage_blocks/amethyst
+- minecraft:amethyst_block (from )
+
+#forge:crops/beetroot
+- minecraft:beetroot (from )
+
+#minecraft:stairs
+- #minecraft:wooden_stairs (from Default)
+- minecraft:cobblestone_stairs (from Default)
+- minecraft:sandstone_stairs (from Default)
+- minecraft:nether_brick_stairs (from Default)
+- minecraft:stone_brick_stairs (from Default)
+- minecraft:brick_stairs (from Default)
+- minecraft:purpur_stairs (from Default)
+- minecraft:quartz_stairs (from Default)
+- minecraft:red_sandstone_stairs (from Default)
+- minecraft:prismarine_brick_stairs (from Default)
+- minecraft:prismarine_stairs (from Default)
+- minecraft:dark_prismarine_stairs (from Default)
+- minecraft:polished_granite_stairs (from Default)
+- minecraft:smooth_red_sandstone_stairs (from Default)
+- minecraft:mossy_stone_brick_stairs (from Default)
+- minecraft:polished_diorite_stairs (from Default)
+- minecraft:mossy_cobblestone_stairs (from Default)
+- minecraft:end_stone_brick_stairs (from Default)
+- minecraft:stone_stairs (from Default)
+- minecraft:smooth_sandstone_stairs (from Default)
+- minecraft:smooth_quartz_stairs (from Default)
+- minecraft:granite_stairs (from Default)
+- minecraft:andesite_stairs (from Default)
+- minecraft:red_nether_brick_stairs (from Default)
+- minecraft:polished_andesite_stairs (from Default)
+- minecraft:diorite_stairs (from Default)
+- minecraft:blackstone_stairs (from Default)
+- minecraft:polished_blackstone_brick_stairs (from Default)
+- minecraft:polished_blackstone_stairs (from Default)
+- minecraft:cobbled_deepslate_stairs (from Default)
+- minecraft:polished_deepslate_stairs (from Default)
+- minecraft:deepslate_tile_stairs (from Default)
+- minecraft:deepslate_brick_stairs (from Default)
+- minecraft:oxidized_cut_copper_stairs (from Default)
+- minecraft:weathered_cut_copper_stairs (from Default)
+- minecraft:exposed_cut_copper_stairs (from Default)
+- minecraft:cut_copper_stairs (from Default)
+- minecraft:waxed_weathered_cut_copper_stairs (from Default)
+- minecraft:waxed_exposed_cut_copper_stairs (from Default)
+- minecraft:waxed_cut_copper_stairs (from Default)
+- minecraft:waxed_oxidized_cut_copper_stairs (from Default)
+- minecraft:mud_brick_stairs (from Default)
+- minestuck:black_chess_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dark_gray_chess_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_gray_chess_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:white_chess_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:coarse_stone_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:coarse_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_tile_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cast_iron_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_stone_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chalk_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chalk_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:brown_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:green_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowery_mossy_stone_brick_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:logs/frost
+- minestuck:frost_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass_panes/blue
+- minecraft:blue_stained_glass_pane (from )
+
+#forge:seeds/melon
+- minecraft:melon_seeds (from )
+
+#forge:raw_materials/galena
+
+#forge:ingots/electrum
+
+#minecraft:logs
+- #minecraft:logs_that_burn (from Default)
+- #minecraft:crimson_stems (from Default)
+- #minecraft:warped_stems (from Default)
+- #minestuck:logs/glowing (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/frost (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/rainbow (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/end (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/vine (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/flowery_vine (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/dead (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/petrified (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/aspect (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:logs/shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:crops/wheat
+- minecraft:wheat (from )
+
+#minecraft:creeper_drop_music_discs
+- minecraft:music_disc_13 (from Default)
+- minecraft:music_disc_cat (from Default)
+- minecraft:music_disc_blocks (from Default)
+- minecraft:music_disc_chirp (from Default)
+- minecraft:music_disc_far (from Default)
+- minecraft:music_disc_mall (from Default)
+- minecraft:music_disc_mellohi (from Default)
+- minecraft:music_disc_stal (from Default)
+- minecraft:music_disc_strad (from Default)
+- minecraft:music_disc_ward (from Default)
+- minecraft:music_disc_11 (from Default)
+- minecraft:music_disc_wait (from Default)
+
+#forge:raw_materials/gold
+- minecraft:raw_gold (from )
+
+#minestuck:ores/redstone
+- minestuck:end_stone_redstone_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:compasses
+- minecraft:compass (from Default)
+- minecraft:recovery_compass (from Default)
+
+#minecraft:arrows
+- minecraft:arrow (from Default)
+- minecraft:tipped_arrow (from Default)
+- minecraft:spectral_arrow (from Default)
+
+#forge:tools/fishing_rods
+- minecraft:fishing_rod (from )
+
+#forge:stone
+- minecraft:andesite (from )
+- minecraft:diorite (from )
+- minecraft:granite (from )
+- minecraft:infested_stone (from )
+- minecraft:stone (from )
+- minecraft:polished_andesite (from )
+- minecraft:polished_diorite (from )
+- minecraft:polished_granite (from )
+- minecraft:deepslate (from )
+- minecraft:polished_deepslate (from )
+- minecraft:infested_deepslate (from )
+- minecraft:tuff (from )
+- minestuck:coarse_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:coarse_end_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:brown_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:green_stone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:wooden_doors
+- minecraft:oak_door (from Default)
+- minecraft:spruce_door (from Default)
+- minecraft:birch_door (from Default)
+- minecraft:jungle_door (from Default)
+- minecraft:acacia_door (from Default)
+- minecraft:dark_oak_door (from Default)
+- minecraft:crimson_door (from Default)
+- minecraft:warped_door (from Default)
+- minecraft:mangrove_door (from Default)
+
+#forge:tools/hoes
+- minecraft:wooden_hoe (from )
+- minecraft:stone_hoe (from )
+- minecraft:iron_hoe (from )
+- minecraft:golden_hoe (from )
+- minecraft:diamond_hoe (from )
+- minecraft:netherite_hoe (from )
+
+#forge:glass_panes/yellow
+- minecraft:yellow_stained_glass_pane (from )
+
+#minecraft:emerald_ores
+- minecraft:emerald_ore (from Default)
+- minecraft:deepslate_emerald_ore (from Default)
+
+#minestuck:leaves/aspect
+- minestuck:blood_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:breath_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:doom_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:heart_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:hope_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:life_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mind_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rage_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:space_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:time_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:void_aspect_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/purple
+- minecraft:purple_stained_glass (from )
+
+#forge:gems/lapis
+- minecraft:lapis_lazuli (from )
+
+#forge:gunpowder
+- minecraft:gunpowder (from )
+
+#forge:tools/shovels
+- minecraft:wooden_shovel (from )
+- minecraft:stone_shovel (from )
+- minecraft:iron_shovel (from )
+- minecraft:golden_shovel (from )
+- minecraft:diamond_shovel (from )
+- minecraft:netherite_shovel (from )
+
+#forge:dyes/magenta
+- minecraft:magenta_dye (from )
+
+#minecraft:crimson_stems
+- minecraft:crimson_stem (from Default)
+- minecraft:stripped_crimson_stem (from Default)
+- minecraft:crimson_hyphae (from Default)
+- minecraft:stripped_crimson_hyphae (from Default)
+
+#minecraft:ignored_by_piglin_babies
+- minecraft:leather (from Default)
+
+#forge:ores/aluminium
+
+#minestuck:logs/shadewood
+- minestuck:shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:scarred_shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:scarred_shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_scarred_shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_scarred_shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rotted_shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rotted_shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_rotted_shadewood_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:stripped_rotted_shadewood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:stone_tool_materials
+- minecraft:cobblestone (from Default)
+- minecraft:blackstone (from Default)
+- minecraft:cobbled_deepslate (from Default)
+
+#forge:dyes/cyan
+- minecraft:cyan_dye (from )
+
+#minecraft:wart_blocks
+- minecraft:nether_wart_block (from Default)
+- minecraft:warped_wart_block (from Default)
+
+#minecraft:terracotta
+- minecraft:terracotta (from Default)
+- minecraft:white_terracotta (from Default)
+- minecraft:orange_terracotta (from Default)
+- minecraft:magenta_terracotta (from Default)
+- minecraft:light_blue_terracotta (from Default)
+- minecraft:yellow_terracotta (from Default)
+- minecraft:lime_terracotta (from Default)
+- minecraft:pink_terracotta (from Default)
+- minecraft:gray_terracotta (from Default)
+- minecraft:light_gray_terracotta (from Default)
+- minecraft:cyan_terracotta (from Default)
+- minecraft:purple_terracotta (from Default)
+- minecraft:blue_terracotta (from Default)
+- minecraft:brown_terracotta (from Default)
+- minecraft:green_terracotta (from Default)
+- minecraft:red_terracotta (from Default)
+- minecraft:black_terracotta (from Default)
+
+#minestuck:modus_card
+- minestuck:stack_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:queue_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:queuestack_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:tree_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:hashmap_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:set_modus_card (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ingots/nickel
+
+#forge:ore_rates/sparse
+- minecraft:nether_gold_ore (from )
+
+#forge:crops
+- #forge:crops/beetroot (from )
+- #forge:crops/carrot (from )
+- #forge:crops/nether_wart (from )
+- #forge:crops/potato (from )
+- #forge:crops/wheat (from )
+
+#forge:ore_bearing_ground/netherrack
+- minecraft:netherrack (from )
+
+#forge:seeds/wheat
+- minecraft:wheat_seeds (from )
+
+#minestuck:ores/diamond
+- minestuck:pink_stone_diamond_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ingots/iron
+- minecraft:iron_ingot (from )
+
+#forge:dyes/purple
+- minecraft:purple_dye (from )
+
+#forge:ores_in_ground/deepslate
+- minecraft:deepslate_coal_ore (from )
+- minecraft:deepslate_copper_ore (from )
+- minecraft:deepslate_diamond_ore (from )
+- minecraft:deepslate_emerald_ore (from )
+- minecraft:deepslate_gold_ore (from )
+- minecraft:deepslate_iron_ore (from )
+- minecraft:deepslate_lapis_ore (from )
+- minecraft:deepslate_redstone_ore (from )
+
+#minecraft:anvil
+- minecraft:anvil (from Default)
+- minecraft:chipped_anvil (from Default)
+- minecraft:damaged_anvil (from Default)
+
+#forge:ores/silver
+
+#minecraft:birch_logs
+- minecraft:birch_log (from Default)
+- minecraft:birch_wood (from Default)
+- minecraft:stripped_birch_log (from Default)
+- minecraft:stripped_birch_wood (from Default)
+
+#forge:sand
+- #forge:sand/colorless (from )
+- #forge:sand/red (from )
+
+#forge:glass_panes/purple
+- minecraft:purple_stained_glass_pane (from )
+
+#forge:dyes/yellow
+- minecraft:yellow_dye (from )
+
+#forge:dusts
+- #forge:dusts/glowstone (from )
+- #forge:dusts/prismarine (from )
+- #forge:dusts/redstone (from )
+- minestuck:glowystone_dust (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/yellow
+- minecraft:yellow_stained_glass (from )
+
+#minestuck:cassettes
+- minestuck:cassette_mellohi (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_13 (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_blocks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_cat (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_chirp (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_far (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_mall (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_dance_stab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_retro_battle (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_emissary (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_11 (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_pigstep (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_stal (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_strad (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_wait (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_ward (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_otherside (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cassette_5 (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:storage_blocks/raw_gold
+- minecraft:raw_gold_block (from )
+
+#forge:seeds
+- #forge:seeds/beetroot (from )
+- #forge:seeds/melon (from )
+- #forge:seeds/pumpkin (from )
+- #forge:seeds/wheat (from )
+
+#forge:gems/prismarine
+- minecraft:prismarine_crystals (from )
+
+#forge:ores/ardite
+
+#minecraft:iron_ores
+- minecraft:iron_ore (from Default)
+- minecraft:deepslate_iron_ore (from Default)
+
+#forge:ores/gold
+- #minecraft:gold_ores (from )
+- #minestuck:ores/gold (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:oak_logs
+- minecraft:oak_log (from Default)
+- minecraft:oak_wood (from Default)
+- minecraft:stripped_oak_log (from Default)
+- minecraft:stripped_oak_wood (from Default)
+
+#forge:raw_materials
+- #forge:raw_materials/copper (from )
+- #forge:raw_materials/gold (from )
+- #forge:raw_materials/iron (from )
+
+#forge:barrels
+- #forge:barrels/wooden (from )
+
+#minecraft:stone_crafting_materials
+- minecraft:cobblestone (from Default)
+- minecraft:blackstone (from Default)
+- minecraft:cobbled_deepslate (from Default)
+
+#minestuck:bugs
+- minestuck:bug_on_a_stick (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chocolate_beetle (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cone_of_flies (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:grasshopper (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cicada (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:jar_of_bugs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:piglin_repellents
+- minecraft:soul_torch (from Default)
+- minecraft:soul_lantern (from Default)
+- minecraft:soul_campfire (from Default)
+
+#forge:ingots/zinc
+
+#forge:ores/lapis
+- #minecraft:lapis_ores (from )
+- #minestuck:ores/lapis (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:raw_materials/silver
+
+#forge:glass/black
+- minecraft:black_stained_glass (from )
+
+#forge:slimeballs
+- minecraft:slime_ball (from )
+
+#forge:fences/nether_brick
+- minecraft:nether_brick_fence (from )
+
+#forge:armors/leggings
+- minecraft:leather_leggings (from )
+- minecraft:chainmail_leggings (from )
+- minecraft:iron_leggings (from )
+- minecraft:golden_leggings (from )
+- minecraft:diamond_leggings (from )
+- minecraft:netherite_leggings (from )
+
+#forge:rods
+- #forge:rods/blaze (from )
+- #forge:rods/wooden (from )
+- minestuck:uranium_powered_stick (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/lime
+- minecraft:lime_stained_glass (from )
+
+#minestuck:ores/lapis
+- minestuck:pink_stone_lapis_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:chests/wooden
+- minecraft:chest (from )
+- minecraft:trapped_chest (from )
+
+#forge:ores/iron
+- #minecraft:iron_ores (from )
+- #minestuck:ores/iron (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ores/nickel
+
+#forge:raw_materials/zinc
+
+#minecraft:mangrove_logs
+- minecraft:mangrove_log (from Default)
+- minecraft:mangrove_wood (from Default)
+- minecraft:stripped_mangrove_log (from Default)
+- minecraft:stripped_mangrove_wood (from Default)
+
+#minecraft:jungle_logs
+- minecraft:jungle_log (from Default)
+- minecraft:jungle_wood (from Default)
+- minecraft:stripped_jungle_log (from Default)
+- minecraft:stripped_jungle_wood (from Default)
+
+#minecraft:lectern_books
+- minecraft:written_book (from Default)
+- minecraft:writable_book (from Default)
+
+#forge:gems/emerald
+- minecraft:emerald (from )
+
+#forge:chests/ender
+- minecraft:ender_chest (from )
+
+#forge:armors/chestplates
+- minecraft:leather_chestplate (from )
+- minecraft:chainmail_chestplate (from )
+- minecraft:iron_chestplate (from )
+- minecraft:golden_chestplate (from )
+- minecraft:diamond_chestplate (from )
+- minecraft:netherite_chestplate (from )
+
+#minecraft:wooden_stairs
+- minecraft:oak_stairs (from Default)
+- minecraft:spruce_stairs (from Default)
+- minecraft:birch_stairs (from Default)
+- minecraft:jungle_stairs (from Default)
+- minecraft:acacia_stairs (from Default)
+- minecraft:dark_oak_stairs (from Default)
+- minecraft:crimson_stairs (from Default)
+- minecraft:warped_stairs (from Default)
+- minecraft:mangrove_stairs (from Default)
+- minestuck:rainbow_planks_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_planks_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dead_planks_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:treated_planks_stairs (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:spruce_logs
+- minecraft:spruce_log (from Default)
+- minecraft:spruce_wood (from Default)
+- minecraft:stripped_spruce_log (from Default)
+- minecraft:stripped_spruce_wood (from Default)
+
+#minecraft:wooden_buttons
+- minecraft:oak_button (from Default)
+- minecraft:spruce_button (from Default)
+- minecraft:birch_button (from Default)
+- minecraft:jungle_button (from Default)
+- minecraft:acacia_button (from Default)
+- minecraft:dark_oak_button (from Default)
+- minecraft:crimson_button (from Default)
+- minecraft:warped_button (from Default)
+- minecraft:mangrove_button (from Default)
+- minestuck:wooden_explosive_button (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:tools
+- #forge:tools/swords (from )
+- #forge:tools/axes (from )
+- #forge:tools/pickaxes (from )
+- #forge:tools/shovels (from )
+- #forge:tools/hoes (from )
+- #forge:tools/shields (from )
+- #forge:tools/bows (from )
+- #forge:tools/crossbows (from )
+- #forge:tools/fishing_rods (from )
+- #forge:tools/tridents (from )
+
+#forge:fence_gates/wooden
+- minecraft:oak_fence_gate (from )
+- minecraft:spruce_fence_gate (from )
+- minecraft:birch_fence_gate (from )
+- minecraft:jungle_fence_gate (from )
+- minecraft:acacia_fence_gate (from )
+- minecraft:dark_oak_fence_gate (from )
+- minecraft:crimson_fence_gate (from )
+- minecraft:warped_fence_gate (from )
+- minecraft:mangrove_fence_gate (from )
+
+#forge:storage_blocks/raw_copper
+- minecraft:raw_copper_block (from )
+
+#minecraft:stone_bricks
+- minecraft:stone_bricks (from Default)
+- minecraft:mossy_stone_bricks (from Default)
+- minecraft:cracked_stone_bricks (from Default)
+- minecraft:chiseled_stone_bricks (from Default)
+- minestuck:decrepit_stone_bricks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mossy_decrepit_stone_bricks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowery_mossy_stone_bricks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:storage_blocks/quartz
+- minecraft:quartz_block (from )
+
+#forge:ores/aluminum
+
+#forge:ores/uranium
+- #minestuck:ores/uranium (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:glass/orange
+- minecraft:orange_stained_glass (from )
+
+#forge:glass_panes/lime
+- minecraft:lime_stained_glass_pane (from )
+
+#forge:shears
+- minecraft:shears (from )
+
+#minestuck:ores/iron
+- minestuck:end_stone_iron_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:sandstone_iron_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:red_sandstone_iron_ore (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:chest_boats
+- minecraft:oak_chest_boat (from Default)
+- minecraft:spruce_chest_boat (from Default)
+- minecraft:birch_chest_boat (from Default)
+- minecraft:jungle_chest_boat (from Default)
+- minecraft:acacia_chest_boat (from Default)
+- minecraft:dark_oak_chest_boat (from Default)
+- minecraft:mangrove_chest_boat (from Default)
+
+#forge:dyes/green
+- minecraft:green_dye (from )
+
+#minecraft:slabs
+- #minecraft:wooden_slabs (from Default)
+- minecraft:stone_slab (from Default)
+- minecraft:smooth_stone_slab (from Default)
+- minecraft:stone_brick_slab (from Default)
+- minecraft:sandstone_slab (from Default)
+- minecraft:purpur_slab (from Default)
+- minecraft:quartz_slab (from Default)
+- minecraft:red_sandstone_slab (from Default)
+- minecraft:brick_slab (from Default)
+- minecraft:cobblestone_slab (from Default)
+- minecraft:nether_brick_slab (from Default)
+- minecraft:petrified_oak_slab (from Default)
+- minecraft:prismarine_slab (from Default)
+- minecraft:prismarine_brick_slab (from Default)
+- minecraft:dark_prismarine_slab (from Default)
+- minecraft:polished_granite_slab (from Default)
+- minecraft:smooth_red_sandstone_slab (from Default)
+- minecraft:mossy_stone_brick_slab (from Default)
+- minecraft:polished_diorite_slab (from Default)
+- minecraft:mossy_cobblestone_slab (from Default)
+- minecraft:end_stone_brick_slab (from Default)
+- minecraft:smooth_sandstone_slab (from Default)
+- minecraft:smooth_quartz_slab (from Default)
+- minecraft:granite_slab (from Default)
+- minecraft:andesite_slab (from Default)
+- minecraft:red_nether_brick_slab (from Default)
+- minecraft:polished_andesite_slab (from Default)
+- minecraft:diorite_slab (from Default)
+- minecraft:cut_sandstone_slab (from Default)
+- minecraft:cut_red_sandstone_slab (from Default)
+- minecraft:blackstone_slab (from Default)
+- minecraft:polished_blackstone_brick_slab (from Default)
+- minecraft:polished_blackstone_slab (from Default)
+- minecraft:cobbled_deepslate_slab (from Default)
+- minecraft:polished_deepslate_slab (from Default)
+- minecraft:deepslate_tile_slab (from Default)
+- minecraft:deepslate_brick_slab (from Default)
+- minecraft:waxed_weathered_cut_copper_slab (from Default)
+- minecraft:waxed_exposed_cut_copper_slab (from Default)
+- minecraft:waxed_cut_copper_slab (from Default)
+- minecraft:oxidized_cut_copper_slab (from Default)
+- minecraft:weathered_cut_copper_slab (from Default)
+- minecraft:exposed_cut_copper_slab (from Default)
+- minecraft:cut_copper_slab (from Default)
+- minecraft:waxed_oxidized_cut_copper_slab (from Default)
+- minecraft:mud_brick_slab (from Default)
+- minestuck:coarse_stone_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:coarse_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_chess_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dark_gray_chess_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:light_gray_chess_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:white_chess_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chalk_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:chalk_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:pink_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:brown_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:green_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_stone_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:flowery_mossy_stone_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_tile_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shade_brick_slab (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:ores/emerald
+- #minecraft:emerald_ores (from )
+
+#forge:ingots/lead
+
+#forge:ingots/cobalt
+
+#minestuck:logs/petrified
+- minestuck:petrified_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:petrified_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:dyes/lime
+- minecraft:lime_dye (from )
+
+#minestuck:logs/rainbow
+- minestuck:rainbow_log (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rainbow_wood (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:flowers
+- #minecraft:small_flowers (from Default)
+- #minecraft:tall_flowers (from Default)
+- minecraft:flowering_azalea_leaves (from Default)
+- minecraft:flowering_azalea (from Default)
+- minecraft:mangrove_propagule (from Default)
+
+#minecraft:buttons
+- #minecraft:wooden_buttons (from Default)
+- minecraft:stone_button (from Default)
+- minecraft:polished_blackstone_button (from Default)
+- minestuck:stone_explosive_button (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minestuck:storage_blocks/cruxite
+- minestuck:cruxite_block (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:planks
+- minecraft:oak_planks (from Default)
+- minecraft:spruce_planks (from Default)
+- minecraft:birch_planks (from Default)
+- minecraft:jungle_planks (from Default)
+- minecraft:acacia_planks (from Default)
+- minecraft:dark_oak_planks (from Default)
+- minecraft:crimson_planks (from Default)
+- minecraft:warped_planks (from Default)
+- minecraft:mangrove_planks (from Default)
+- minestuck:glowing_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:frost_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:rainbow_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:end_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:dead_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:treated_planks (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #minestuck:planks/aspect (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:fox_food
+- minecraft:sweet_berries (from Default)
+- minecraft:glow_berries (from Default)
+
+#forge:cobblestone
+- #forge:cobblestone/normal (from )
+- #forge:cobblestone/infested (from )
+- #forge:cobblestone/mossy (from )
+- #forge:cobblestone/deepslate (from )
+- minestuck:flowery_mossy_cobblestone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:mycelium_cobblestone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:black_cobblestone (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:rails
+- minecraft:rail (from Default)
+- minecraft:powered_rail (from Default)
+- minecraft:detector_rail (from Default)
+- minecraft:activator_rail (from Default)
+
+#minecraft:diamond_ores
+- minecraft:diamond_ore (from Default)
+- minecraft:deepslate_diamond_ore (from Default)
+
+#forge:gems/amethyst
+- minecraft:amethyst_shard (from )
+
+#forge:barrels/wooden
+- minecraft:barrel (from )
+
+#minecraft:overworld_natural_logs
+- minecraft:acacia_log (from Default)
+- minecraft:birch_log (from Default)
+- minecraft:oak_log (from Default)
+- minecraft:jungle_log (from Default)
+- minecraft:spruce_log (from Default)
+- minecraft:dark_oak_log (from Default)
+- minecraft:mangrove_log (from Default)
+
+#forge:glass/silica
+- minecraft:glass (from )
+- minecraft:black_stained_glass (from )
+- minecraft:blue_stained_glass (from )
+- minecraft:brown_stained_glass (from )
+- minecraft:cyan_stained_glass (from )
+- minecraft:gray_stained_glass (from )
+- minecraft:green_stained_glass (from )
+- minecraft:light_blue_stained_glass (from )
+- minecraft:light_gray_stained_glass (from )
+- minecraft:lime_stained_glass (from )
+- minecraft:magenta_stained_glass (from )
+- minecraft:orange_stained_glass (from )
+- minecraft:pink_stained_glass (from )
+- minecraft:purple_stained_glass (from )
+- minecraft:red_stained_glass (from )
+- minecraft:white_stained_glass (from )
+- minecraft:yellow_stained_glass (from )
+
+#forge:dyes/brown
+- minecraft:brown_dye (from )
+
+#forge:storage_blocks/gold
+- minecraft:gold_block (from )
+
+#forge:storage_blocks/raw_iron
+- minecraft:raw_iron_block (from )
+
+#forge:ores
+- #forge:ores/coal (from )
+- #forge:ores/copper (from )
+- #forge:ores/diamond (from )
+- #forge:ores/emerald (from )
+- #forge:ores/gold (from )
+- #forge:ores/iron (from )
+- #forge:ores/lapis (from )
+- #forge:ores/redstone (from )
+- #forge:ores/quartz (from )
+- #forge:ores/netherite_scrap (from )
+- #minestuck:ores/cruxite (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- #forge:ores/uranium (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:wooden_pressure_plates
+- minecraft:oak_pressure_plate (from Default)
+- minecraft:spruce_pressure_plate (from Default)
+- minecraft:birch_pressure_plate (from Default)
+- minecraft:jungle_pressure_plate (from Default)
+- minecraft:acacia_pressure_plate (from Default)
+- minecraft:dark_oak_pressure_plate (from Default)
+- minecraft:crimson_pressure_plate (from Default)
+- minecraft:warped_pressure_plate (from Default)
+- minecraft:mangrove_pressure_plate (from Default)
+
+#minecraft:candles
+- minecraft:candle (from Default)
+- minecraft:white_candle (from Default)
+- minecraft:orange_candle (from Default)
+- minecraft:magenta_candle (from Default)
+- minecraft:light_blue_candle (from Default)
+- minecraft:yellow_candle (from Default)
+- minecraft:lime_candle (from Default)
+- minecraft:pink_candle (from Default)
+- minecraft:gray_candle (from Default)
+- minecraft:light_gray_candle (from Default)
+- minecraft:cyan_candle (from Default)
+- minecraft:purple_candle (from Default)
+- minecraft:blue_candle (from Default)
+- minecraft:brown_candle (from Default)
+- minecraft:green_candle (from Default)
+- minecraft:red_candle (from Default)
+- minecraft:black_candle (from Default)
+
+#minecraft:tall_flowers
+- minecraft:sunflower (from Default)
+- minecraft:lilac (from Default)
+- minecraft:peony (from Default)
+- minecraft:rose_bush (from Default)
+
+#forge:rods/wooden
+- minecraft:stick (from )
+
+#minestuck:leaves/shadewood
+- minestuck:shadewood_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:shroomy_shadewood_leaves (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#forge:dusts/prismarine
+- minecraft:prismarine_shard (from )
+
+#forge:fences
+- #forge:fences/nether_brick (from )
+- #forge:fences/wooden (from )
+
+#forge:raw_materials/cobalt
+
+#forge:bookshelves
+- minecraft:bookshelf (from )
+
+#forge:ingots/aluminium
+
+#forge:storage_blocks/diamond
+- minecraft:diamond_block (from )
+
+#forge:ores_in_ground/stone
+- minecraft:coal_ore (from )
+- minecraft:copper_ore (from )
+- minecraft:diamond_ore (from )
+- minecraft:emerald_ore (from )
+- minecraft:gold_ore (from )
+- minecraft:iron_ore (from )
+- minecraft:lapis_ore (from )
+- minecraft:redstone_ore (from )
+
+#minestuck:faygo
+- minestuck:orange_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:candy_apple_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:faygo_cola (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:cotton_candy_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:creme_soda_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:grape_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:moon_mist_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:peach_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minestuck:redpop_faygo (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:gold_ores
+- minecraft:gold_ore (from Default)
+- minecraft:nether_gold_ore (from Default)
+- minecraft:deepslate_gold_ore (from Default)
+
+#forge:dyes
+- #forge:dyes/white (from )
+- #forge:dyes/orange (from )
+- #forge:dyes/magenta (from )
+- #forge:dyes/light_blue (from )
+- #forge:dyes/yellow (from )
+- #forge:dyes/lime (from )
+- #forge:dyes/pink (from )
+- #forge:dyes/gray (from )
+- #forge:dyes/light_gray (from )
+- #forge:dyes/cyan (from )
+- #forge:dyes/purple (from )
+- #forge:dyes/blue (from )
+- #forge:dyes/brown (from )
+- #forge:dyes/green (from )
+- #forge:dyes/red (from )
+- #forge:dyes/black (from )
+
+#forge:glass_panes/pink
+- minecraft:pink_stained_glass_pane (from )
+
+#minecraft:freeze_immune_wearables
+- minecraft:leather_boots (from Default)
+- minecraft:leather_leggings (from Default)
+- minecraft:leather_chestplate (from Default)
+- minecraft:leather_helmet (from Default)
+- minecraft:leather_horse_armor (from Default)
+
+#minecraft:completes_find_tree_tutorial
+- #minecraft:logs (from Default)
+- #minecraft:leaves (from Default)
+- #minecraft:wart_blocks (from Default)
+
+#minecraft:dirt
+- minecraft:dirt (from Default)
+- minecraft:grass_block (from Default)
+- minecraft:podzol (from Default)
+- minecraft:coarse_dirt (from Default)
+- minecraft:mycelium (from Default)
+- minecraft:rooted_dirt (from Default)
+- minecraft:moss_block (from Default)
+- minecraft:mud (from Default)
+- minecraft:muddy_mangrove_roots (from Default)
+
+#forge:netherrack
+- minecraft:netherrack (from )
+
+#forge:ingots/ardite
+
+#forge:ore_bearing_ground/deepslate
+- minecraft:deepslate (from )
+
+#forge:terracotta
+- minecraft:terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:black_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:black_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:blue_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:blue_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:brown_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:brown_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:cyan_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:cyan_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:gray_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:gray_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:green_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:green_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:light_blue_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:light_blue_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:light_gray_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:light_gray_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:lime_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:lime_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:magenta_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:magenta_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:orange_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:orange_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:pink_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:pink_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:purple_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:purple_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:red_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:red_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:white_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:white_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:yellow_glazed_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+- minecraft:yellow_terracotta (from minestuck-224635-4498401_mapped_official_1.19.2.jar)
+
+#minecraft:cluster_max_harvestables
+- minecraft:diamond_pickaxe (from Default)
+- minecraft:golden_pickaxe (from Default)
+- minecraft:iron_pickaxe (from Default)
+- minecraft:netherite_pickaxe (from Default)
+- minecraft:stone_pickaxe (from Default)
+- minecraft:wooden_pickaxe (from Default)
