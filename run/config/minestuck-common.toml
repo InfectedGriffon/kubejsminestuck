@@ -1,0 +1,13 @@
+
+#If you're looking for a config option that isn't here, try looking in the world-specific config
+[logging]
+	#Makes the recipe-generated grist cost process log any items that are used as recipe ingredients, but is neither the output of a different recipe, or has a grist cost. Useful for finding items that probably need manual grist costs.
+	logIngredientItemsWithoutCosts = false
+	#Makes the recipe-generated grist cost process log any items that has a grist cost, but which could also be provided as a recipe generated cost. Useful for finding items that probably do not need manual grist costs.
+	logItemsWithRecipeAndCost = false
+
+[performance]
+	#Time reserved for worldgen between generating the land and the actual entry. Measured in ticks. Try increasing this if entry halts the game too much.
+	#Range: > 0
+	entryDelay = 200
+
