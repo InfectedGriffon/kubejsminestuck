@@ -21,20 +21,25 @@ public class GristCostRecipeJS extends RecipeJS {
         }
 
         var iter = args.list().iterator();
-        iter.next(); //skip over item
+        iter.next(); //skip over ingredient
         while (iter.hasNext()) {
-            var key = iter.next().toString();
+            var key = iter.next().toString();                  // grist id
             gristCost.addProperty(
-                    key.contains(":")? key: Minestuck.MOD_ID+":"+key,
-                    jsNumToLong(iter.next().toString())
+                    key.contains(":")? key: Minestuck.MOD_ID+":"+key, // add minestuck namespace
+                    jsNumToLong(iter.next().toString())               // grist amount
             );
         }
     }
 
+    /**
+     * javascript for turns large numbers into scientific notation
+     * @param s the string to parse
+     * @return parsed number
+     */
     private Long jsNumToLong(String s) {
         // scientific notation
         if (s.contains("E")) {
-            return ((Double) Double.parseDouble(s)).longValue();
+            return Double.valueOf(s).longValue();
         }
         // every other number (will error on decimals)
         return Long.parseLong(s.replace(".0",""));
