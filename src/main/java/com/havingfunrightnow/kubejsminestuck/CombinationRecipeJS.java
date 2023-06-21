@@ -1,6 +1,6 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import com.mraof.minestuck.alchemy.CombinationMode;
+import com.mraof.minestuck.alchemy.recipe.CombinationMode;
 import dev.latvian.mods.kubejs.recipe.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
