@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'org.spongepowered.mixin'
 
 group = 'com.havingfunrightnow'
-version = '1.0.0'
+version = '2.1.0'
 
 java {
     archivesBaseName = 'KubeJSMinestuck'

@@ -1,1 +1,1 @@
-com.havingfunrightnow.kubejsminestuck.KubeJSMinestuckPlugin
+com.havingfunrightnow.kubejsminestuck.KubeJSMinestuckPlugin minestuck

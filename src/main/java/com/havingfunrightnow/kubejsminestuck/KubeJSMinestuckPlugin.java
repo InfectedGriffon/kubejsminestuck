@@ -1,23 +1,15 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.alchemy.GristType;
 import com.mraof.minestuck.alchemy.GristTypes;
+import com.mraof.minestuck.item.crafting.MSRecipeTypes;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
-import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
-import dev.latvian.mods.kubejs.recipe.RegisterRecipeTypesEvent;
-import dev.latvian.mods.kubejs.recipe.minecraft.CookingRecipeJS;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
+import dev.latvian.mods.kubejs.recipe.schema.minecraft.CookingRecipeSchema;
+import dev.latvian.mods.kubejs.registry.RegistryInfo;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
-
-    private static final ResourceKey<Registry<GristType>> GRIST_REGISTRY_NAME =
-            ResourceKey.createRegistryKey(GristTypes.GRIST_TYPES.getRegistryName());
-
-    public static final RegistryObjectBuilderTypes<GristType> GRIST =
-            RegistryObjectBuilderTypes.add(GRIST_REGISTRY_NAME, GristType.class);
+    public static final RegistryInfo GRIST = RegistryInfo.of(GristTypes.GRIST_TYPES.getRegistryKey()).type(GristType.class);
 
     @Override
     public void init() {
@@ -25,9 +17,9 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     }
 
     @Override
-    public void registerRecipeTypes(RegisterRecipeTypesEvent event) {
-        event.register(new ResourceLocation(Minestuck.MOD_ID, "combination"), CombinationRecipeJS::new);
-        event.register(new ResourceLocation(Minestuck.MOD_ID, "grist_cost"), GristCostRecipeJS::new);
-        event.register(new ResourceLocation(Minestuck.MOD_ID, "irradiating"), CookingRecipeJS::new);
+    public void registerRecipeSchemas(RegisterRecipeSchemasEvent event) {
+        event.register(MSRecipeTypes.COMBINATION_TYPE.getId(), CombinationRecipeSchema.SCHEMA);
+        event.register(MSRecipeTypes.GRIST_COST_TYPE.getId(), GristCostRecipeSchema.SCHEMA);
+        event.register(MSRecipeTypes.IRRADIATING_TYPE.getId(), CookingRecipeSchema.SCHEMA);
     }
 }

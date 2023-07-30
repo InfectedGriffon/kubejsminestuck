@@ -1,12 +1,11 @@
 package com.havingfunrightnow.kubejsminestuck;
 
 import com.mraof.minestuck.alchemy.GristType;
-import dev.latvian.mods.kubejs.BuilderBase;
-import dev.latvian.mods.kubejs.RegistryObjectBuilderTypes;
+import dev.latvian.mods.kubejs.registry.BuilderBase;
+import dev.latvian.mods.kubejs.registry.RegistryInfo;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.Objects;
 import java.util.function.Supplier;
 
 public class GristBuilder extends BuilderBase<GristType> {
@@ -23,9 +22,7 @@ public class GristBuilder extends BuilderBase<GristType> {
     @Override
     public GristType createObject() {
         var properties = new GristType.Properties(rarity, value);
-        if (!underlyingType) {
-            properties.notUnderlingType();
-        }
+        if (!underlyingType) properties.notUnderlingType();
         properties.candyStack(candy);
         return new GristType(properties);
     }
@@ -46,13 +43,12 @@ public class GristBuilder extends BuilderBase<GristType> {
     }
 
     public GristBuilder candy(ItemStack candy) {
-        Objects.requireNonNull(candy);
-        this.candy = candy.copy()::copy;
+        this.candy = candy::copy;
         return this;
     }
 
     @Override
-    public RegistryObjectBuilderTypes<? super GristType> getRegistryType() {
+    public RegistryInfo getRegistryType() {
         return KubeJSMinestuckPlugin.GRIST;
     }
 }
