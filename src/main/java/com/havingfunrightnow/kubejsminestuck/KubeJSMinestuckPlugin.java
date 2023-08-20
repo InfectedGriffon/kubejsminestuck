@@ -19,7 +19,9 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     @Override
     public void registerRecipeSchemas(RegisterRecipeSchemasEvent event) {
         event.register(MSRecipeTypes.COMBINATION_TYPE.getId(), CombinationRecipeSchema.SCHEMA);
-        event.register(MSRecipeTypes.GRIST_COST_TYPE.getId(), GristCostRecipeSchema.SCHEMA);
+        event.register(MSRecipeTypes.GRIST_COST_TYPE.getId(), GristCostRecipeSchema.GRIST_COST_SCHEMA);
+        event.register(MSRecipeTypes.WILDCARD_GRIST_COST.getId(), GristCostRecipeSchema.WILDCARD_GRIST_COST_SCHEMA);
+        event.register(MSRecipeTypes.UNAVAILABLE_GRIST_COST.getId(), GristCostRecipeSchema.UNAVAILABLE_GRIST_COST_SCHEMA);
         event.register(MSRecipeTypes.IRRADIATING_TYPE.getId(), CookingRecipeSchema.SCHEMA);
     }
 }

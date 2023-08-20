@@ -18,5 +18,11 @@ public class GristCostRecipeSchema {
             true
     ).key("grist_cost").allowEmpty();
 
-    public static final RecipeSchema SCHEMA = new RecipeSchema(INGREDIENT, GRIST_COSTS).uniqueInputId(INGREDIENT);
+    private static final RecipeKey<Integer> PRIORITY = NumberComponent.ANY_INT.key("priority").defaultOptional();
+
+    private static final RecipeKey<Long> WILDCARD_AMOUNT = NumberComponent.ANY_LONG.key("grist_cost");
+
+    public static final RecipeSchema GRIST_COST_SCHEMA = new RecipeSchema(INGREDIENT, GRIST_COSTS, PRIORITY).uniqueInputId(INGREDIENT);
+    public static final RecipeSchema WILDCARD_GRIST_COST_SCHEMA = new RecipeSchema(INGREDIENT, WILDCARD_AMOUNT, PRIORITY).uniqueInputId(INGREDIENT);
+    public static final RecipeSchema UNAVAILABLE_GRIST_COST_SCHEMA = new RecipeSchema(INGREDIENT, PRIORITY).uniqueInputId(INGREDIENT);
 }
