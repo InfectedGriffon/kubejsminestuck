@@ -7,6 +7,12 @@ import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
 import dev.latvian.mods.kubejs.recipe.schema.minecraft.CookingRecipeSchema;
 import dev.latvian.mods.kubejs.registry.RegistryInfo;
+import dev.latvian.mods.kubejs.script.ScriptType;
+import dev.latvian.mods.kubejs.util.AttachedData;
+import dev.latvian.mods.rhino.util.wrap.TypeWrappers;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.player.Player;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     public static final RegistryInfo GRIST = RegistryInfo.of(GristTypes.GRIST_TYPES.getRegistryKey()).type(GristType.class);
@@ -23,5 +29,19 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
         event.register(MSRecipeTypes.WILDCARD_GRIST_COST.getId(), GristCostRecipeSchema.WILDCARD_GRIST_COST_SCHEMA);
         event.register(MSRecipeTypes.UNAVAILABLE_GRIST_COST.getId(), GristCostRecipeSchema.UNAVAILABLE_GRIST_COST_SCHEMA);
         event.register(MSRecipeTypes.IRRADIATING_TYPE.getId(), CookingRecipeSchema.SCHEMA);
+    }
+
+    @Override
+    public void attachPlayerData(AttachedData<Player> event) {
+        event.add("minestuck", new KJSMPlayerData((ServerPlayer) event.getParent()));
+    }
+
+    @Override
+    public void registerTypeWrappers(ScriptType type, TypeWrappers typeWrappers) {
+        typeWrappers.registerSimple(GristType.class, o -> getGrist(o.toString()));
+    }
+
+    public static GristType getGrist(String id) {
+        return GristTypes.getRegistry().getValue(new ResourceLocation(id));
     }
 }

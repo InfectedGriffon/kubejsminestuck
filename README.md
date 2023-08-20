@@ -22,3 +22,15 @@ simple addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) t
     - uses the startup event 'minestuck.grist'
     - `event.create('name').rarity(num).value(num)`
     - `.notUnderlingType()` and `.candy(item)` are optional
+- Minestuck Playerdata
+  - get and set various things related to minestuck, including:
+    - color (get/set)
+    - modus (get)
+    - boondollars (get/set)
+    - title (get/set once)
+    - hero class/aspect (get)
+    - echeladder rung + progress (get/set)
+    - grist cache
+      - use just `.grist` to get the whole cache
+      - use `.getGrist(type)` to get the amount for a specific type
+      - use `.addGrist(type, amount)` or `.addGrist({"grist_type": amount, ...})`
