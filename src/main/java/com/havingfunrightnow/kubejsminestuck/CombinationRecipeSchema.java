@@ -1,6 +1,6 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import com.mraof.minestuck.alchemy.recipe.CombinationMode;
+import com.mraof.minestuck.api.alchemy.recipe.combination.CombinationMode;
 import dev.latvian.mods.kubejs.recipe.component.EnumComponent;
 import dev.latvian.mods.kubejs.recipe.component.RecipeComponent;
 import dev.latvian.mods.kubejs.recipe.schema.RecipeSchema;

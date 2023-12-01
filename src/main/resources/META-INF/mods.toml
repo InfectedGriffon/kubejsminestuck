@@ -1,63 +1,61 @@
 modLoader = "javafml"
-loaderVersion = "[43,)"
+loaderVersion = "[47,)"
 license = "MIT"
 [[mods]]
     modId = "kubejsminestuck"
     version = "${file.jarVersion}"
     displayName = "KubeJSMinestuck"
     logoFile="wtd.png"
-    authors="Love, Cheese and small house plants"
-    description = '''
-KubeJS support for Minestuck Recipes and Resources
-'''
+    authors="hadean"
+    description = "Adds Minestuck support for KubeJS, including recipes, custom grist types, and sburb data."
 
 [[dependencies.kubejsminestuck]]
-modId="minestuck"
-mandatory=true
-versionRange="[1.9.0,)"
-ordering="NONE"
-side="BOTH"
+    modId="minestuck"
+    mandatory=true
+    versionRange="[1.11.0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.kubejsminestuck]]
-modId="geckolib3"
-mandatory=true
-versionRange="[3.0,)"
-ordering="NONE"
-side="BOTH"
+    modId="geckolib"
+    mandatory=true
+    versionRange="[4.0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.kubejsminestuck]]
-modId="infiniverse"
-mandatory=true
-versionRange="[1.0.0,)"
-ordering="NONE"
-side="BOTH"
+    modId="infiniverse"
+    mandatory=true
+    versionRange="[1.0.0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.kubejsminestuck]]
-modId="kubejs"
-mandatory=true
-versionRange="[1902.6,)"
-ordering="NONE"
-side="BOTH"
+    modId="kubejs"
+    mandatory=true
+    versionRange="[2001.6,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.kubejsminestuck]]
-modId="rhino"
-mandatory=true
-versionRange="[1902.2,)"
-ordering="NONE"
-side="BOTH"
+    modId="rhino"
+    mandatory=true
+    versionRange="[2001.2,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.kubejsminestuck]]
-modId="architectury"
-mandatory=true
-versionRange="[6.5,)"
-ordering="NONE"
-side="BOTH"
+    modId="architectury"
+    mandatory=true
+    versionRange="[9.1,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.kubejsminestuck]]
     modId = "forge"
     mandatory = true
-    versionRange = "[43,)"
+    versionRange = "[47,)"
     ordering = "NONE"
     side = "BOTH"
 [[dependencies.kubejsminestuck]]
     modId = "minecraft"
     mandatory = true
-    versionRange = "[1.19.2,1.20)"
+    versionRange = "[1.20.1,1.21)"
     ordering = "NONE"
     side = "BOTH"

@@ -1,7 +1,8 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import com.mraof.minestuck.alchemy.GristType;
-import com.mraof.minestuck.alchemy.GristTypes;
+import com.mraof.minestuck.Minestuck;
+import com.mraof.minestuck.api.alchemy.GristType;
+import com.mraof.minestuck.api.alchemy.GristTypes;
 import com.mraof.minestuck.item.crafting.MSRecipeTypes;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
@@ -15,7 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
-    public static final RegistryInfo GRIST = RegistryInfo.of(GristTypes.GRIST_TYPES.getRegistryKey()).type(GristType.class);
+    public static final RegistryInfo<GristType> GRIST = RegistryInfo.of(GristTypes.REGISTRY_KEY, GristType.class);
 
     @Override
     public void init() {
@@ -33,7 +34,7 @@ public class KubeJSMinestuckPlugin extends KubeJSPlugin {
 
     @Override
     public void attachPlayerData(AttachedData<Player> event) {
-        event.add("minestuck", new KJSMPlayerData((ServerPlayer) event.getParent()));
+        event.add(Minestuck.MOD_ID, new KJSMPlayerData((ServerPlayer) event.getParent()));
     }
 
     @Override

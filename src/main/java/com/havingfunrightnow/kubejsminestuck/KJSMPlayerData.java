@@ -1,8 +1,8 @@
 package com.havingfunrightnow.kubejsminestuck;
 
 import com.google.common.collect.ImmutableMap;
-import com.mraof.minestuck.alchemy.*;
-import com.mraof.minestuck.alchemy.GristHelper.EnumSource;
+import com.mraof.minestuck.alchemy.GristHelper;
+import com.mraof.minestuck.api.alchemy.*;
 import com.mraof.minestuck.player.*;
 import net.minecraft.server.level.ServerPlayer;
 
@@ -76,10 +76,10 @@ public class KJSMPlayerData {
         return data.getGristCache().getGristSet().getGrist(type);
     }
     public long addGrist(GristType type, long amount) {
-        return data.getGristCache().addWithinCapacity(new GristAmount(type, amount), EnumSource.CONSOLE).getGrist(type);
+        return data.getGristCache().addWithinCapacity(new GristAmount(type, amount), GristHelper.EnumSource.CONSOLE).getGrist(type);
     }
     public MutableGristSet addGrist(Map<String, Double> set) {
         var gristSet = new DefaultImmutableGristSet(set.entrySet().stream().collect(Collectors.toMap(e -> KubeJSMinestuckPlugin.getGrist(e.getKey()), e -> e.getValue().longValue())));
-        return data.getGristCache().addWithinCapacity(gristSet, EnumSource.CONSOLE);
+        return data.getGristCache().addWithinCapacity(gristSet, GristHelper.EnumSource.CONSOLE);
     }
 }

@@ -1,6 +1,6 @@
 package com.havingfunrightnow.kubejsminestuck;
 
-import com.mraof.minestuck.alchemy.GristType;
+import com.mraof.minestuck.api.alchemy.GristType;
 import dev.latvian.mods.kubejs.registry.BuilderBase;
 import dev.latvian.mods.kubejs.registry.RegistryInfo;
 import net.minecraft.resources.ResourceLocation;
@@ -12,7 +12,9 @@ public class GristBuilder extends BuilderBase<GristType> {
 
     private float rarity = 0.3F;
     private float value = 2;
-    private boolean underlyingType = true;
+    private int color = 16777215;
+    private float power = 0f;
+    private boolean underlingType = false;
     private Supplier<ItemStack> candy = () -> ItemStack.EMPTY;
 
     public GristBuilder(ResourceLocation i) {
@@ -22,7 +24,8 @@ public class GristBuilder extends BuilderBase<GristType> {
     @Override
     public GristType createObject() {
         var properties = new GristType.Properties(rarity, value);
-        if (!underlyingType) properties.notUnderlingType();
+        if (this.underlingType)
+            properties.underlingType(power, color);
         properties.candyStack(candy);
         return new GristType(properties);
     }
@@ -37,18 +40,20 @@ public class GristBuilder extends BuilderBase<GristType> {
         return this;
     }
 
-    public GristBuilder notUnderlingType() {
-        this.underlyingType = false;
+    public GristBuilder underlingType(int color, float power) {
+        this.color = color;
+        this.power = power;
+        this.underlingType = true;
         return this;
     }
 
     public GristBuilder candy(ItemStack candy) {
-        this.candy = candy::copy;
+        this.candy = candy.isEmpty()? () -> ItemStack.EMPTY : () -> candy;
         return this;
     }
 
     @Override
-    public RegistryInfo getRegistryType() {
+    public RegistryInfo<GristType> getRegistryType() {
         return KubeJSMinestuckPlugin.GRIST;
     }
 }
