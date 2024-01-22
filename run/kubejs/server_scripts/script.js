@@ -17,3 +17,7 @@ ServerEvents.recipes(event => {
     "minestuck:carved_heavy_planks"
   );
 });
+
+MinestuckEvents.gristDrops(event => {
+  event.newDrops = GristSet.of(new GristAmount("minestuck:build", 1000));
+});
