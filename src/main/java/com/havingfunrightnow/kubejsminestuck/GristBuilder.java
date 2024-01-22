@@ -3,11 +3,13 @@ package com.havingfunrightnow.kubejsminestuck;
 import com.mraof.minestuck.api.alchemy.GristType;
 import dev.latvian.mods.kubejs.registry.BuilderBase;
 import dev.latvian.mods.kubejs.registry.RegistryInfo;
+import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class GristBuilder extends BuilderBase<GristType> {
 
     private float rarity = 0.3F;
@@ -30,16 +32,23 @@ public class GristBuilder extends BuilderBase<GristType> {
         return new GristType(properties);
     }
 
+    @Info("Sets the rarity, which controls how often this type is used in generation.")
     public GristBuilder rarity(float rarity) {
         this.rarity = rarity;
         return this;
     }
 
+    @Info("Sets the value, which is used in boondollar pricing and xp gain from alchemizing.")
     public GristBuilder value(float value) {
         this.value = value;
         return this;
     }
 
+    @Info("""
+            Makes this grist type available for underlings.
+            
+            Any underlings spawned with this type will have the specified color and power.
+            """)
     public GristBuilder underlingType(int color, float power) {
         this.color = color;
         this.power = power;
@@ -47,6 +56,11 @@ public class GristBuilder extends BuilderBase<GristType> {
         return this;
     }
 
+    @Info("""
+            Sets the associated candy item.
+            
+            Candy items can be dropped by underlings instead of grist entities when killed by specific weapons.
+            """)
     public GristBuilder candy(ItemStack candy) {
         this.candy = candy.isEmpty()? () -> ItemStack.EMPTY : () -> candy;
         return this;
