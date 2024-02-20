@@ -1,5 +1,7 @@
 package com.havingfunrightnow.kubejsminestuck.event;
 
+import com.mraof.minestuck.event.ConnectionClosedEvent;
+import com.mraof.minestuck.event.ConnectionCreatedEvent;
 import com.mraof.minestuck.event.SburbEvent;
 import com.mraof.minestuck.skaianet.SburbConnection;
 import com.mraof.minestuck.skaianet.Session;
@@ -28,5 +30,15 @@ public class SburbEventJS extends EventJS {
     @Info("the minecraft server this event happened in")
     public MinecraftServer getMinecraftServer() {
         return this.event.getMinecraftServer();
+    }
+
+    @Info("the type of connection between the players this event happened to")
+    public ConnectionCreatedEvent.ConnectionType getConnectionType() {
+        if (this.event instanceof ConnectionCreatedEvent connectionEvent)
+            return connectionEvent.getConnectionType();
+        else if (this.event instanceof ConnectionClosedEvent connectionEvent)
+            return connectionEvent.getConnectionType();
+        else
+            return null;
     }
 }
