@@ -7,6 +7,8 @@ import com.mraof.minestuck.api.alchemy.GristSet;
 import com.mraof.minestuck.api.alchemy.GristType;
 import com.mraof.minestuck.api.alchemy.GristTypes;
 import com.mraof.minestuck.computer.editmode.DeployList;
+import com.mraof.minestuck.world.lands.LandTypes;
+import com.mraof.minestuck.world.lands.terrain.TerrainLandType;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
 import dev.latvian.mods.kubejs.recipe.schema.minecraft.CookingRecipeSchema;
@@ -21,10 +23,12 @@ import net.minecraft.world.entity.player.Player;
 
 public class KubeJSMinestuckPlugin extends KubeJSPlugin {
     public static final RegistryInfo<GristType> GRIST = RegistryInfo.of(GristTypes.REGISTRY_KEY, GristType.class);
+    public static final RegistryInfo<TerrainLandType> TERRAIN_LAND_TYPE = RegistryInfo.of(LandTypes.TERRAIN_KEY, TerrainLandType.class);
 
     @Override
     public void init() {
         GRIST.addType("basic", GristBuilder.class, GristBuilder::new);
+        TERRAIN_LAND_TYPE.addType("basic", TerrainLandTypeBuilder.class, TerrainLandTypeBuilder::new);
     }
 
     @Override

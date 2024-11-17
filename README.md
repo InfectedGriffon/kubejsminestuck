@@ -42,3 +42,14 @@ A small addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) 
     - use `getGrist(type)` to get the amount stored of a specific type
     - use `addGrist(type, amount)` to add a specific grist type to the cache 
     - use `addGrist(GristSet.of(GristAmount, GristAmount, ...))` to add multiple types to the cache at once
+- Custom TerrainLandType
+  - uses the startup event `minestuck.terrain_land_type`
+  - names method is required, all others are optional
+  - `names(string[] names)`: controls name of Land, accepts one or more translatable strings
+  - `consortType(string name)`: maps to EnumConsort.
+  - `skylight(float)`
+  - `fogColor(double r, double g, double b)`
+  - `skyColor(double r, double g, double b)`
+  - `music(string registryName)`
+  - `addFeature(GenerationStep.Decoration step, string registryName, string[] biomes)`: adds a PlacedFeature of `registryName`. `biomes` maps to LandBiomeType[].
+  - `addBlockRegistry(string registryEntry, string registryName)`: adds to StructureBlockRegistry. `registryName` maps to block registry name.
