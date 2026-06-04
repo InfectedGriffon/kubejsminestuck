@@ -1,0 +1,27 @@
+{
+  "keys": [
+    {
+      "name": "input1",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "input2",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "mode",
+      "role": "input",
+      "type": {
+        "type": "enum",
+        "enum": "com.mraof.minestuck.api.alchemy.recipe.combination.CombinationMode"
+      }
+    },
+    {
+      "name": "output",
+      "role": "output",
+      "type": "item_stack"
+    }
+  ]
+}

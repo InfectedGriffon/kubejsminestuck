@@ -1,0 +1,8 @@
+{
+  "minestuck:grist_map": {
+    "type": "map",
+    "key": "string",
+    "component": "long",
+    "min": 0
+  }
+}

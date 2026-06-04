@@ -1,0 +1,1 @@
+xyz.atarax.kubejsminestuck.KubeJSMinestuckPlugin minestuck
