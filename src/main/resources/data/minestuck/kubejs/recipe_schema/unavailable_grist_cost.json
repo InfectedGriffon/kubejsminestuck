@@ -1,0 +1,15 @@
+{
+  "keys": [
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "priority",
+      "role": "input",
+      "type": "int",
+      "optional": 100
+    }
+  ]
+}

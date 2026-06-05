@@ -13,10 +13,7 @@
     {
       "name": "mode",
       "role": "input",
-      "type": {
-        "type": "enum",
-        "enum": "com.mraof.minestuck.api.alchemy.recipe.combination.CombinationMode"
-      }
+      "type": "minestuck:combination_mode"
     },
     {
       "name": "output",

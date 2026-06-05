@@ -1,0 +1,20 @@
+{
+  "keys": [
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient"
+    },
+    {
+      "name": "grist_cost",
+      "role": "input",
+      "type": "long"
+    },
+    {
+      "name": "priority",
+      "role": "input",
+      "type": "int",
+      "optional": 100
+    }
+  ]
+}

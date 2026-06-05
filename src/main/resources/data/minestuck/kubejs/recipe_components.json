@@ -1,8 +1,12 @@
 {
   "minestuck:grist_map": {
     "type": "map",
-    "key": "string",
+    "key": {"type": "registry_element","registry": "minestuck:grist"},
     "component": "long",
     "min": 0
+  },
+  "minestuck:combination_mode": {
+    "type": "enum",
+    "enum": "com.mraof.minestuck.api.alchemy.recipe.combination.CombinationMode"
   }
 }

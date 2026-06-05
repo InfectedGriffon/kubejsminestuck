@@ -3,7 +3,6 @@ package xyz.atarax.kubejsminestuck;
 import com.mraof.minestuck.Minestuck;
 import com.mraof.minestuck.api.alchemy.GristAmount;
 import com.mraof.minestuck.api.alchemy.GristSet;
-import com.mraof.minestuck.api.alchemy.GristType;
 import com.mraof.minestuck.api.alchemy.GristTypes;
 import com.mraof.minestuck.computer.editmode.DeployList;
 import com.mraof.minestuck.world.lands.LandTypes;
@@ -12,14 +11,11 @@ import dev.latvian.mods.kubejs.plugin.KubeJSPlugin;
 import dev.latvian.mods.kubejs.registry.BuilderTypeRegistry;
 import dev.latvian.mods.kubejs.script.BindingRegistry;
 import dev.latvian.mods.kubejs.util.AttachedData;
-import net.minecraft.resources.RegistryOps;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import xyz.atarax.kubejsminestuck.events.MinestuckEventsJS;
 
 public class KubeJSMinestuckPlugin implements KubeJSPlugin {
-    public static final RegistryOps.RegistryInfo<GristType> GRIST = RegistryOps.RegistryInfo.fromRegistryLookup(GristTypes.REGISTRY.asLookup());
-
     @Override
     public void registerBuilderTypes(BuilderTypeRegistry registry) {
         registry.of(GristTypes.REGISTRY_KEY, callback -> callback.addDefault(GristBuilder.class, GristBuilder::new));
