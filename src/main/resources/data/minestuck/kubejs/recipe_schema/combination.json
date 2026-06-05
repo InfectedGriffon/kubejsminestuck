@@ -18,7 +18,10 @@
     {
       "name": "output",
       "role": "output",
-      "type": "item_stack"
+      "type": {
+        "type": "registry_element",
+        "registry": "minecraft:item"
+      }
     }
   ]
 }
