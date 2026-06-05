@@ -26,37 +26,37 @@ sourceSets.main.resources {
 }
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-    maven { url 'https://maven.parchmentmc.org' }
-
-    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-
-    maven { url "https://commoble.net/maven/" }
-
+    maven {
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {includeGroup "software.bernie.geckolib"}
+    }
+    maven {
+        url "https://commoble.net/maven/"
+        content {includeGroup "net.commoble.infiniverse"}
+    }
     maven {
         url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
+        content {includeGroup "curse.maven"}
     }
     maven {
-        // Shedaniel's maven (Architectury API)
-        url = "https://maven.architectury.dev"
-        content {
-            includeGroup "dev.architectury"
-        }
+        url "https://maven.architectury.dev"
+        content {includeGroup "dev.architectury"}
     }
-
     maven {
-        // latvian.dev Maven (KubeJS and Rhino, tiny-java-server)
-        url = "https://maven.latvian.dev/releases"
+        url "https://maven.latvian.dev/releases"
         content {
             includeGroup "dev.latvian.mods"
             includeGroup "dev.latvian.apps"
         }
     }
-
-    maven { url 'https://jitpack.io' } // animated-gif-lib-for-java
+    maven {
+        url 'https://modmaven.dev'
+        content {includeGroup "mezz.jei"}
+    }
+    maven {
+        url 'https://jitpack.io'
+        content {includeGroup "com.github.rtyley"}
+    }
 }
 
 base {
@@ -134,15 +134,18 @@ dependencies {
     // For all intends and purposes: You can treat this dependency as if it is a normal library you would use.
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    implementation "curse.maven:minestuck-224635:8183503"
+    // minestuck side
+    implementation "curse.maven:minestuck-224635:${minestuck_version}"
     implementation "software.bernie.geckolib:geckolib-neoforge-1.21.1:${geckolib_version}"
     implementation "net.commoble.infiniverse:infiniverse-1.21:${infiniverse_version}"
+    // kubejs side
     implementation "dev.latvian.mods:kubejs-neoforge:${kubejs_version}"
     implementation "dev.latvian.mods:rhino:${rhino_version}"
     implementation "dev.architectury:architectury-neoforge:${architectury_version}"
 
-    // probejs for debugging and stuff during runClient
+    // debugging and stuff
     runtimeOnly "curse.maven:probejs-585406:8122173"
+    runtimeOnly "mezz.jei:jei-1.21.1-neoforge:19.25.0.322"
 
 }
 
@@ -165,20 +168,6 @@ tasks.withType(ProcessResources).configureEach {
 
     filesMatching(['META-INF/neoforge.mods.toml']) {
         expand replaceProperties
-    }
-}
-
-// Example configuration to allow publishing using the maven-publish plugin
-publishing {
-    publications {
-        register('mavenJava', MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
-        }
     }
 }
 
