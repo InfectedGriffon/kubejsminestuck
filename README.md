@@ -1,4 +1,4 @@
-# KubeJS Minestuck
+# KubeJSMinestuck
 
 A small addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) that adds support for [minestuck](https://www.curseforge.com/minecraft/mc-mods/minestuck), including recipes, custom grist types, and Sburb player data.
 
