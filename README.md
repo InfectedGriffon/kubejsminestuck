@@ -1,25 +1,55 @@
+# KubeJS Minestuck
 
-Installation information
-=======
+A small addon for [kubejs](https://www.curseforge.com/minecraft/mc-mods/kubejs) that adds support for [minestuck](https://www.curseforge.com/minecraft/mc-mods/minestuck), including recipes, custom grist types, and Sburb player data.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Current Features:
+- Combination Recipes (totem lathe / punch designix)
+    - `combination(input1, input2, mode, output)`
+    - inputs and output are all item IDs
+    - mode can be "and", "or", or their symbol variants "&&" and "||"
+- Grist Cost Recipes
+    - `grist_cost(item, {"grist_type": amount, ...}, priority?)`
+        - the most common type of grist cost
+    - `wildcard_grist_cost(item, amount, priority?)`
+        - uses the specified amount of wildcard grist (usually build)
+    - `unavailable_grist_cost(item, priority?)`
+        - makes an item unable to be alchemized
+    - priority: recipes with higher priority take precedence, this is optional and defaults to 100
+    - to make an item free, use the normal grist cost type with an empty object as the cost
+    - resource locations default to minecraft, so make sure to include `minestuck:` in the id
+- Irradiating Recipes (cookalyzer)
+    - uses the same syntax as vanilla furnace recipes
+- Custom Grist
+    - uses the startup event `minestuck.grist`
+    - chain up to four methods to modify properties, all optional
+    - `rarity(float)`: controls use in world generation
+    - `value(float)`: controls strength in alchemy and boondollar costs
+    - `underlingType(int color, float power)`: controls color and strength of underlings
+        - the colour is most easily written in the format `0xRRGGBB`
+    - `candy(item id)`: item representation of the grist
+- Minestuck Playerdata
+    - use `player.data.minestuck` to access various resources
+    - getting can be replaced with just the field name, e.g. `data.minestuck.getColor()` can be written as `data.minestuck.color`
+    - setting (single values) can be replaced with assignment, e.g. `data.minestuck.setRung(4)` can be written as `data.minestuck.rung = 4`
+    - color: get/set, can only be set before connecting to a server player
+    - modus: get
+    - boondollars: get/set/add/take
+    - title: get/set
+    - hero class/aspect: get
+    - echeladder rung + progress: get/set, increase progress
+    - grist cache
+        - use `getGrist()` to get the whole cache
+        - use `getGrist(type)` to get the amount stored of a specific type
+        - use `addGrist(type, amount)` to add a specific grist type to the cache
+        - use `addGrist(GristSet.of(GristAmount, GristAmount, ...))` to add multiple types to the cache at once
+- Custom TerrainLandType
+    - uses the startup event `minestuck.terrain_land_type`
+    - names method is required, all others are optional
+    - `names(string[] names)`: controls name of Land, accepts one or more translatable strings
+    - `consortType(string name)`: maps to EnumConsort.
+    - `skylight(float)`
+    - `fogColor(double r, double g, double b)`
+    - `skyColor(double r, double g, double b)`
+    - `music(string registryName)`
+    - `addFeature(GenerationStep.Decoration step, string registryName, string[] biomes)`: adds a PlacedFeature of `registryName`. `biomes` maps to LandBiomeType[].
+    - `addBlockRegistry(string registryEntry, string registryName)`: adds to StructureBlockRegistry. `registryName` maps to block registry name.
