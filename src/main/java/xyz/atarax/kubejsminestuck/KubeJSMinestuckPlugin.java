@@ -32,6 +32,7 @@ public class KubeJSMinestuckPlugin implements KubeJSPlugin {
         bindings.add("GristSet", GristSet.class);
         bindings.add("GristAmount", GristAmount.class);
         bindings.add("DeployList", DeployList.class);
+        bindings.add("MinestuckUtils", Utils.class);
     }
 
     @Override

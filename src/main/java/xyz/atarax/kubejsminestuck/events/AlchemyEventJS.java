@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
+@SuppressWarnings("unused")
 public class AlchemyEventJS implements KubeEvent {
     final AlchemyEvent event;
 
@@ -16,27 +17,27 @@ public class AlchemyEventJS implements KubeEvent {
         this.event = event;
     }
 
-    @Info("the player who activated the alchemiter")
+    @Info("The player who activated the alchemiter")
     public PlayerIdentifier getPlayer() {
         return this.event.getPlayer();
     }
 
-    @Info("the alchemiter block entity used in this event")
+    @Info("The alchemiter block entity used in this event")
     public BlockEntity getAlchemiter() {
         return this.event.getAlchemiter();
     }
 
-    @Info("the level where this event took place")
+    @Info("The level where this event took place")
     public Level getLevel() {
         return this.event.getLevel();
     }
 
-    @Info("the cruxite dowel itemstack that is currently on/in the alchemiter")
+    @Info("The cruxite dowel itemstack that is currently on/in the alchemiter")
     public ItemStack getDowel() {
         return this.event.getDowel();
     }
 
-    @Info("the itemstack the alchemiter will spawn")
+    @Info("The itemstack the alchemiter will spawn")
     public ItemStack getResult() {
         return this.event.getItemResult();
     }
@@ -45,7 +46,7 @@ public class AlchemyEventJS implements KubeEvent {
         this.event.setItemResult(result);
     }
 
-    @Info("a grist set containing the cost of this alchemization")
+    @Info("A grist set containing the cost of this alchemization")
     public GristSet getCost() {
         return this.event.getCost();
     }

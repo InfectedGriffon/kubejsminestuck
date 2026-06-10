@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class GristBuilder extends BuilderBase<GristType> {
     private float rarity;
     private float value;

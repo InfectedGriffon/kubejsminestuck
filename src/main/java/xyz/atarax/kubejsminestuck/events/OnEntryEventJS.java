@@ -6,6 +6,7 @@ import dev.latvian.mods.kubejs.event.KubeEvent;
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.server.MinecraftServer;
 
+@SuppressWarnings("unused")
 public class OnEntryEventJS implements KubeEvent {
     final OnEntryEvent event;
 
@@ -13,12 +14,12 @@ public class OnEntryEventJS implements KubeEvent {
         this.event = event;
     }
 
-    @Info("the minecraft server this event happened in")
+    @Info("The minecraft server the entry happened in")
     public MinecraftServer getMinecraftServer() {
         return this.event.getMcServer();
     }
 
-    @Info("the player who activated this event")
+    @Info("The player who entered")
     public PlayerIdentifier getPlayer() {
         return this.event.getPlayer();
     }

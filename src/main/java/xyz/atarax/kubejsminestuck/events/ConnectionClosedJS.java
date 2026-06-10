@@ -6,6 +6,7 @@ import dev.latvian.mods.kubejs.event.KubeEvent;
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.server.MinecraftServer;
 
+@SuppressWarnings("unused")
 public class ConnectionClosedJS implements KubeEvent {
     final SburbEvent.ConnectionClosed event;
 
@@ -13,12 +14,12 @@ public class ConnectionClosedJS implements KubeEvent {
         this.event = event;
     }
 
-    @Info("the primary connection of the player this event happened to")
+    @Info("The primary connection of the player this event happened to")
     public ActiveConnection getConnection() {
         return this.event.getConnection();
     }
 
-    @Info("the minecraft server this event happened in")
+    @Info("The minecraft server this event happened in")
     public MinecraftServer getMinecraftServer() {
         return this.event.getMinecraftServer();
     }
