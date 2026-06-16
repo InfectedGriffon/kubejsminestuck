@@ -3,14 +3,14 @@ package xyz.atarax.kubejsminestuck.events;
 import com.mraof.minestuck.api.alchemy.GristSet;
 import com.mraof.minestuck.event.AlchemyEvent;
 import com.mraof.minestuck.player.PlayerIdentifier;
-import dev.latvian.mods.kubejs.event.KubeEvent;
+import dev.latvian.mods.kubejs.level.KubeLevelEvent;
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
 @SuppressWarnings("unused")
-public class AlchemyEventJS implements KubeEvent {
+public class AlchemyEventJS implements KubeLevelEvent {
     final AlchemyEvent event;
 
     public AlchemyEventJS(AlchemyEvent event) {

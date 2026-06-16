@@ -5,16 +5,17 @@ import com.mraof.minestuck.api.alchemy.GristType;
 import com.mraof.minestuck.api.alchemy.MutableGristSet;
 import com.mraof.minestuck.entity.underling.UnderlingEntity;
 import com.mraof.minestuck.event.GristDropsEvent;
-import dev.latvian.mods.kubejs.event.KubeEvent;
+import dev.latvian.mods.kubejs.entity.KubeLivingEntityEvent;
 import dev.latvian.mods.kubejs.typings.Info;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 
 import java.util.Map;
 import java.util.stream.Collectors;
 
 @SuppressWarnings("unused")
-public class GristDropsEventJS implements KubeEvent {
+public class GristDropsEventJS implements KubeLivingEntityEvent {
     final GristDropsEvent event;
 
     public GristDropsEventJS(GristDropsEvent event) {
@@ -67,5 +68,10 @@ public class GristDropsEventJS implements KubeEvent {
     @Info("Completely overrides the grist drops for this event.")
     public void setNewDrops(GristSet newDrops) {
         this.event.setNewDrops(newDrops);
+    }
+
+    @Override
+    public LivingEntity getEntity() {
+        return this.event.getUnderling();
     }
 }

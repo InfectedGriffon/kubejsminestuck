@@ -7,7 +7,10 @@ import com.mraof.minestuck.event.SburbEvent;
 import dev.latvian.mods.kubejs.event.EventGroup;
 import dev.latvian.mods.kubejs.event.EventHandler;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import xyz.atarax.kubejsminestuck.KubeJSMinestuck;
 
+@EventBusSubscriber(modid = KubeJSMinestuck.MOD_ID)
 public class MinestuckEventsJS {
     public static final EventGroup GROUP = EventGroup.of("MinestuckEvents");
     public static final EventHandler ALCHEMY = GROUP.server("alchemy", () -> AlchemyEventJS.class);
