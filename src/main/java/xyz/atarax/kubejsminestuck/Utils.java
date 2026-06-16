@@ -6,6 +6,7 @@ import com.mraof.minestuck.item.CaptchaCardItem;
 import com.mraof.minestuck.item.MSItems;
 import com.mraof.minestuck.item.components.EncodedItemComponent;
 import com.mraof.minestuck.player.IdentifierHandler;
+import com.mraof.minestuck.player.PlayerIdentifier;
 import com.mraof.minestuck.skaianet.SburbConnections;
 import com.mraof.minestuck.util.ColorHandler;
 import com.mraof.minestuck.util.MSDamageSources;
@@ -58,19 +59,27 @@ public class Utils {
         player.hurt(MSDamageSources.decapitation(player.level().registryAccess()), Float.MAX_VALUE);
     }
     @Info("Finds the server player of a given sburb client")
-    public static ServerPlayer sburbServerOfClient(ServerPlayer client) {
-        var id = Objects.requireNonNull(IdentifierHandler.encode(client));
-        return SburbConnections.get(client.server)
-                .primaryPartnerForClient(id)
-                .map(n -> n.getPlayer(client.server))
+    public static ServerPlayer sburbServerOfClient(ServerPlayer clientPlayer) {
+        var id = Objects.requireNonNull(IdentifierHandler.encode(clientPlayer));
+        return sburbServerOfClient(id, clientPlayer.server);
+    }
+    @Info("Finds the primary client player of a given sburb server")
+    public static ServerPlayer sburbClientOfServer(ServerPlayer serverPlayer) {
+        var id = Objects.requireNonNull(IdentifierHandler.encode(serverPlayer));
+        return sburbClientOfServer(id, serverPlayer.server);
+    }
+    @Info("Finds the server player of a given sburb client")
+    public static ServerPlayer sburbServerOfClient(PlayerIdentifier clientId, MinecraftServer server) {
+        return SburbConnections.get(server)
+                .primaryPartnerForClient(clientId)
+                .map(n -> n.getPlayer(server))
                 .orElse(null);
     }
     @Info("Finds the primary client player of a given sburb server")
-    public static ServerPlayer sburbClientOfServer(ServerPlayer server) {
-        var id = Objects.requireNonNull(IdentifierHandler.encode(server));
-        return SburbConnections.get(server.server)
-                .primaryPartnerForServer(id)
-                .map(n -> n.getPlayer(server.server))
+    public static ServerPlayer sburbClientOfServer(PlayerIdentifier serverId, MinecraftServer server) {
+        return SburbConnections.get(server)
+                .primaryPartnerForServer(serverId)
+                .map(n -> n.getPlayer(server))
                 .orElse(null);
     }
 }

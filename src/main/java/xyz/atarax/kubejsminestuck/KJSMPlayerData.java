@@ -5,7 +5,6 @@ import com.mraof.minestuck.alchemy.GristHelper;
 import com.mraof.minestuck.api.alchemy.*;
 import com.mraof.minestuck.inventory.captchalogue.CaptchaDeckHandler;
 import com.mraof.minestuck.player.*;
-import com.mraof.minestuck.skaianet.SburbConnections;
 import com.mraof.minestuck.skaianet.SburbHandler;
 import com.mraof.minestuck.skaianet.SburbPlayerData;
 import com.mraof.minestuck.util.ColorHandler;
@@ -19,7 +18,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @SuppressWarnings("unused")
-public class KJSMPlayerData {
+public class    KJSMPlayerData {
     private final PlayerData data;
     private final SburbPlayerData hsData;
     private final ServerPlayer player;
@@ -179,16 +178,10 @@ public class KJSMPlayerData {
     }
     @Info("The sburb client player of this server, if one exists")
     public ServerPlayer getSburbClient() {
-        return SburbConnections.get(player.server)
-                .primaryPartnerForServer(Objects.requireNonNull(IdentifierHandler.encode(player)))
-                .map(p -> p.getPlayer(player.server))
-                .orElse(null);
+        return Utils.sburbClientOfServer(player);
     }
     @Info("The sburb server player of this client, if one exists")
     public ServerPlayer getSburbServer() {
-        return SburbConnections.get(player.server)
-                .primaryPartnerForClient(Objects.requireNonNull(IdentifierHandler.encode(player)))
-                .map(p -> p.getPlayer(player.server))
-                .orElse(null);
+        return Utils.sburbServerOfClient(player);
     }
 }
