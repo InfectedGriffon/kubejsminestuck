@@ -5,9 +5,15 @@ import com.mraof.minestuck.alchemy.GristHelper;
 import com.mraof.minestuck.api.alchemy.*;
 import com.mraof.minestuck.inventory.captchalogue.CaptchaDeckHandler;
 import com.mraof.minestuck.player.*;
+import com.mraof.minestuck.skaianet.SburbConnections;
+import com.mraof.minestuck.skaianet.SburbHandler;
+import com.mraof.minestuck.skaianet.SburbPlayerData;
 import com.mraof.minestuck.util.ColorHandler;
 import dev.latvian.mods.kubejs.typings.Info;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -15,11 +21,13 @@ import java.util.Optional;
 @SuppressWarnings("unused")
 public class KJSMPlayerData {
     private final PlayerData data;
+    private final SburbPlayerData hsData;
     private final ServerPlayer player;
 
     public KJSMPlayerData(ServerPlayer player) {
         Objects.requireNonNull(player);
         this.data = PlayerData.get(player).orElseThrow();
+        this.hsData = SburbPlayerData.get(player);
         this.player = player;
     }
 
@@ -152,5 +160,35 @@ public class KJSMPlayerData {
     @Info("Adds a set of grist to the player's cache")
     public MutableGristSet addGrist(GristSet gristSet) {
         return GristCache.get(data).addWithinCapacity(gristSet, GristHelper.EnumSource.CONSOLE);
+    }
+    @Info("Has this player entered the medium yet")
+    public boolean hasEntered() {
+        return hsData.hasEntered();
+    }
+    @Info("The dimension of the player's land in the medium")
+    public ResourceKey<Level> getLand() {
+        return hsData.getLandDimension();
+    }
+    @Info("Sets a player's land to a dimension. Does not work if they already have a land")
+    public void setLand(ResourceKey<Level> dim) {
+        hsData.setLand(dim);
+    }
+    @Info("The player's cruxite artifact as an itemstack")
+    public ItemStack getArtifactItem() {
+        return SburbHandler.getEntryItem(player.level(), hsData);
+    }
+    @Info("The sburb client player of this server, if one exists")
+    public ServerPlayer getSburbClient() {
+        return SburbConnections.get(player.server)
+                .primaryPartnerForServer(Objects.requireNonNull(IdentifierHandler.encode(player)))
+                .map(p -> p.getPlayer(player.server))
+                .orElse(null);
+    }
+    @Info("The sburb server player of this client, if one exists")
+    public ServerPlayer getSburbServer() {
+        return SburbConnections.get(player.server)
+                .primaryPartnerForClient(Objects.requireNonNull(IdentifierHandler.encode(player)))
+                .map(p -> p.getPlayer(player.server))
+                .orElse(null);
     }
 }
